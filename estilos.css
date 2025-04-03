@@ -1,0 +1,166 @@
+body{
+	margin:0;
+	padding:0;
+	width: 100%;
+	background-color: #d0d0d0;
+}
+/* .container{
+	width:90%
+	margin:10px auto;
+} */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.portada{
+	width: 100%;
+	display: flex;
+}
+/**/
+
+.popup-button {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .popup-button .btn {
+	display: inline-block;
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 14px;
+  }
+  
+  .popup-button .btn:hover {
+	background-color: #0056b3;
+  }
+  
+  footer {
+    /* position: relative; */
+	display: flex;
+	justify-content: center;
+    background-color: #f5b338;
+    /* bottom: -100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 1em 0;
+    margin-top: auto;
+    
+
+}
+
+  @media (max-width: 768px) {
+	.mfp-content {
+	  width: 90% !important; /* Asegura que se adapte a pantallas pequeñas */
+	}
+  }
+     /*Tablet*/
+/* @media screen and (min-width:480px) and (max-width:960px){ */
+/* @media (min-width:480px) and (max-width:960px){ */
+	/* @media (min-width:820px) { */
+/* @media (min-width:768px) { */
+
+	/* @media only screen and (min-width: 768px) and (max-width: 991px){ */
+		@media (min-width: 768px) and (max-width: 991px){
+
+	main{
+		width: 100%;
+	}
+	.portada{
+		width: 100%;
+		display:flex;
+	}
+	.portada > img{
+		width:inherit;
+		/* margin-top: 70px; */
+	}
+	.localidades > img{
+		width:100%;
+		height: auto;
+
+	}
+	.contacto >img{
+		width: 100%;
+	}
+	/* .portada > img {
+		max-width: 100%;
+		height: auto;
+	} */
+}
+  
+    
+/*Movil*/
+@media (min-width:200px) and (max-width:480px){
+
+	.portada > img{
+		width: inherit;
+		/* margin-top: 70px; */
+	}
+	.cartel{
+		width: inherit;
+	}
+	.descripcion{
+		font-family: "Rubik", sans-serif;
+		color: black;
+	}
+	.localidades>img{
+		display: flex;
+		width: 100%;
+	}
+	.mfp-container{
+		height: 80%;
+	}
+	.mfp-content{
+		vertical-align: bottom;
+	}
+	.contacto > img{
+		width:100%;
+		height: auto;
+		margin-top: 25%;
+
+	}
+	
+}
+ 
+
+
+
+
+/*PC*/
+@media screen and (min-width:960px){
+	.portada>img{
+			width: 100%;
+			height: auto;	 
+	}
+	.localidades>img {
+		width: 100%;
+		height: auto;
+	  }
+	  .contacto > img{
+		width:100%;
+		height: auto;
+
+	}
+}
