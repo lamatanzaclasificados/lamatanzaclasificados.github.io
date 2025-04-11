@@ -1,9 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+
+
 body{
+
 	margin:0;
 	padding:0;
 	width: 100%;
 	background-color: #d0d0d0;
 }
+main{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	
+}
+
+/* 
+main{
+	flex: 1;
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+} */
+
 /* .container{
 	width:90%
 	margin:10px auto;
@@ -99,7 +125,7 @@ body{
 	  width: 90% !important; /* Asegura que se adapte a pantallas pequeñas */
 	}
 	.carousel-item{
-		height: 7.5rem;
+		height: 7.9rem;
 	}
 	.foto-1{
 		background-image: url(/img/v1.webp);
