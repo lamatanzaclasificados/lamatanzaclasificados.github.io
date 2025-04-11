@@ -24,7 +24,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
 }
 
 
@@ -80,3 +80,15 @@ body {
     margin-top: 7rem;
   }
 }
+@media (max-width: 768px) {
+  .carousel-item{
+		height: 7.5rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .carousel-item{
+    height: 16rem;
+  }
+}
+
+

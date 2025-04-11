@@ -70,11 +70,60 @@ body{
     
 
 }
+.foto-1{
+	background-image: url(/img/v1.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+.foto-2{
+	background-image: url(/img/v2.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+
+}
+.foto-3{
+	background-image: url(/img/v3.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
 
   @media (max-width: 768px) {
 	.mfp-content {
 	  width: 90% !important; /* Asegura que se adapte a pantallas pequeñas */
 	}
+	.carousel-item{
+		height: 7.5rem;
+	}
+	.foto-1{
+		background-image: url(/img/v1.webp);
+		background-position: center center;
+		/* background-size: contain; */
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
+	.foto-2{
+		background-image: url(/img/v2.webp);
+		background-position: center center;
+		/* background-size: contain; */
+		background-repeat: no-repeat;
+		background-color: #000;
+
+	}
+	.foto-3{
+		background-image: url(/img/v3.webp);
+		background-position: center center;
+		/* background-size: contain; */
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
+
   }
      /*Tablet*/
 /* @media screen and (min-width:480px) and (max-width:960px){ */
@@ -104,6 +153,30 @@ body{
 	.contacto >img{
 		width: 100%;
 	}
+	.foto-1{
+		background-image: url(/img/v1.webp);
+		background-position: center center;
+		background-size:contain;
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
+
+	.foto-2{
+		background-image: url(/img/v2.webp);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #000;
+
+	}
+	.foto-3{
+		background-image: url(/img/v3.webp);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
+
 	/* .portada > img {
 		max-width: 100%;
 		height: auto;
@@ -135,6 +208,9 @@ body{
 	.mfp-content{
 		vertical-align: bottom;
 	}
+	.contacto{
+		margin-top: 10px;
+	}
 	.contacto > img{
 		width:100%;
 		height: auto;
@@ -157,6 +233,9 @@ body{
 	.localidades>img {
 		width: 100%;
 		height: auto;
+	  }
+	  .contacto{
+		margin-top: 330px;
 	  }
 	  .contacto > img{
 		width:100%;

@@ -6856,7 +6856,9 @@ fieldset:disabled .btn {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform .6s ease-in-out
+    transition: transform .6s ease-in-out;
+  
+    
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -7023,7 +7025,7 @@ fieldset:disabled .btn {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 .carousel-dark .carousel-control-next-icon,
