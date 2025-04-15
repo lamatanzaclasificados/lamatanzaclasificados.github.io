@@ -66,6 +66,10 @@ main{
 .popup-button {
 	text-align: center;
 	margin-top: 10px;
+	position:absolute;
+	z-index: 1500;
+	margin-left: 48%;
+	margin-top: -90px;
   }
   
   .popup-button .btn {
@@ -97,7 +101,7 @@ main{
 
 }
 .foto-1{
-	background-image: url(/img/v1.webp);
+	background-image: url(/img/Flayer1.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -105,7 +109,7 @@ main{
 }
 
 .foto-2{
-	background-image: url(/img/v2.webp);
+	background-image: url(/img/Flayer2.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -113,7 +117,7 @@ main{
 
 }
 .foto-3{
-	background-image: url(/img/v3.webp);
+	background-image: url(/img/Flayer3.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -125,17 +129,17 @@ main{
 	  width: 90% !important; /* Asegura que se adapte a pantallas pequeñas */
 	}
 	.carousel-item{
-		height: 7.9rem;
+		height: 9.5rem;
 	}
 	.foto-1{
-		background-image: url(/img/v1.webp);
+		background-image: url(/img/Flayer1.webp);
 		background-position: center center;
 		/* background-size: contain; */
 		background-repeat: no-repeat;
 		background-color: #000;
 	}
 	.foto-2{
-		background-image: url(/img/v2.webp);
+		background-image: url(/img/Flayer2.webp);
 		background-position: center center;
 		/* background-size: contain; */
 		background-repeat: no-repeat;
@@ -143,7 +147,7 @@ main{
 
 	}
 	.foto-3{
-		background-image: url(/img/v3.webp);
+		background-image: url(/img/Flayer3.webp);
 		background-position: center center;
 		/* background-size: contain; */
 		background-repeat: no-repeat;
@@ -180,7 +184,7 @@ main{
 		width: 100%;
 	}
 	.foto-1{
-		background-image: url(/img/v1.webp);
+		background-image: url(/img/Flayer1.webp);
 		background-position: center center;
 		background-size:contain;
 		background-repeat: no-repeat;
@@ -188,7 +192,7 @@ main{
 	}
 
 	.foto-2{
-		background-image: url(/img/v2.webp);
+		background-image: url(/img/Flayer2.webp);
 		background-position: center center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -196,7 +200,7 @@ main{
 
 	}
 	.foto-3{
-		background-image: url(/img/v3.webp);
+		background-image: url(/img/Flayer3.webp);
 		background-position: center center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -243,6 +247,10 @@ main{
 		margin-top: 25%;
 
 	}
+	.popup-button{
+		margin-left: 40%;
+		margin-top: -115px;
+	}
 	
 }
  
@@ -267,5 +275,8 @@ main{
 		width:100%;
 		height: auto;
 
+	}
+	.popup-button{
+		margin-left: 48%;
 	}
 }
