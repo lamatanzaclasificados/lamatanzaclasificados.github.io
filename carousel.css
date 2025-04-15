@@ -89,7 +89,7 @@ body {
 }
 @media (min-width: 360px) and (max-width: 414px){
   .carousel-item{
-		height: 9.5rem;
+		height: 10.5rem;
 	}  
 }
 @media (min-width: 768px) and (max-width: 991px){
