@@ -169,9 +169,7 @@ main{
 	.mfp-content {
 	  width: 90% !important; /* Asegura que se adapte a pantallas pequeñas */
 	}
-	.carousel-item{
-		height: 9.5rem;
-	}
+
 	.foto-1{
 		background-image: url(/img/Flayer1.webp);
 		background-position: center center;
@@ -294,6 +292,9 @@ main{
 	}
 	.navbar-brand{
 		font-size: 0.75em;
+	}
+	.carousel-item{
+		height: 12.5rem;
 	}
 }
  
