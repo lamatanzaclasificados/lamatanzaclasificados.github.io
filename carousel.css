@@ -24,9 +24,9 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
+/* .carousel-item {
   height: 50rem;
-}
+} */
 
 
 /* MARKETING CONTENT
@@ -103,20 +103,13 @@ body {
 	}
 }
 
-@media (min-width: 320px) and (max-width: 414px){
+
+/* @media (min-width: 320px) and (max-width: 414px){
   .carousel-item{
 		height: 10.5rem;
 	}
-}
-@media (min-width: 320px) and (max-width: 390px){
-  .carousel-item{
-		height: 9.5rem;
-	}
-  .popup-button {
-    margin-left: 31%;
-    margin-top: -30%;
-    }
-}
+} */
+
 @media (min-width: 768px) and (max-width: 991px){
   .carousel-item{
     height: 20rem;
@@ -136,11 +129,7 @@ body {
     height: 21.5rem;
   }
 } */
-@media(max-width: 300px){
-  .carousel-item{
-    height: 7.5rem;
-  }
-  }
+
   @media(min-width: 420px) and (max-width: 540px){
     main{
       width: 100%;
@@ -157,7 +146,7 @@ body {
   @media only screen and (min-width: 820px)
   {
     .carousel-item{
-      height: 21.5rem;
+      height: 31.5rem;
     }
 
   }
@@ -171,4 +160,26 @@ body {
       margin-top: -21%;
       }
   }
+  
+  @media (max-width: 360px) {
+    .carousel-item{
+      height: 8rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 361px){
+    .carousel-item{
+      height: 8.5rem;
+    }
+    .popup-button {
+      margin-left: 31%;
+      margin-top: -16%;
+      }
+  }
+
+  
+  @media(max-width: 300px){
+    .carousel-item{
+      height: 7.5rem;
+    }
+    }
 

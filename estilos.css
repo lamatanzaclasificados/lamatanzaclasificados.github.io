@@ -290,9 +290,11 @@ main{
 	}
 	.popup-button{
 		margin-left: 35%;
-		margin-top: -202px;
+		margin-top: -90px;
 	}
-	
+	.navbar-brand{
+		font-size: 0.75em;
+	}
 }
  
 
