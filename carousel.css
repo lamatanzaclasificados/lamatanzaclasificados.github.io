@@ -168,7 +168,7 @@ body {
   }
   @media (min-width: 320px) and (max-width: 361px){
     .carousel-item{
-      height: 8.5rem;
+      height: 11.5rem;
     }
     .popup-button {
       margin-left: 31%;
