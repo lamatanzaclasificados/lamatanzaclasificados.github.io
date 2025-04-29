@@ -35,6 +35,15 @@
 	.navbar-brand{
 		font-size: 0.9em;
 	}
+	.promo{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.promo>img{
+		width: 95%;
+		margin-bottom: -30%;
+	}
 
 
 /* body{
@@ -72,7 +81,7 @@ main{
 }
 .portfolio-menu ul li{
 	display:inline-block;
-	margin:0;
+	margin: 1px;
 	list-style:none;
 	padding:10px 15px;
 	cursor:pointer;
