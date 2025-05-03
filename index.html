@@ -234,15 +234,15 @@
                     </a>
                 </div>
                 <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
-                    <a href="/img/negocio11.jpg" class="fancylight popup-btn with-caption image-link popup-image"
+                    <a href="/img/negocio11.webp" class="fancylight popup-btn with-caption image-link popup-image"
                         data-link="https://wa.link/99wodj" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/negocio11.jpg" alt="">
+                        <img class="img-fluid" src="/img/negocio11.webp" alt="">
                     </a>
                 </div>
                 <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
-                    <a href="/img/negocio12.jpg" class="fancylight popup-bt with-caption image-link popup-image"
+                    <a href="/img/negocio12.webp" class="fancylight popup-bt with-caption image-link popup-image"
                         data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/negocio12.jpg" alt="">
+                        <img class="img-fluid" src="/img/negocio12.webp" alt="">
                     </a>
                 </div>
                 <div class="item lava col-lg-3 col-md-4 col-6 col-sm gallery">
@@ -469,13 +469,20 @@
             <img src="/img/publicar aca.webp" alt="">
         </div>
         <div class="contacto">
+           
             <img src="/img/final.webp" alt="">
         </div>
 
     </main>
     <footer>
-        <div>
-            <p>ClasificadosLaMatanza</p>
+        <div class="pie">
+
+            <a href="https://www.instagram.com/lamatanzaclasificados/">
+                
+                <i class="fa-brands fa-instagram fa-lg"></i>
+                lamatanzaclasificados
+            </a> 
+            
         </div>
     </footer>
 
@@ -509,6 +516,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
 
 
 
@@ -566,15 +574,18 @@
                         if (link) {
                             const buttonHtml = `
                 <div class="popup-button" style="text-align: center;">
-                    <a href="${link}" target="_blank" class="btn" style=" font-size:18px;
-                        display: inline-block; 
-                        padding: 10px 20px; 
-                        background-color: #2eb01e; 
-                        color: white; 
-                        text-decoration: none; 
-                        border-radius: 5px;">
-                        WhatsApp ${nombre}
-                    </a>
+
+                        <a href="${link}" target="_blank" class="btn" style=" font-size:18px;
+                            display: inline-block; 
+                            padding: 10px 20px; 
+                            background-color: #2eb01e; 
+                            color: white; 
+                            text-decoration: none; 
+                            border-radius: 5px;">
+                            
+                            <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> ${nombre}
+                        </a>
+                    
                 </div>`;
                             $('.mfp-container').append(buttonHtml);
                             //$('.mfp-content').append(buttonHtml);

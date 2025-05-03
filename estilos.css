@@ -264,6 +264,15 @@ main{
     
 /*Movil*/
 @media (min-width:200px) and (max-width:480px){
+	.pie{
+		display: flexbox;
+		flex-wrap: nowrap;
+	}
+	a{
+		text-decoration: none;
+		
+
+	}
 
 	.portada > img{
 		width: inherit;
