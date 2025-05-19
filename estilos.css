@@ -44,6 +44,28 @@
 		width: 95%;
 		margin-bottom: -30%;
 	}
+	.mfp-content{
+		vertical-align: top;
+	}
+	.lottie-wrapper {
+		position: fixed;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 9999;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	  }
+	  
+	  .lottie-button {
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+	  }
+	  
+
 
 
 /* body{
@@ -93,26 +115,50 @@ main{
 }
 
 
-.portfolio-item .item{
+/* .portfolio-item .item{ */
 	/*width:303px;*/
-	float:left;
+	/* float:left;
 	margin-bottom:10px;
-}
+} */
 
 .portada{
 	width: 100%;
 	display: flex;
 }
-/**/
+/* gpt*/
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-.popup-button {
+.portfolio-item .item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.mfp-container {
+  position: relative;
+}
+
+/* .popup-button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1050;
+  } */
+/*cierre gpt*/
+
+/* .popup-button {
 	text-align: center;
 	margin-top: 10px;
 	position:absolute;
 	z-index: 1500;
 	margin-left: 40%;
 	margin-top: -53%;
-  }
+  } */
   
   .popup-button .btn {
 	display: inline-block;
@@ -263,7 +309,7 @@ main{
   
     
 /*Movil*/
-@media (min-width:200px) and (max-width:480px){
+@media (min-width:200px) and (max-width:375px){
 	.pie{
 		display: flexbox;
 		flex-wrap: nowrap;
@@ -293,7 +339,7 @@ main{
 		height: 80%;
 	}
 	.mfp-content{
-		vertical-align: bottom;
+		vertical-align: top;
 	}
 	.contacto{
 		margin-top: 10px;
@@ -304,16 +350,72 @@ main{
 		margin-top: 25%;
 
 	}
-	.popup-button{
-		margin-left: 22%;
-		margin-top: -90px;
-	}
+	/* .popup-button{
+		margin-left: 34%;
+		margin-top: -183px;
+	} */
 	.navbar-brand{
 		font-size: 0.75em;
 	}
 	.carousel-item{
 		height: 12.5rem;
 	}
+	
+
+}
+
+@media (min-width:376px) and (max-width:480px){
+	.pie{
+		display: flexbox;
+		flex-wrap: nowrap;
+	}
+	a{
+		text-decoration: none;
+		
+
+	}
+
+	.portada > img{
+		width: inherit;
+		/* margin-top: 70px; */
+	}
+	.cartel{
+		width: inherit;
+	}
+	.descripcion{
+		font-family: "Rubik", sans-serif;
+		color: black;
+	}
+	.localidades>img{
+		display: flex;
+		width: 100%;
+	}
+	.mfp-container{
+		height: 80%;
+	}
+	.mfp-content{
+		vertical-align: top;
+	}
+	.contacto{
+		margin-top: 10px;
+	}
+	.contacto > img{
+		width:100%;
+		height: auto;
+		margin-top: 25%;
+
+	}
+	/* .popup-button{
+		margin-left: 34%;
+		margin-top: -313px;
+	} */
+	.navbar-brand{
+		font-size: 0.75em;
+	}
+	.carousel-item{
+		height: 12.5rem;
+	}
+	
 }
  
 

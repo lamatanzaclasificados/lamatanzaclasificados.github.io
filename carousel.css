@@ -114,10 +114,10 @@ body {
   .carousel-item{
     height: 20rem;
   }
-  .popup-button {
+  /* .popup-button {
     margin-left: 40%;
     margin-top: -11%;
-    }
+    } */
 }
 /* @media (min-width: 768px) and (max-width: 912px){
   .carousel-item{
@@ -130,7 +130,7 @@ body {
   }
 } */
 
-  @media(min-width: 420px) and (max-width: 540px){
+  /* @media(min-width: 420px) and (max-width: 540px){
     main{
       width: 100%;
     }
@@ -138,10 +138,16 @@ body {
       height: 13.5rem;
     }
     .popup-button {
-      margin-left: 40%;
-      margin-top: -6%;
+      margin-left: 35%;
+      margin-top: -78%;
       }
-    }
+      #lottie-prev{
+        top: 66%;
+      }
+      #lottie-next{
+        top: 66%;
+      }
+    } */
 
   @media only screen and (min-width: 820px)
   {
@@ -155,10 +161,10 @@ body {
     .carousel-item{
       height: 23.9rem;
     }
-    .popup-button {
+    /* .popup-button {
       margin-left: 40%;
       margin-top: -21%;
-      }
+      } */
   }
   
   @media (max-width: 360px) {
@@ -170,10 +176,22 @@ body {
     .carousel-item{
       height: 11.5rem;
     }
-    .popup-button {
+    /* .popup-button {
       margin-left: 31%;
-      margin-top: -48%;
-      }
+      margin-top: -70%;
+      } */
+      #lottie-prev {
+        top: 70%;
+        left: 10px;
+        /* transform: translateY(-50%); */
+    }
+
+    #lottie-next {
+        top: 70%;
+        right: 10px;
+        /* transform: translateY(-50%); */
+    }
+
   }
 
   
@@ -182,4 +200,21 @@ body {
       height: 7.5rem;
     }
     }
+  @media (min-width: 200px) and (max-width: 375px){
+    #lottie-prev{
+      top: 76%;
+    }
+    #lottie-next{
+      top: 76%;
+    }
 
+   }  
+   /* @media(min-width: 362px) and (max-width:419px) */
+  @media(min-width: 376px) and (max-width:419px){
+  #lottie-prev{
+		top: 69%;
+	}
+	#lottie-next{
+		top: 69%;
+	}
+}

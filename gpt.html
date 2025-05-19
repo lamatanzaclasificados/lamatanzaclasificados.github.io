@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="/css/magnific-popup.min.css">
+
+    <title>La matanza Clasificados</title>
+    <style>
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .popup-controls-wrapper {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+        }
+
+        .popup-button a {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #2eb01e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .lottie-button {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .mfp-arrow,
+        .mfp-close {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">La Matanza Clasificados</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--aqui-->
+    <main>
+        <div class="portada">
+            <img src="img/portada (1).jpg" alt="">
+        </div>
+        
+        <div class="prueba">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item foto-1 active">
+                            </div>
+                            <div class="carousel-item foto-2">
+                                
+                            </div>
+                            <div class="carousel-item foto-3">
+                                
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center my-2">
+                            <img src="/img/boton-2.webp" width="100%" height="auto" alt="">
+                        </div>
+                    </div>
+                    <div class="portfolio-menu mt-2 mb-4">
+                        <ul>
+                            <li class="btn btn-outline-dark active" data-filter="*">Todo</li>
+                            <li class="btn btn-outline-dark" data-filter=".estet">Estetica</li>
+                            <li class="btn btn-outline-dark" data-filter=".tecnico">Tecnicos</li>
+                            <li class="btn btn-outline-dark text" data-filter=".abog">Abogados/Gestores</li>
+                            <li class="btn btn-outline-dark text" data-filter=".clases">Clases/Cursos</li>
+                            <li class="btn btn-outline-dark text" data-filter=".lava">Lavadero de autos</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item row">
+                        <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio1 a.jpg" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/99wodj" name="Valentina" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio1 a.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio2.webp" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/y4o27e" name="Sol y Luna" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio2.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio3.webp" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/99wodj" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio3.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio4.webp" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio4.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio5.webp" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio5.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio6.webp" class="popup-image fancylight popup-btn"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio6.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item abog col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio10.jpg"
+                                class="popup-image fancylight popup-btn with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio11.webp"
+                                class="popup-image fancylight popup-btn with-caption image-link"
+                                data-link="https://wa.link/99wodj" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio11.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio12.webp"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio12.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio13.webp"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio13.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="item lava col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio16.jpg"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio16.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio21.jpg"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio21.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio25.jpg"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio25.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item clases col-lg-3 col-md-4 col-6 col-sm gallery">
+                            <a href="/img/negocio26.jpg"
+                                class="popup-image fancylight popup-bt with-caption image-link"
+                                data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                                <img class="img-fluid" src="/img/negocio26.jpg" alt="">
+                            </a>
+                        </div>
+        
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="promo">
+                <img src="/img/publicar aca.webp" alt="">
+            </div>
+            <div class="contacto">
+    
+                <img src="/img/final.webp" alt="">
+            </div>
+    
+        </main>
+
+    <footer>
+        <div class="pie">
+            <a href="https://www.instagram.com/lamatanzaclasificados/">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+                lamatanzaclasificados
+            </a>
+        </div>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            console.log("Inicializando magnificPopup");
+          
+
+            
+            if ($.fn.magnificPopup && $('.popup-image').data('magnificPopup')) {
+            $('.popup-image').magnificPopup('destroy');
+            console.log("🧹 magnificPopup destruido antes de volver a inicializar");
+            }
+
+            $('.popup-image').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                callbacks: {
+                    open: function () {
+                        // setTimeout(() => {
+                        //     //agregarBotonEnlace(this.currItem);
+                        //     console.log("✅ Popup abierto");
+                        //     console.log(this.currItem); // <--- esto nos dice qué contiene
+
+                        //     const prevEl = document.getElementById('lottie-prev');
+                        //     const nextEl = document.getElementById('lottie-next');
+                        //     const closeEl = document.getElementById('lottie-close');
+
+                        //     if (prevEl && nextEl && closeEl) {
+                        //         lottie.loadAnimation({ container: prevEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/arrow-left.json' });
+                        //         lottie.loadAnimation({ container: nextEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/arrow-right.json' });
+                        //         lottie.loadAnimation({ container: closeEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/close.json' });
+
+                        //         $(document).off('click.lottie');
+                        //         $(document).on('click.lottie', '#lottie-prev', () => $.magnificPopup.instance.prev());
+                        //         $(document).on('click.lottie', '#lottie-next', () => $.magnificPopup.instance.next());
+                        //         $(document).on('click.lottie', '#lottie-close', () => $.magnificPopup.close());
+                        //     }
+                        // }, 0);
+                       
+                    console.log("✅ Popup abierto");
+                    agregarBotonEnlace(this.currItem);
+                    
+                    },
+                    close: function () {
+                        $('.popup-controls-wrapper').remove();
+                    }
+                }
+            });
+
+            function agregarBotonEnlace(item) {
+                console.log("👉 Ejecutando agregarBotonEnlace");
+                $('.popup-controls-wrapper').remove();
+
+                const link = item.el.attr('data-link');
+                const nombre = item.el.attr('name') || '';
+
+                const html = `
+                    <div class="popup-controls-wrapper">
+                        <div id="lottie-prev" class="lottie-button"></div>
+                        <div class="popup-button">
+                            <a href="${link}" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> ${nombre}
+                            </a>
+                        </div>
+                        <div id="lottie-next" class="lottie-button"></div>
+                        <div id="lottie-close" class="lottie-button"></div>
+                    </div>
+                `;
+
+                // Insertamos en .mfp-wrap (fuera del reemplazo de .mfp-content)
+                $('.mfp-wrap').append(html);
+            }
+        });
+    </script> -->
+    <script>
+        $(window).on('load', function () {
+          console.log("🔁 DOM completamente cargado");
+      
+          const $images = $('.popup-image');
+      
+          if ($images.length === 0) {
+            console.warn("⚠️ No se encontraron elementos .popup-image");
+            return;
+          }
+      
+          if ($.fn.magnificPopup && $images.data('magnificPopup')) {
+            $images.magnificPopup('destroy');
+            console.log("🧹 magnificPopup destruido antes de volver a inicializar");
+          }
+      
+          $images.magnificPopup({
+            type: 'image',
+            gallery: { enabled: true },
+            callbacks: {
+              open: function () {
+                console.log("✅ Popup abierto");
+                agregarBotonEnlace(this.currItem);
+
+                console.log("🖼 Total items en galería:", $.magnificPopup.instance.items.length);
+
+      
+                lottie.loadAnimation({
+                  container: document.getElementById('lottie-prev'),
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: '/json/arrow-left.json'
+                });
+                lottie.loadAnimation({
+                  container: document.getElementById('lottie-next'),
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: '/json/arrow-right.json'
+                });
+                lottie.loadAnimation({
+                  container: document.getElementById('lottie-close'),
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: '/json/close.json'
+                });
+
+                $(document).off('click.lottie');
+
+                $(document).on('click.lottie', '#lottie-prev', function () {
+                console.log("⬅️ Click en prev");
+                $.magnificPopup.instance.prev();
+                });
+
+                $(document).on('click.lottie', '#lottie-next', function () {
+                console.log("➡️ Click en next");
+                $.magnificPopup.instance.next();
+                });
+
+      
+                // $(document).off('click.lottie');
+                //$(document).off('click.lottie');
+                $(document).off('.lottie');
+
+                $(document).on('click.lottie', '#lottie-prev', function () {
+                if ($.magnificPopup.instance && $.magnificPopup.instance.currItem && $.magnificPopup.instance.items.length > 1) {
+                    console.log("⬅️ Prev");
+                    $.magnificPopup.instance.prev();
+                } else {
+                    console.warn("⚠️ No hay item anterior o la galería no está lista");
+                }
+                });
+
+                $(document).on('click.lottie', '#lottie-next', function () {
+                if ($.magnificPopup.instance && $.magnificPopup.instance.currItem && $.magnificPopup.instance.items.length > 1) {
+                    console.log("➡️ Next");
+                    $.magnificPopup.instance.next();
+                } else {
+                    console.warn("⚠️ No hay item siguiente o la galería no está lista");
+                }
+                });
+
+                // $(document).on('click.lottie', '#lottie-prev', () => $.magnificPopup.instance.prev());
+                // $(document).on('click.lottie', '#lottie-next', () => $.magnificPopup.instance.next());
+                // $(document).on('click.lottie', '#lottie-close', () => $.magnificPopup.close());
+              },
+              close: function () {
+                console.log("🛑 Popup cerrado");
+                $('.popup-controls-wrapper').remove();
+              }
+            }
+          });
+      
+          function agregarBotonEnlace(item) {
+            console.log("👉 Ejecutando agregarBotonEnlace");
+      
+            if (!item.el || !item.el.attr) {
+              console.warn("⚠️ item.el no válido:", item);
+              return;
+            }
+      
+            const link = item.el.attr('data-link');
+            const nombre = item.el.attr('name') || 'Contacto';
+      
+            const html = `
+              <div class="popup-controls-wrapper">
+                <div id="lottie-prev" class="lottie-button"></div>
+                <div class="popup-button">
+                  <a href="${link}" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> ${nombre}
+                  </a>
+                </div>
+                <div id="lottie-next" class="lottie-button"></div>
+                <div id="lottie-close" class="lottie-button"></div>
+              </div>
+            `;
+      
+            $('.mfp-wrap').append(html);
+          }
+        });
+      </script>
+      
+</body>
+
+</html>

@@ -13,11 +13,12 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
+    
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"> -->
+    <link rel="stylesheet" href="/css/magnific-popup.min.css">
     <!-- <dotlottie-player src="https://lottie.host/c9aa34b2-a08d-4192-a00a-af02df253106/XYufmjlDfT.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player> -->
-
+    <link rel="stylesheet" href="/css/estilos2.css">
 
     <title>La matanza Clasificados</title>
     <style>
@@ -26,7 +27,47 @@
             object-fit: cover;
         }
 
+        /* .lottie-wrapper {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        z-index: 9999;
+        }
+
+        .lottie-close-wrapper {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 10000;
+        }
+
         .lottie-button {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        }
+
+        .popup-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #2eb01e;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        white-space: nowrap;
+        } */
+
+        
+
+
+
+        /* .lottie-button {
             position: fixed;
             width: 60px;
             height: 60px;
@@ -44,6 +85,18 @@
             top: 81%;
             right: 10px;
             transform: translateY(-50%);
+        } */
+
+        #lottie-prev {
+            top: 81%;
+            left: 10px;
+            /* transform: translateY(-50%); */
+        }
+
+        #lottie-next {
+            top: 81%;
+            right: 10px;
+            /* transform: translateY(-50%); */
         }
 
         #lottie-close {
@@ -205,13 +258,13 @@
                 </div>
                 <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
                     <a href="/img/negocio3.webp" class="fancylight popup-btn popup-image"
-                        data-link="https://wa.link/99wodj" data-fancybox-group="light">
+                        data-link="https://wa.link/99wodj" name="Joana" data-fancybox-group="light">
                         <img class="img-fluid" src="/img/negocio3.webp" alt="">
                     </a>
                 </div>
                 <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
                     <a href="/img/negocio4.webp" class="fancylight popup-btn popup-image"
-                        data-link="https://wa.link/y4o27e" data-fancybox-group="light">
+                        data-link="https://wa.link/y4o27e" name="Ro-Nails" data-fancybox-group="light">
                         <img class="img-fluid" src="/img/negocio4.webp" alt="">
                     </a>
                 </div>
@@ -275,199 +328,19 @@
                         <img class="img-fluid" src="/img/negocio26.jpg" alt="">
                     </a>
                 </div>
-                <!-- <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img11.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img12.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img12.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img13.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img13.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img14.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img14.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img15.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img15.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img16.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img16.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img17.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img17.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img18.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img18.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img19.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img19.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img20.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img20.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img21.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img21.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img22.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img22.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img23.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img23.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img24.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img24.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img25.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img25.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img26.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img26.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img27.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img27.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img28.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img28.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img29.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img29.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="/img/img30.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/img30.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
-                            alt="">
-                    </a>
-                </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                    <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                        class="fancylight popup-btn" data-fancybox-group="light">
-                        <img class="img-fluid"
-                            src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                            alt="">
-                    </a>
-                </div> -->
+                
             </div>
             <!-- Contenedores Lottie -->
+            <!-- <div id="lottie-close" class="lottie-button" style="display:none;"></div> -->
+            
+            <div class="lottie-wrapper" style="display: none;">
             <div id="lottie-prev" class="lottie-button" style="display:none;"></div>
             <div id="lottie-next" class="lottie-button" style="display:none;"></div>
-            <div id="lottie-close" class="lottie-button" style="display:none;"></div>
+            </div>
+            <!-- Contenedor separado para botón de cerrar -->
+            <div class="lottie-close-wrapper" style="display: none;">
+                <div id="lottie-close" class="lottie-button"></div>
+            </div>
 
 
         </div>
@@ -475,8 +348,10 @@
             <img src="/img/publicar aca.webp" alt="">
         </div>
         <div class="contacto">
-           
-            <img src="/img/final.webp" alt="">
+           <div class="enlaces">
+            <a href="https://www.instagram.com/lamatanzaclasificados/"><img class="img-fluid" src="/img/instagram.webp" alt="instagram"></a> 
+            <a href="https://wa.link/t659hj"><img class="img-fluid" src="/img/wsp.webp" alt="whatsapp"></a>
+        </div>
         </div>
 
     </main>
@@ -561,6 +436,9 @@
                                 console.log('botones nuevos');
 
                                 $('#lottie-prev, #lottie-next, #lottie-close').show();
+                                $('.lottie-wrapper').show();
+                                $('.lottie-close-wrapper').show();
+
                             },
                             change: function () {
                                 console.log('Imagen cambiada');
@@ -568,18 +446,23 @@
                             },
                             close: function () {
                                 $('#lottie-prev, #lottie-next, #lottie-close').hide();
+                                $('.lottie-wrapper').hide();
+
                             }
                         }
                     });
 
                     function agregarBotonEnlace(item) {
-                        $('.mfp-wrap .popup-button').remove();
+                        //$('.mfp-wrap .popup-button').remove();
+                        // 🔁 Elimina botones anteriores
+                        $('.popup-button').remove();
+                        
 
                         const link = item.el.attr('data-link');
                         const nombre = item.el.attr('name');
                         if (link) {
                             const buttonHtml = `
-                <div class="popup-button" style="text-align: center;">
+                <div class="popup-button boton" style="text-align: center;">
 
                         <a href="${link}" target="_blank" class="btn" style=" font-size:18px;
                             display: inline-block; 
@@ -589,12 +472,15 @@
                             text-decoration: none; 
                             border-radius: 5px;">
                             
-                            <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> ${nombre}
+                            <i class="fa-brands fa-whatsapp fa-lg boton" style="color: #ffffff;"></i> ${nombre}
                         </a>
                     
                 </div>`;
-                            $('.mfp-container').append(buttonHtml);
-                            //$('.mfp-content').append(buttonHtml);
+                            //$('.mfp-container').append(buttonHtml);
+                            //$('.lottie-wrapper').append(buttonHtml);
+                            // Insertar entre las flechas
+                            $('#lottie-next').before(buttonHtml);
+                           
                         }
                     }
                 });

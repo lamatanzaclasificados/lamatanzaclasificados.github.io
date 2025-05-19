@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup con Lottie</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="magnific-popup.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/estilos2.css">
+  <style>
+    .popup-controls-wrapper {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      z-index: 1050;
+    }
+
+    .popup-button a {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #2eb01e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .lottie-button {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="item gallery">
+      <a href="/img/cliente 1.webp" class="popup-image" data-link="https://wa.link/demo" name="Ejemplo">
+        <img src="/img/cliente 1.webp" class="img-fluid" alt="Ejemplo">
+      </a>
+    </div>
+    <div class="item gallery">
+      <a href="/img/cliente 2.webp" class="popup-image" data-link="https://wa.link/demo" name="Ejemplo">
+        <img src="/img/cartel 2.webp" class="img-fluid" alt="Ejemplo">
+      </a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-image').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true
+        },
+        callbacks: {
+          open: function () {
+            setTimeout(() => {
+              agregarBotonEnlace(this.currItem);
+
+              // Lottie animaciones
+              const prevEl = document.getElementById('lottie-prev');
+              const nextEl = document.getElementById('lottie-next');
+              const closeEl = document.getElementById('lottie-close');
+
+              if (prevEl && nextEl && closeEl) {
+                lottie.loadAnimation({ container: prevEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/arrow-left.json' });
+                lottie.loadAnimation({ container: nextEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/arrow-right.json' });
+                lottie.loadAnimation({ container: closeEl, renderer: 'svg', loop: true, autoplay: true, path: '/json/close.json' });
+
+                $(document).off('click.lottie');
+                $(document).on('click.lottie', '#lottie-prev', () => $.magnificPopup.instance.prev());
+                $(document).on('click.lottie', '#lottie-next', () => $.magnificPopup.instance.next());
+                $(document).on('click.lottie', '#lottie-close', () => $.magnificPopup.close());
+              }
+            }, 0);
+          },
+          close: function () {
+            $('.popup-controls-wrapper').remove();
+          }
+        }
+      });
+
+      function agregarBotonEnlace(item) {
+        $('.popup-controls-wrapper').remove();
+
+        const link = item.el.attr('data-link');
+        const nombre = item.el.attr('name') || '';
+
+        const html = `
+          <div class="popup-controls-wrapper">
+            <div id="lottie-prev" class="lottie-button"></div>
+            <div class="popup-button">
+              <a href="${link}" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i> ${nombre}
+              </a>
+            </div>
+            <div id="lottie-next" class="lottie-button"></div>
+            <div id="lottie-close" class="lottie-button"></div>
+          </div>
+        `;
+        $('.mfp-content').append(html);
+      }
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

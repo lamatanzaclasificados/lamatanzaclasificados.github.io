@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lottie Popup Centrado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <style>
+    .lottie-wrapper {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      z-index: 9999;
+    }
+    .lottie-button {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+    .popup-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2eb01e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Imagen de prueba con popup</h2>
+<a href="https://via.placeholder.com/600" class="popup-image" data-link="https://wa.link/demo" name="Valentina">
+  <img src="https://via.placeholder.com/150" alt="Ejemplo">
+</a>
+
+<div class="lottie-wrapper" style="display: none;">
+  <div id="lottie-prev" class="lottie-button"></div>
+  <div id="lottie-next" class="lottie-button"></div>
+  <div id="lottie-close" class="lottie-button"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+<script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
+
+<script>
+  $(window).on('load', function () {
+    const $images = $('.popup-image');
+
+    $images.magnificPopup({
+      type: 'image',
+      gallery: { enabled: true },
+      callbacks: {
+        open: function () {
+          $('.lottie-wrapper').show();
+          agregarBotonEnlace(this.currItem);
+
+          lottie.loadAnimation({
+            container: document.getElementById('lottie-prev'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/json/arrow-left.json'
+          });
+          lottie.loadAnimation({
+            container: document.getElementById('lottie-next'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/json/arrow-right.json'
+          });
+          lottie.loadAnimation({
+            container: document.getElementById('lottie-close'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/json/close.json'
+          });
+
+          $(document).off('.lottie');
+          $(document).on('click.lottie', '#lottie-prev', () => $.magnificPopup.instance.prev());
+          $(document).on('click.lottie', '#lottie-next', () => $.magnificPopup.instance.next());
+          $(document).on('click.lottie', '#lottie-close', () => $.magnificPopup.close());
+        },
+        close: function () {
+          $('.lottie-wrapper').hide();
+          $('.popup-button').remove();
+        }
+      }
+    });
+
+    function agregarBotonEnlace(item) {
+      $('.popup-button').remove(); // limpiar anterior
+
+      if (!item.el || !item.el.attr) return;
+
+      const link = item.el.attr('data-link');
+      const nombre = item.el.attr('name') || 'Contacto';
+
+      const html = `
+        <div class="popup-button">
+          <a href="${link}" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> ${nombre}
+          </a>
+        </div>
+      `;
+
+      //$('.lottie-wrapper').append(html); // Insertar dentro del flex container
+      
+      // Insertar entre las flechas
+      $('#lottie-next').before(html);
+    }
+  });
+</script>
+
+</body>
+</html>
