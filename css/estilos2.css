@@ -98,30 +98,7 @@
 /* gpt*/
 
 
-	/*nuevo*/
-	/* .popup-controls-wrapper {
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		gap: 10px;
-		align-items: center;
-		z-index: 1050;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	
-	.popup-button {
-		order: 0;
-	}
-	
-	.lottie-button {
-		width: 40px;
-		height: 40px;
-		cursor: pointer;
-		order: 1;
-	} */
+
 
 	
 
@@ -211,24 +188,13 @@
 	background-color: #000;
 }
 
-.lottie-wrapper {
-	position: fixed;
-	bottom: 30px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	z-index: 9999;
-	}
-
 	.lottie-close-wrapper {
-	position: fixed;
-	top: 20px;
-	right: 30px;
-	z-index: 10000;
-	}
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 10px;
+		margin-right: 10px;
+		bottom: 100%;
+	  }
 
 	.lottie-button {
 	width: 50px;
@@ -258,11 +224,107 @@
 	white-space: nowrap;
 	}
 
+	.lottie-close-wrapper {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 10000;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	#lottie-close {
+		position: absolute;
+	   
+		right: 0;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		z-index: 9999;
+	}
+		.lottie-wrapper {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		}
+
+		.lottie-wrapper > #lottie-prev,
+		.lottie-wrapper > #lottie-next {
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		}
+
+		.lottie-wrapper > .popup-button {
+		flex: 1;
+		text-align: center;
+		}
+
+		.popup-button a {
+		padding: 10px 20px;
+		background-color: #2eb01e;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 18px;
+		}
+
 
 /* Teléfonos pequeños (verticales) */
 
-@media (max-width: 480px) { 
-    /* estilos aquí */
+/* @media (min-width: 320px )and (max-width: 375px) { */
+	@media (min-width: 320px )and (max-width: 391px) {
+	/* .lottie-wrapper {
+		display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+		bottom: 20%;
+	  } */
+	  .promo > img{
+		margin-bottom: -4%;
+	  }
+
+	.contacto {
+		margin-top: 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 200px;
+	  }
+	  .enlaces{
+		margin-top: auto;
+	  }
+	  .contacto a {
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	  }
+	  .contacto a img {
+		width: 54%;
+		height: auto;
+	  }
+	  
+
+  }
+
+  /* @media (min-width: 376px )and (max-width: 420px) {
+	.lottie-wrapper {
+		display: flex;
+	  bottom: 30%;
+	}
+	} */
+
+/* @media (min-width: 421px) and (max-width: 480px) {  */
+	@media (min-width: 412px) and (max-width: 480px) { 
+
+	/* estilos aquí */
     .pie{
 		display: flexbox;
 		flex-wrap: nowrap;
@@ -271,6 +333,9 @@
 		text-decoration: none;
 		
 
+	}
+	.promo > img{
+		margin-bottom: -4%;
 	}
 
 	.portada > img{
@@ -295,7 +360,7 @@
 		vertical-align: top;
 	}
 	.contacto{
-		margin-top: 6em;
+		margin-top: 2em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
@@ -342,18 +407,14 @@
           right: 10px;
           transform: translateY(-50%);
       } */
-	  .lottie-wrapper{
+	  /* .lottie-wrapper{
 		bottom: 30%;
-	  }
+	  } */
 
 	
   }
 
-  @media (max-width: 376px) {
-	.lottie-wrapper {
-	  bottom: 20%;
-	}
-	}
+ 
   
   /* Teléfonos medianos (horizontal o grandes) */
   @media (min-width: 481px) and (max-width: 767px) {
@@ -362,6 +423,16 @@
   
   /* Tablets (vertical y horizontal) */
   @media (min-width: 768px) and (max-width: 1024px) {
+	
+	/* body {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	  }
+	main{
+		flex: 1;
+	} */
     .promo > img {
 		width: 90%;
 		margin-bottom: -23%;
@@ -369,6 +440,51 @@
 	.mfp-image-holder .mfp-content {
 		max-width: 90%;
 	  }  
+	  .contacto{
+		display: flex;
+		margin-top: 8em;
+		/* flex-direction: column; */
+		align-items: center;	
+		min-height: 12%;	  
+	}
+	/* footer {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		background-color: #f5b338;
+		bottom: -100px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		text-align: center;
+		margin-bottom: 0px;
+		padding: 1em 0;
+		margin-top: auto;
+	  } */
+	  footer {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		background-color: #f5b338;
+		bottom: -100px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		text-align: center;
+		margin-bottom: 0px;
+		padding: 1em 0;
+		margin-top: 11%;
+		/* bottom: -426px; */
+	  }  
+	  .enlaces{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}  
+	.contacto a {
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	  }
+
+
   }
   
   /* Laptops */

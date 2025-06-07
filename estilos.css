@@ -47,7 +47,7 @@
 	.mfp-content{
 		vertical-align: top;
 	}
-	.lottie-wrapper {
+	/* .lottie-wrapper {
 		position: fixed;
 		bottom: 40px;
 		left: 50%;
@@ -57,7 +57,7 @@
 		gap: 20px;
 		align-items: center;
 		justify-content: center;
-	  }
+	  } */
 	  
 	  .lottie-button {
 		width: 60px;
@@ -440,7 +440,7 @@ main{
 		height: auto;
 
 	}
-	.popup-button{
-		margin-left: 48%;
+	.lottie-wrapper{
+		margin-top: -45px;
 	}
 }
