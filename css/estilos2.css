@@ -52,10 +52,10 @@
 		justify-content: center;
 		width: 100%;
 	}
-	.promo>img{
+	/* .promo>img{
 		width: 95%;
 		margin-bottom: -15%;
-	}
+	} */
 	.mfp-content{
 		vertical-align: top;
 	}
@@ -279,7 +279,7 @@
 /* Teléfonos pequeños (verticales) */
 
 /* @media (min-width: 320px )and (max-width: 375px) { */
-	@media (min-width: 320px )and (max-width: 391px) {
+	@media (min-width: 320px )and (max-width: 394px) {
 	/* .lottie-wrapper {
 		display: flex;
       align-items: center;
