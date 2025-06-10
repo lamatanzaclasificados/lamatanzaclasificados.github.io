@@ -1,0 +1,195 @@
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+        jQuery(document).ready(function ($) {
+            var popup_btn = $('.popup-btn');
+            popup_btn.magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                image: {
+                    titleSrc: function (item) {
+                        return item.el.find('img').attr('alt');
+                    }
+                }
+
+
+
+            });
+
+
+            //prueba
+
+            jQuery(document).ready(function ($) {
+                $('.popup-image').magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    },
+                    callbacks: {
+                        open: function () {
+                            agregarBotonEnlace(this.currItem);
+
+                            const mfpContent = document.querySelector('.mfp-content');
+
+                            const closeWrapper = document.querySelector('.lottie-close-wrapper');
+                            if (closeWrapper && !mfpContent.contains(closeWrapper)) {
+                                mfpContent.appendChild(closeWrapper);
+                            }
+
+                            const lottieWrapper = document.querySelector('.lottie-wrapper');
+                            if (lottieWrapper && !mfpContent.contains(lottieWrapper)) {
+                                mfpContent.appendChild(lottieWrapper);
+                            }
+
+                            $('#lottie-prev, #lottie-next, #lottie-close').show();
+                                $('.lottie-wrapper').show();
+                                $('.lottie-close-wrapper').show();
+
+                            // Reasignar eventos después de mover
+                            $('#lottie-prev').off('click').on('click', function () {
+                                $.magnificPopup.instance.prev();
+                            });
+
+                            $('#lottie-next').off('click').on('click', function () {
+                                $.magnificPopup.instance.next();
+                            });
+
+                            $('#lottie-close').off('click').on('click', function () {
+                                $.magnificPopup.close();
+                            });
+
+                            // Reasignar lottie si hace falta
+                            lottie.loadAnimation({
+                                container: document.getElementById('lottie-prev'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: '/json/arrow-left.json'
+                            });
+
+                            lottie.loadAnimation({
+                                container: document.getElementById('lottie-next'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: '/json/arrow-right.json'
+                            });
+
+                            lottie.loadAnimation({
+                                container: document.getElementById('lottie-close'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: '/json/close.json'
+                            });
+                        }
+                        ,
+                        change: function () {
+                            console.log('Imagen cambiada');
+                            agregarBotonEnlace(this.currItem);
+                        },
+                        close: function () {
+
+
+                            // Mover el botón close dentro del popup cada vez
+                            const closeWrapper = document.querySelector('.lottie-close-wrapper');
+                            const mfpContent = document.querySelector('.mfp-content');
+                            if (closeWrapper && mfpContent && !mfpContent.contains(closeWrapper)) {
+                                mfpContent.appendChild(closeWrapper);
+
+                            }
+                            $('#lottie-prev, #lottie-next, #lottie-close').hide();
+                            $('.lottie-wrapper').hide();
+
+                            $('.lottie-close-wrapper').hide();
+
+
+                        }
+                    }
+                });
+
+                // Cargar animaciones Lottie
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-prev'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: '/json/arrow-left.json' // flecha izquierda
+                });
+
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-next'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: '/json/arrow-right.json' // flecha derecha
+                });
+
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-close'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: '/json/close.json' // cruz/cerrar
+                });
+
+                // Asignar eventos a botones
+                $('#lottie-prev').on('click', function () {
+                    $.magnificPopup.instance.prev();
+                });
+
+                $('#lottie-next').on('click', function () {
+                    $.magnificPopup.instance.next();
+                });
+
+                $('#lottie-close').on('click', function () {
+                    $.magnificPopup.close();
+                });
+
+
+
+                function agregarBotonEnlace(item) {
+                    //$('.mfp-wrap .popup-button').remove();
+                    // 🔁 Elimina botones anteriores
+                    $('.popup-button').remove();
+
+
+                    const link = item.el.attr('data-link');
+                    const nombre = item.el.attr('name');
+                    if (link) {
+                        const buttonHtml = `
+                <div class="popup-button boton" style="text-align: center;">
+
+                        <a href="${link}" target="_blank" class="btn" style=" font-size:18px;
+                            display: inline-block; 
+                            padding: 10px 20px; 
+                            background-color: #2eb01e; 
+                            color: white; 
+                            text-decoration: none; 
+                            border-radius: 5px;">
+                            
+                            <i class="fa-brands fa-whatsapp fa-lg boton" style="color: #ffffff;"></i> ${nombre}
+                        </a>
+                    
+                </div>`;
+                        //$('.mfp-container').append(buttonHtml);
+                        //$('.lottie-wrapper').append(buttonHtml);
+                        // Insertar entre las flechas
+                        $('#lottie-next').before(buttonHtml);
+
+                    }
+                }
+                
+
+
+
+                
+            });
+
+
+
+        });
+    });
+</script>

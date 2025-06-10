@@ -499,7 +499,7 @@
 		margin-top: 6em;
 		/* flex-direction: column; */
 		align-items: center;	
-		min-height: 18%;	  
+		min-height: 21%;	  
 	}
     .contacto a img {
 		width: 50%; /* o el tamaño que desees */
@@ -527,7 +527,7 @@
 		margin-bottom: 0px;
 		padding: 1em 0;
 		/* margin-top: 20%; */
-		bottom: -426px;
+		bottom: -418px;
 	  }  
 	  .promo > img {
 		width: 50%;
