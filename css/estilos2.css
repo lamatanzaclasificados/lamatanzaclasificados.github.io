@@ -322,7 +322,8 @@
 	} */
 
 /* @media (min-width: 421px) and (max-width: 480px) {  */
-	@media (min-width: 412px) and (max-width: 480px) { 
+/* @media (min-width: 412px) and (max-width: 480px) {  */
+	@media (min-width: 411px) and (max-width: 480px) { 
 
 	/* estilos aquí */
     .pie{
