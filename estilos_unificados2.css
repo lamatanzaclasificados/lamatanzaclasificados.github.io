@@ -1,0 +1,691 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #d0d0d0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tipografía */
+.titulo-1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 4em;
+}
+
+.sub-titulo {
+  font-weight: 300;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Portada */
+.portada {
+  width: 100%;
+  display: flex;
+}
+
+.portada > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 0.9em;
+}
+.intro{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.intro>img
+{width: 100%;
+}
+
+/* Promo */
+.promo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top:1em;
+}
+
+.promo > img {
+  width: 70%;
+  margin-bottom: -100px; /* corregido, antes tenía % */
+}
+
+/* Contacto */
+.contacto {
+  display: flex;
+  min-height: 600px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* justify-content: flex-end; */
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-top: 25%;
+}
+
+
+/* .enlaces {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 6em 0em 1em 6em;
+
+gap: 0.5em;
+} */
+
+.enlaces>a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto a img {
+  width: 50%;
+  height: auto;
+}
+
+/* Portfolio */
+.portfolio-menu {
+  text-align: center;
+}
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 1px;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.portfolio-item .item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+/* Magnific popup ajustes */
+.mfp-content {
+  vertical-align:middle ;
+}
+
+.mfp-figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* Botones popup y lottie */
+.popup-button a {
+  position: relative;
+  display: inline-block;
+  /* padding: 10px 20px; */
+  background-color: #2eb01e;
+  color: white;
+  border-radius: 5px;
+  font-size: 3.2em;
+  white-space: nowrap;
+  z-index: 10100;
+}
+
+.popup-button a:hover {
+  background-color: #228c15;
+}
+
+.lottie-button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.lottie-close-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+
+#lottie-close {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.lottie-wrapper {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lottie-wrapper > #lottie-prev,
+.lottie-wrapper > #lottie-next {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.popup-button.boton a {
+  background-color: #25d366 !important;
+  padding: 14px 24px !important;
+  border-radius: 10px !important;
+  /* font-size: 24px !important; */
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  color: white !important;
+}
+
+/* efecto hover */
+.popup-button.boton a:hover {
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f5b338;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: auto;
+}
+
+/* Carrusel */
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.foto-1 {
+  /* background: url(/img/Flayer1.webp) center center/cover no-repeat #000; */
+  background: url(/img/animacion\ 1.avif) center center/cover no-repeat #000;
+}
+
+.foto-2 {
+  /* background: url(/img/Flayer2.webp) center center/cover no-repeat #000; */
+    background: url(/img/animacion\ 2.avif) center center/cover no-repeat #000;
+}
+
+.foto-3 {
+  /* background: url(/img/Flayer3.webp) center center/cover no-repeat #000; */
+    background: url(/img/animacion\ 3.avif) center center/cover no-repeat #000;
+}
+
+/* =================== Responsive =================== */
+@media (max-width: 768px) {
+  .titulo-1 { font-size: 1.5em; }
+  .sub-titulo { font-size: 1.5em; margin: 10px; }
+
+  .carousel-item { height: 18rem; }
+  .carousel-item img { height: auto; }
+
+  .promo > img { width: 100%; margin-bottom: -30px; }
+  .mfp-content{
+    vertical-align: middle;
+  }
+}
+
+/*aca*/
+@media (min-width: 992px) and (max-width:1024px){
+  .contacto{
+    display: flex;
+    min-height: 762px;
+    background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+    background-size: cover;
+    background-position-x: center;
+    /* justify-content: end; */
+  }
+  .promo > img { width: 95%; margin-bottom: -60px; }
+  .enlaces {
+     /* margin: 4em 0; 
+     */
+     display: flex;
+     flex-direction: column;
+     margin-top: 236px;
+  }
+  .contacto a img { width: 70%; }
+
+ 
+}
+
+
+@media (max-width: 540px) {
+  .enlaces{ display:flex; flex-direction: column; margin-top: 108px;}
+  .titulo-1 { font-size: 1.5em; }
+  .sub-titulo { font-size: 1em; }
+  
+  .contacto { 
+    display:flex;
+    min-height: 300px;
+    background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+    background-size: cover;
+    background-position-x: center;
+    /* justify-content: end; */
+    }
+  
+  .contacto a img { width: 65%; }
+  .carousel-item { height: 14rem; }
+  #lottie-close {
+    width:60px;
+    height: 60px;
+  }
+
+      img.mfp-img{
+        padding: 25px;
+      }
+      .lottie-wrapper {
+        bottom: -53px;
+      }
+      .popup-button a {
+        font-size: 1.5em;
+      }
+   .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+
+
+
+}
+@media (max-width: 344px){
+  .contacto { 
+    min-height: 250px;
+    background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+    background-size: cover;
+    background-position-x: center;
+    }
+
+    .popup-button a{
+      font-size: 1.5em;
+    }
+
+
+}
+@media(max-width:430px)
+{
+  .popup-button a {
+    font-size: 1.2em;
+  }
+}
+
+
+
+
+
+
+@media (min-width:1280px){
+  .popup-button a {
+    font-size: 2em;
+  }
+
+   .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+.lottie-wrapper{
+  bottom: -40px;
+}
+img.mfp-img{
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+}
+
+
+
+
+/* Quita el fondo blanco detrás de las flechas Lottie */
+.mfp-arrow,
+.mfp-arrow::before,
+.mfp-arrow::after,
+.lottie-button,
+.lottie-wrapper {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Evita que aparezcan cuadrados de fondo por el contenedor */
+.mfp-content {
+  background: transparent !important;
+}
+
+/* Asegura que las animaciones floten sin fondo */
+#lottie-prev, #lottie-next, #lottie-close {
+  background-color: transparent !important;
+}
+
+.mfp-close{
+  display: none;
+}
+
+
+/*chat hoy*/
+/* ===== Eliminar fondo/cuadro detrás de la imagen ===== */
+.mfp-figure:after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.mfp-content,
+.mfp-figure {
+  background: transparent !important;
+}
+
+img.mfp-img {
+  padding: 0 !important;
+  background: none !important;
+
+  /* Estilo moderno */
+  border-radius: 15px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35) !important;
+}
+
+.mfp-figure {
+  overflow: visible !important; /* evita que la sombra se corte */
+}
+
+/* ===== Flechas Lottie sin fondo ===== */
+#lottie-prev,
+#lottie-next,
+#lottie-close {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+/* ===== Tamaño y posición de flechas ===== */
+#lottie-prev,
+#lottie-next {
+  width: 70px;   /* flechas más grandes */
+  height: 70px;
+  z-index: 9999;
+}
+
+#lottie-prev {
+  left: 15px; /* distancia desde borde izquierdo */
+}
+
+#lottie-next {
+  right: 15px; /* distancia desde borde derecho */
+}
+
+/* ===== Flecha de cierre (X) ===== */
+/* #lottie-close {
+  position: absolute;
+  top: -20px;      /* la subimos para que NO tape la imagen */
+  /* right: 10px;
+  width: 45px;
+  height: 45px;
+  z-index: 10000; 
+
+}*/ 
+
+/* ===== Botón de WhatsApp centrado entre las flechas ===== */
+.popup-button.boton {
+  /* position: absolute; */
+  bottom: 20px; /* distancia desde la parte inferior del popup */
+  left: 50%;
+  /* transform: translateX(-50%); */
+  z-index: 9999;
+  width: auto;
+  text-align: center;
+  pointer-events: all; /* permite hacer clic */
+}
+
+.popup-button.boton {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lottie-wrapper {
+  /* position: absolute; */
+  display: flex;
+
+  align-items: center;
+  /* bottom: -80px; */
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+/* .popup-button.boton a {
+  background-color: #25d366 !important;
+  padding: 14px 24px !important;
+  border-radius: 10px !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  color: white !important;
+} */
+
+/* efecto hover */
+.popup-button.boton a:hover {
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+/* Ajustes en móviles */
+@media (max-width: 480px) {
+  .popup-button.boton {
+    bottom: 15px;
+  }
+}
+
+/* ===== Responsividad para pantallas pequeñas ===== */
+@media (max-width: 480px) {
+  #lottie-prev,
+  #lottie-next {
+    width: 55px;
+    height: 55px;
+  }
+
+  #lottie-close {
+    width: 38px;
+    height: 38px;
+    top: -15px;
+  }
+
+  img.mfp-img {
+    border-radius: 12px;
+  }
+}
+
+
+
+
+/*probando*/
+
+
+@media(min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+  img.mfp-img{
+  width:80%;
+  }
+  .lottie-wrapper{
+    bottom: -63px;
+  }
+  .popup-button a{
+    font-size: 30px;
+  }
+  #lottie-close {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+ .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+/* ===== Flecha de cierre (X) ===== */
+#lottie-close {
+  position: absolute;
+  top: -33px;      /* la subimos para que NO tape la imagen */
+  right: 11px;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+}
+ 
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  .contacto { 
+    display: flex;
+    min-height: 900px;
+    background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+    background-size: cover;
+    /* justify-content: flex-end; */
+    
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+  }
+  img.mfp-img{
+    width: 80%;
+  }
+  /* ===== Flecha de cierre (X) ===== */
+#lottie-close {
+  position: absolute;
+  top: -44px;      /* la subimos para que NO tape la imagen */
+  right: 17px;
+  width: 60px;
+  height: 60px;
+  z-index: 10000;
+}
+
+figure {
+    margin: 0 0 3rem;
+}
+.popup-button a {
+  font-size: 2.5em;
+}
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .promo > img { width: 95%; margin-bottom: -60px; }
+  /* .enlaces { margin: 4em 0; } */
+
+  .enlaces{ 
+    display:flex;
+    flex-direction: column;
+    margin-top: 208px;  
+  }
+  .contacto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+  background-size: cover;
+  min-height: 550px;
+
+  }
+  .contacto a img { width: 60%; }
+  .popup-button a{ font-size: 3em;}
+  .lottie-wrapper { bottom: -90px;}
+  
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+
+/* ===== Flecha de cierre (X) ===== */
+#lottie-close {
+  position: absolute;
+  top: -65px;      /* la subimos para que NO tape la imagen */
+  right: 10px;
+  width: 120px;
+  height: 120px;
+  z-index: 10000;
+}
+
+}
+
+@media (min-width: 853px) and (max-width: 990px)
+{
+  .lottie-close-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+
+}

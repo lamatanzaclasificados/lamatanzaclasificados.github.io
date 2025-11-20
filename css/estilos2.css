@@ -164,7 +164,7 @@
     padding: 1em 0;
     margin-top: auto;
 }
-.foto-1{
+/* .foto-1{
 	background-image: url(/img/Flayer1.webp);
 	background-position: center center;
 	background-size: cover;
@@ -186,7 +186,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
-}
+} */
 
 	.lottie-close-wrapper {
 		display: flex;
@@ -277,6 +277,32 @@
 
 
 /* Teléfonos pequeños (verticales) */
+@media (min-width: 280px )and (max-width: 319px) {
+	.promo> img{
+		width: 100%;
+	}
+	.contacto {
+		margin-top: 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 156px;
+		background-size: contain;
+	  }
+	  .enlaces{
+		margin-top: auto;
+	  }
+	  .contacto a {
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	  }
+	  .contacto a img {
+		width: 54%;
+		height: auto;
+	  }
+
+}
 
 /* @media (min-width: 320px )and (max-width: 375px) { */
 	@media (min-width: 320px )and (max-width: 394px) {
@@ -289,6 +315,7 @@
 	  } */
 	  .promo > img{
 		margin-bottom: -4%;
+		width: 95%;
 	  }
 
 	.contacto {
@@ -337,6 +364,7 @@
 	}
 	.promo > img{
 		margin-bottom: -4%;
+		width: 100%;
 	}
 
 	.portada > img{
@@ -420,6 +448,32 @@
   /* Teléfonos medianos (horizontal o grandes) */
   @media (min-width: 481px) and (max-width: 767px) {
     /* estilos aquí */
+	.promo>img{
+		width: 100%;
+	}
+	.contacto {
+		margin-top: 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 302px;
+	  }
+	  .enlaces{
+		margin-top: auto;
+	  }
+	  .contacto a {
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	  }
+	  .contacto a img {
+		width: 54%;
+		height: auto;
+	  }
+
+
+
+
   }
   
   /* Tablets (vertical y horizontal) */
@@ -484,6 +538,13 @@
 		justify-content: center;
 		margin-top: auto;
 	  }
+
+	.lottie-wrapper > #lottie-prev,
+	.lottie-wrapper > #lottie-next {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	}
 
 
   }

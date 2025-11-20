@@ -173,6 +173,95 @@ main{
   .popup-button .btn:hover {
 	background-color: #0056b3;
   }
+
+  /*ver*/
+  .lottie-close-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 10px;
+		margin-right: 10px;
+		bottom: 100%;
+	  }
+
+	.lottie-button {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	}
+	#lottie-prev {
+		top: 81%;
+		left: 10px;
+		/* transform: translateY(-50%); */
+	}
+
+	#lottie-next {
+		top: 81%;
+		right: 10px;
+		/* transform: translateY(-50%); */
+	}
+
+	.popup-button a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #2eb01e;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	white-space: nowrap;
+	}
+
+	.lottie-close-wrapper {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 10000;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	#lottie-close {
+		position: absolute;
+	   
+		right: 0;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		z-index: 9999;
+	}
+		.lottie-wrapper {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		}
+
+		.lottie-wrapper > #lottie-prev,
+		.lottie-wrapper > #lottie-next {
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		}
+
+		.lottie-wrapper > .popup-button {
+		flex: 1;
+		text-align: center;
+		}
+
+		.popup-button a {
+		padding: 10px 20px;
+		background-color: #2eb01e;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 18px;
+		}
+  /**/
   
   footer {
     /* position: relative; */
@@ -309,7 +398,33 @@ main{
   
     
 /*Movil*/
-@media (min-width:200px) and (max-width:375px){
+@media (min-width: 280px )and (max-width: 319px) {
+	.promo> img{
+		width: 100%;
+	}
+	.contacto {
+		margin-top: 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 156px;
+		background-size: contain;
+	  }
+	  .enlaces{
+		margin-top: auto;
+	  }
+	  .contacto a {
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	  }
+	  .contacto a img {
+		width: 54%;
+		height: auto;
+	  }
+}
+
+/* @media (min-width:200px) and (max-width:375px){
 	.pie{
 		display: flexbox;
 		flex-wrap: nowrap;
@@ -317,12 +432,11 @@ main{
 	a{
 		text-decoration: none;
 		
-
 	}
 
 	.portada > img{
 		width: inherit;
-		/* margin-top: 70px; */
+		
 	}
 	.cartel{
 		width: inherit;
@@ -350,6 +464,73 @@ main{
 		margin-top: 25%;
 
 	}
+
+	.navbar-brand{
+		font-size: 0.75em;
+	}
+	.carousel-item{
+		height: 12.5rem;
+	}
+	
+
+} */
+ /*Agregado hoy*/
+@media (min-width: 411px) and (max-width: 480px) { 
+
+	/* estilos aquí */
+    .pie{
+		display: flexbox;
+		flex-wrap: nowrap;
+	}
+	a{
+		text-decoration: none;
+		
+
+	}
+	.promo > img{
+		margin-bottom: -4%;
+		width: 100%;
+	}
+
+	.portada > img{
+		width: inherit;
+		/* margin-top: 70px; */
+	}
+	.cartel{
+		width: inherit;
+	}
+	.descripcion{
+		font-family: "Rubik", sans-serif;
+		color: black;
+	}
+	.localidades>img{
+		display: flex;
+		width: 100%;
+	}
+	.mfp-container{
+		height: 80%;
+	}
+	.mfp-content{
+		vertical-align: top;
+	}
+	.contacto{
+		margin-top: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;	
+		min-height: 200px;	  
+	}
+	.contacto a{
+		display: flex;
+		justify-content: center;
+		margin-top: auto;
+	}
+	.contacto a img {
+		width: 54%; /* o el tamaño que desees */
+		height: auto; /* mantiene la proporción */
+	  }
+	  
+	
 	/* .popup-button{
 		margin-left: 34%;
 		margin-top: -183px;
@@ -360,10 +541,35 @@ main{
 	.carousel-item{
 		height: 12.5rem;
 	}
+
+    /*carousel*/
+    .carousel-item{
+        height: 11.5rem;
+      }
+      /* .popup-button {
+        margin-left: 31%;
+        margin-top: -5em;
+        } */
+        /* #lottie-prev {
+          top: 70%;
+          left: 10px;
+          transform: translateY(-50%);
+      }
+  
+      #lottie-next {
+          top: 70%;
+          right: 10px;
+          transform: translateY(-50%);
+      } */
+	  /* .lottie-wrapper{
+		bottom: 30%;
+	  } */
+
 	
+  }
 
-}
-
+ /**/
+/*
 @media (min-width:376px) and (max-width:480px){
 	.pie{
 		display: flexbox;
@@ -377,7 +583,7 @@ main{
 
 	.portada > img{
 		width: inherit;
-		/* margin-top: 70px; */
+
 	}
 	.cartel{
 		width: inherit;
@@ -405,18 +611,38 @@ main{
 		margin-top: 25%;
 
 	}
-	/* .popup-button{
-		margin-left: 34%;
-		margin-top: -313px;
-	} */
+
 	.navbar-brand{
 		font-size: 0.75em;
 	}
 	.carousel-item{
 		height: 12.5rem;
 	}
-	
+	.foto-1{
+	background-image: url(/img/Flayer1.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
 }
+
+.foto-2{
+	background-image: url(/img/Flayer2.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+
+}
+.foto-3{
+	background-image: url(/img/Flayer3.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+}*/
  
 
 
