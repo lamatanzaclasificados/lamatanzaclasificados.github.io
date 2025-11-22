@@ -30,7 +30,9 @@ body {
   color: #ffc107 !important;
 }
 
-
+.carousel-item {
+  transition: transform 1.2s ease-in-out !important;
+}
 
 /**/
 
