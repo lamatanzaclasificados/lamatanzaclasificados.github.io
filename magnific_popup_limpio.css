@@ -154,14 +154,43 @@ img.mfp-img {
   padding-right: 36px;
 }
 
-.mfp-counter {
+/* .mfp-counter {
   position: absolute;
   top: -35PX;
   right: 0;
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
+} */
+
+/* .mfp-counter {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+} */
+
+/* Estilo base */
+.mfp-counter {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+  z-index: 9999;
 }
+
 
 /* Responsivo */
 @media (max-width: 900px) {
@@ -204,5 +233,6 @@ img.mfp-img {
   box-sizing: border-box;
 
   }
+  
 
   }

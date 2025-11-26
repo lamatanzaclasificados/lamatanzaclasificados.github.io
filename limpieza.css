@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .btn-check:checked+.btn,
 .btn.active,
 .btn.show,
@@ -13,25 +14,45 @@
     border-color: var(--bs-btn-active-border-color)
 }
 
+
+.blue {
+    color: blue;
+}
+
+.violet {
+    color: rgb(143, 2, 199);
+}
+
+.verde {
+    color: green;
+}
+
+
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 /*probando menu*/
 
 .nav-link {
-  transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:active {
-  transform: scale(1.1);
-  color: #ffc107 !important;
-}
+    transform: scale(1.1);
+    color: #ffc107 !important;
+} 
+
+
+
+
+/*FIN MENU*/
 
 .carousel-item {
-  transition: transform 1.2s ease-in-out !important;
+    transition: transform 1.2s ease-in-out !important;
 }
 
 /**/
@@ -53,6 +74,11 @@ a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
+}
+
+.logos {
+    width: 100px;
+    height: 100px;
 }
 
 /* Tipografía */
@@ -77,7 +103,7 @@ a:visited {
 .portada>img {
     width: 100%;
     height: auto;
-    margin-top: 13%;
+    margin-top: 5%;
 }
 
 /* Navbar */
@@ -113,11 +139,12 @@ a:visited {
 /* Contacto */
 .contacto {
     display: flex;
-    min-height: 600px;
+    min-height: 538px;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+    /* background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif'); */
+    background-image: url('/img/finaldepag.avif');
     background-size: cover;
     background-repeat: no-repeat;
     /* justify-content: flex-end; */
@@ -128,18 +155,26 @@ a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 25%;
+    margin-top: 30%;
 }
 
 .enlaces>a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
 }
 
 .contacto a img {
     width: 50%;
     height: auto;
+}
+
+.contacto a img:active {
+    transform: scale(1.1);
 }
 
 /* Portfolio */
@@ -154,6 +189,7 @@ a:visited {
     padding: 10px 15px;
     cursor: pointer;
     transition: all 0.5s ease;
+    font-size: 1rem;
 }
 
 .portfolio-item {
@@ -253,11 +289,13 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #f5b338;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 1.5em 0;
     margin-top: auto;
+    font-size: 24px;
 }
+
 /* footer>p{
     font-size: 1em;
     color: black;
@@ -285,7 +323,7 @@ footer a:hover {
     color: #ffffff;
 } */
 
-footer a {
+/* footer a {
     color: #000000;
     text-decoration: none;
     transition: color 0.3s ease, opacity 0.3s ease;
@@ -296,7 +334,124 @@ footer a {
 footer a:hover {
     opacity: 1;
     color: #ffffff;
+} */
+/*fot*/
+.footer-matanza {
+    background-color: #f5b338;
+    color: #000000;
+    padding: 40px 20px 20px;
+    /* margin-top: 50px; */
+    /* font-size: 15px; */
 }
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Marca */
+.footer-brand h3 {
+    color: #000000;
+    /* font-size: 20px; */
+    margin-bottom: 5px;
+}
+
+/* Enlaces */
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #6918ff;
+}
+
+/* Redes sociales */
+.footer-social a {
+    color: #dddddd;
+    /* font-size: 22px; */
+    margin: 0 6px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* .footer-social a:hover {
+    color: #ffffff;
+    transform: scale(1.15);
+} */
+
+/* Línea inferior */
+.footer-copy {
+    text-align: center;
+    /* padding-top: 15px;
+    margin-top: 20px; */
+    /* border-top: 1px solid #333; */
+    /* font-size: 14px; */
+}
+
+
+/* Colores personalizados para cada icono */
+.footer-social a.facebook {
+    color: #1877f2;
+    /* Azul Facebook */
+}
+
+.footer-social a.instagram {
+    color: #a838ff;
+    /* Violeta */
+}
+
+.footer-social a.whatsapp {
+    color: #25d366;
+    /* Verde WhatsApp */
+}
+
+/**/
+/* Estilo base */
+.footer-social a {
+    font-size: 1.8rem;
+    /* Tamaño de los íconos */
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+/* Colores */
+.footer-social a.facebook {
+    color: #1877f2;
+    /* Azul Facebook */
+}
+
+.footer-social a.instagram {
+    color: #a838ff;
+    /* Violeta */
+}
+
+.footer-social a.whatsapp {
+    color: #25d366;
+    /* Verde WhatsApp */
+}
+
+/* Hover con Efecto Glow */
+.footer-social a.facebook:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px #1877f2, 0 0 20px #1877f2;
+}
+
+.footer-social a.instagram:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px #a838ff, 0 0 20px #a838ff;
+}
+
+.footer-social a.whatsapp:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px #25d366, 0 0 20px #25d366;
+}
+
 
 
 /* Carrusel */
@@ -512,7 +667,40 @@ img.mfp-img {
         font-size: 2.5em;
     }
 
+    .footer-social a {
+        font-size: 1em;
+    }
 
+    .footer-matanza {
+        background-color: #f5b338;
+        color: #000000;
+        padding: 20px 10px 10px;
+        /* margin-top: 50px; */
+        /* font-size: 15px; */
+    }
+
+    .mfp-counter {
+        top: 36px;
+        right: 10px;
+        font-size: 12px;
+        padding: 4px 10px;
+
+    }
+
+    .nav-link {
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:active {
+        transform: scale(1.1);
+        color: #ffc107 !important;
+    }
+    .portada>img {
+    width: 100%;
+    height: auto;
+    margin-top: 13%;
+    }
+    
 }
 
 @media (min-width: 769px) and (max-width: 820px) {
@@ -537,6 +725,14 @@ img.mfp-img {
         right: 47px;
 
     }
+    .portfolio-menu ul li{
+        font-size: 2.5rem;
+    }
+    .portada>img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
 
 
 }
@@ -545,7 +741,7 @@ img.mfp-img {
     .enlaces {
         display: flex;
         flex-direction: column;
-        margin-top: 108px;
+        margin-top: 129px;
     }
 
     .titulo-1 {
@@ -559,7 +755,7 @@ img.mfp-img {
     .contacto {
         display: flex;
         min-height: 300px;
-        background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+        background-image: url('/img/finaldepag.avif');
         background-size: cover;
         background-position-x: center;
         /* justify-content: end; */
@@ -567,7 +763,13 @@ img.mfp-img {
 
     .contacto a img {
         width: 65%;
+        /* transform: scale(1.1); */
+        /* animation: flotante 3s infinite ease-in-out; */
+
     }
+
+
+
 
     .carousel-item {
         height: 13rem;
@@ -607,6 +809,27 @@ img.mfp-img {
     figure {
         margin: 0 0 3rem;
     }
+
+    .footer-matanza {
+        background-color: #f5b338;
+        color: #000000;
+        padding: 20px 10px 10px;
+        /* margin-top: 50px; */
+        /* font-size: 15px; */
+    }
+
+    .footer-container {
+        gap: 5px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+    .portada>img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
 
 
 }
@@ -658,7 +881,7 @@ img.mfp-img {
     }
 
     .lottie-wrapper {
-        bottom: -13px;
+        bottom: -24px;
     }
 
     #lottie-close {
@@ -666,6 +889,18 @@ img.mfp-img {
         height: 100px;
         cursor: pointer;
     }
+
+    .footer-container {
+        gap: 5px;
+    }
+    .portfolio-menu ul li{
+        font-size: 2.5rem;
+    }
+    .portada>img {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
 
 
 
@@ -740,19 +975,26 @@ img.mfp-img {
     figure {
         margin: 0 0 5rem;
     }
+    .lottie-wrapper {
+        bottom: -24px;
+    }
+    .btn{
+        --bs-btn-font-size: 3rem; 
+    }
 
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
     .contacto {
         display: flex;
-        min-height: 900px;
-        background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+        min-height: 1000px;
+        background-image: url('/img/finaldepag.avif');
         background-size: cover;
         /* justify-content: flex-end; */
 
     }
-    .portada>img{
+
+    .portada>img {
         margin-top: 2%;
     }
 
@@ -785,7 +1027,7 @@ img.mfp-img {
     }
 
     .popup-button a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .lottie-wrapper {
@@ -816,6 +1058,13 @@ img.mfp-img {
         width: 70%;
     }
 
+    .contacto a img {
+        width: 40%;
+    }
+    .navbar-nav{
+        font-size: 1.5rem;
+    }
+
 
 
 }
@@ -834,7 +1083,7 @@ img.mfp-img {
 
     .contacto {
         min-height: 250px;
-        background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif');
+        background-image: url('/img/finaldepag.avif');
         background-size: cover;
         background-position-x: center;
     }
@@ -866,22 +1115,23 @@ img.mfp-img {
     body {
         font-size: 15px;
     }
-        .popup-button.boton a { 
-    background-color: #25d366 !important;
-    padding: 14px 24px !important;
-    border-radius: 10px !important;
-    font-weight: 600;
-    display: inline-block;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    color: white !important;
-    transition: transform 0.2s ease-in-out;
-}
 
-/* efecto hover y toque en celular */
-.popup-button.boton a:hover,
-.popup-button.boton a:active {
-    transform: scale(1.06);
-}
+    .popup-button.boton a {
+        background-color: #25d366 !important;
+        padding: 14px 24px !important;
+        border-radius: 10px !important;
+        font-weight: 600;
+        display: inline-block;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        color: white !important;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* efecto hover y toque en celular */
+    .popup-button.boton a:hover,
+    .popup-button.boton a:active {
+        transform: scale(1.06);
+    }
 
 }
 
