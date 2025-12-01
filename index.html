@@ -161,7 +161,7 @@
     <main>
         <div class="portada" id="Inicio">
             <!-- <img src="img/portada (1).avif" alt=""> -->
-            <img src="img/portada animada inicio la matanza.avif" alt="Portada" loading="lazy" width="984" height="690">
+            <img src="img/cortto arriba.avif" alt="Portada" loading="lazy" width="984" height="690">
 
         </div>
         <div class="intro" data-aos="fade-left"> <img src="/img/Intro.avif" alt="" height="auto"></div>
@@ -213,6 +213,7 @@
                     <img src="/img/boton-2.webp" width="100%" height="auto" alt="">
                 </div>
             </div>
+            <div> <img src="/img/filtros/titulo.avif" width="100%"></div>
             <div class="portfolio-menu mt-2 mb-4" id="Galeria">
                 <ul>
                     <li class="btn btn-outline-dark active" data-filter="*">Todo</li>
@@ -228,12 +229,28 @@
                     <li class="btn btn-outline-dark text" data-filter=".eventos">Alquiler/eventos</li>
                 </ul>
             </div>
+
+            <!-- <div id="titulo-filtro" style="display:none; font-size:22px; text-align: center; font-weight:700; margin-bottom:15px;">
+
+                <span id="texto-filtro"></span>
+
+                <p style="font-size:14px; font-weight:400; margin:5px 0 0;">
+                    Tocá cualquier diseño para ver más información y contactar por WhatsApp.
+                </p>
+            </div> -->
+            <div class="tituloprin" id="titulo-filtro" style="display:none;">
+            </div>
+
+
+
+
             <div class="portfolio-item row">
 
                 <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
-                    <a href="/img/negocio1-a.avif" class="fancylight popup-btn popup-image"
+                    <div class="tap-lottie"></div>
+                    <a href="/img/negocio1.avif" class="fancylight popup-btn popup-image"
                         data-link="https://wa.link/99wodj" name="Valentina" data-fancybox-group="light">
-                        <img class="img-fluid" src="/img/negocio1-a.avif" alt="" loading="lazy">
+                        <img class="img-fluid" src="/img/negocio1.avif" alt="" loading="lazy">
                     </a>
                 </div>
                 <div class="item estet col-lg-3 col-md-4 col-6 col-sm gallery">
@@ -357,17 +374,21 @@
         </div>
 
         <div class="contacto" id="Contacto">
+            <div class="flechass" >
+                    <img src="/img/flechass.png" data-aos="fade-right" data-aos-duration="1000" class="img-fluid">
+            </div>
+
             <div class="enlaces">
 
-                <a href="https://wa.link/t659hj" class="wsp-container"><img class="img-fluid"
-                        src="/img/wsp.webp" alt="whatsapp" loading="lazy"></a>
+                <a href="https://wa.link/t659hj" class="wsp-container"><img class="img-fluid" src="/img/wsp.webp"
+                        alt="whatsapp" loading="lazy"></a>
 
                 <a href="https://www.instagram.com/lamatanzaclasificados/"><img class="img-fluid"
                         src="/img/instagram.webp" alt="instagram" loading="lazy"></a>
-     
+
             </div>
 
-            
+
 
 
         </div>
@@ -385,8 +406,10 @@
                 &copy; 2025 La Matanza Clasificados - Todos los derechos reservados
             </div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/lamatanzaclasificados/" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.link/t659hj" class="whatsapp" aria-label="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/lamatanzaclasificados/" class="instagram" aria-label="Instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://wa.link/t659hj" class="whatsapp" aria-label="Whatsapp"><i
+                        class="bi bi-whatsapp"></i></a>
                 <a href="#" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             </div>
 
@@ -511,37 +534,7 @@
                         }
                     });
 
-                    // function agregarBotonEnlace(item) {
-                    //     //('.mfp-wrap .popup-button').remove();
-                    //     // 🔁 Elimina botones anteriores
-                    //     $('.popup-button').remove();
 
-
-                    //     const link = item.el.attr('data-link');
-                    //     const nombre = item.el.attr('name');
-                    //     if (link) {
-                    //         const buttonHtml = `
-                    // <div class="popup-button boton" style="text-align: center;">
-
-                    //         <a href="${link}" target="_blank" class="btn" style=" font-size:18px;
-                    //             display: inline-block; 
-                    //             padding: 10px 20px; 
-                    //             background-color: #2eb01e; 
-                    //             color: white; 
-                    //             text-decoration: none; 
-                    //             border-radius: 5px;">
-
-                    //             <i class="fa-brands fa-whatsapp fa-lg boton" style="color: #ffffff;"></i> ${nombre}
-                    //         </a>
-
-                    // </div>`;
-                    //         //$('.mfp-container').append(buttonHtml);
-                    //         //$('.lottie-wrapper').append(buttonHtml);
-                    //         // Insertar entre las flechas
-                    //         $('#lottie-next').before(buttonHtml);
-
-                    //     }
-                    // }
 
 
                     function agregarBotonEnlace(item) {
@@ -588,16 +581,6 @@
                         path: '/json/close.json'
                     });
 
-                    // Asignar eventos solo una vez
-                    // $('#lottie-prev').on('click', function () {
-                    //     $.magnificPopup.instance.prev();
-                    // });
-                    // $('#lottie-next').on('click', function () {
-                    //     $.magnificPopup.instance.next();
-                    // });
-                    // $('#lottie-close').on('click', function () {
-                    //     $.magnificPopup.close();
-                    // });
 
                     $('#lottie-prev').on('click', function (e) {
                         e.stopPropagation(); // ✅ evita que el clic cierre el popup
@@ -627,6 +610,111 @@
         });
     </script>
 
+
+
+    <!-- para colocar el titulo-->
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const gallery = document.querySelector(".portfolio-item");
+            const buttons = document.querySelectorAll(".portfolio-menu li");
+            const tituloFiltro = document.getElementById("titulo-filtro");
+
+            const textoFiltro = document.getElementById("texto-filtro");
+
+            buttons.forEach(btn => {
+                btn.addEventListener("click", function () {
+
+                    const texto = this.innerText.trim();
+
+                    tituloFiltro.style.display = "block";
+
+                    // Actualiza solo el título SIN borrar el párrafo
+                    textoFiltro.innerText = texto;
+
+                    // Cambiamos la imagen si existe
+                    if (imagenesFiltro[texto]) {
+                        tituloFiltro.style.backgroundImage = `url('${imagenesFiltro[texto]}')`;
+                    } else {
+                        tituloFiltro.style.backgroundImage = "none";
+                    }
+
+                    // Scroll en celulares
+                    setTimeout(() => {
+                        if (window.innerWidth < 768) {
+                            const y =
+                                tituloFiltro.getBoundingClientRect().top +
+                                window.scrollY -
+                                150;
+                            window.scrollTo({ top: y, behavior: "smooth" });
+                        }
+                    }, 200);
+
+                });
+            });
+
+        });
+    </script> -->
+
+    <!--Agrega background:-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const buttons = document.querySelectorAll(".portfolio-menu li");
+            const tituloFiltro = document.getElementById("titulo-filtro");
+
+            // Lista de fondos por categoría
+            const imagenesFiltro = {
+                "*": "/img/filtros/todo.avif",
+                ".estet": "/img/filtros/estetica.avif",
+                ".tecnico": "/img/filtros/tecnicos.avif",
+                ".abog": "/img/filtros/abogados.avif",
+                ".clases": "/img/filtros/clases.avif",
+                ".lava": "/img/filtros/lavadero.avif",
+                ".comidas": "/img/filtros/comidas.avif",
+                ".barber": "/img/filtros/barberia.avif",
+                ".pastel": "/img/filtros/pasteleria.avif",
+                ".canina": "/img/filtros/canina.avif",
+                ".eventos": "/img/filtros/eventos.avif"
+            };
+
+            buttons.forEach(btn => {
+
+                btn.addEventListener("click", function () {
+
+                    const filtro = this.getAttribute("data-filter");
+
+                    // Mostrar el contenedor
+                    tituloFiltro.style.display = "flex";
+
+                    // Cambiar la imagen si existe
+                    if (imagenesFiltro[filtro]) {
+                        tituloFiltro.style.backgroundImage =
+                            `url('${imagenesFiltro[filtro]}')`;
+                    } else {
+                        tituloFiltro.style.backgroundImage = "none";
+                        tituloFiltro.style.display = "none";
+                    }
+
+                     // Scroll en celulares
+            setTimeout(() => {
+                if (window.innerWidth < 768) {
+                    const y =
+                        tituloFiltro.getBoundingClientRect().top +
+                        window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                }
+            }, 200);
+
+                });
+            });
+
+                // ⬅ Forzar filtro "Todo" al cargar
+    const botonTodo = document.querySelector('.portfolio-menu li[data-filter="*"]');
+    if (botonTodo) botonTodo.click();
+
+              
+        });
+    </script>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -711,6 +799,35 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 </script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Cargar animación en cada "tap-lottie"
+    document.querySelectorAll(".tap-lottie").forEach(el => {
+        lottie.loadAnimation({
+            container: el,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/json/Touch animation blue.json" 
+        });
+    });
+
+});
+</script>
+<script>
+document.querySelectorAll(".item").forEach(item => {
+    const div = document.createElement("div");
+    div.classList.add("tap-lottie");
+    item.prepend(div);
+});
+
+</script>
+
+
 
 
 

@@ -9,11 +9,57 @@
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check)+.btn:active {
-    color: var(--bs-btn-active-color);
+    color: red;
     background-color: #f5b338;
     border-color: var(--bs-btn-active-border-color)
 }
 
+
+  .tituloprin {
+    display: none; /* Se activa con JS */
+    width: 100%;
+    min-height: 100px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.item {
+    position: relative;
+}
+
+/* #titulo-filtro {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 150px; 
+} */
+
+
+
+
+.tap-lottie {
+    position: absolute;
+    bottom: -4px;
+    left: 60%;
+    width: 60px;
+    height: 60px;
+    transform: translateX(22%);
+    z-index: 10;
+    pointer-events: none; /* NO bloquea el clic */
+    opacity: 0.9;
+}
+.flechass{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 198px;
+}
+/* .flechass>img{
+    width: 70%;
+} */
 
 .blue {
     color: blue;
@@ -148,6 +194,7 @@ a:visited {
     background-size: cover;
     background-repeat: no-repeat;
     /* justify-content: flex-end; */
+    position: relative;
 }
 
 .enlaces {
@@ -156,6 +203,7 @@ a:visited {
     align-items: center;
     justify-content: center;
     margin-top: 30%;
+    position: absolute;
 }
 
 .enlaces>a {
@@ -196,6 +244,7 @@ a:visited {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+     margin-bottom: 15%;
 }
 
 .portfolio-item .item {
@@ -464,17 +513,17 @@ footer a:hover {
 
 .foto-1 {
     /* background: url(/img/Flayer1.webp) center center/cover no-repeat #000; */
-    background: url(/img/animacion\ 1.avif) center center/cover no-repeat #000;
+    background: url(/img/unooo.avif) center center/cover no-repeat #000;
 }
 
 .foto-2 {
     /* background: url(/img/Flayer2.webp) center center/cover no-repeat #000; */
-    background: url(/img/animacion\ 2.avif) center center/cover no-repeat #000;
+    background: url(/img/dosssssss.avif) center center/cover no-repeat #000;
 }
 
 .foto-3 {
     /* background: url(/img/Flayer3.webp) center center/cover no-repeat #000; */
-    background: url(/img/animacion\ 3.avif) center center/cover no-repeat #000;
+    background: url(/img/tres.avif) center center/cover no-repeat #000;
 }
 
 /* Quita el fondo blanco detrás de las flechas Lottie */
@@ -674,7 +723,7 @@ img.mfp-img {
     .footer-matanza {
         background-color: #f5b338;
         color: #000000;
-        padding: 20px 10px 10px;
+        /* padding: 20px 10px 10px; */
         /* margin-top: 50px; */
         /* font-size: 15px; */
     }
@@ -700,6 +749,9 @@ img.mfp-img {
     height: auto;
     margin-top: 13%;
     }
+    .flechass{
+    bottom: 289px;
+}
     
 }
 
@@ -733,17 +785,18 @@ img.mfp-img {
     height: auto;
     margin-top: 10%;
 }
+.flechass{
+    bottom: 278px;
+  }
 
 
 }
 
 @media (max-width: 540px) {
-    .enlaces {
-        display: flex;
-        flex-direction: column;
-        margin-top: 129px;
-    }
 
+    .container{
+        margin-bottom: 25px;
+    }
     .titulo-1 {
         font-size: 1.5em;
     }
@@ -754,10 +807,12 @@ img.mfp-img {
 
     .contacto {
         display: flex;
-        min-height: 300px;
+        min-height: 379px;
         background-image: url('/img/finaldepag.avif');
-        background-size: cover;
+        background-size: contain;
         background-position-x: center;
+        position: relative;
+        /* bottom: -46px; */
         /* justify-content: end; */
     }
 
@@ -767,6 +822,19 @@ img.mfp-img {
         /* animation: flotante 3s infinite ease-in-out; */
 
     }
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        margin-top: 102px;
+        position: absolute;
+    }
+      /* .enlaces {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 133px;
+    } */
+
 
 
 
@@ -830,6 +898,14 @@ img.mfp-img {
     height: auto;
     margin-top: 10%;
 }
+ .flechass{
+    bottom: 306px;
+}
+
+.portfolio-item {
+
+    margin-bottom: 15%;
+}
 
 
 }
@@ -844,7 +920,7 @@ img.mfp-img {
 
 } */
 /* Tablets (vertical y horizontal) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .btn {
         --bs-btn-font-size: 2rem;
     }
@@ -902,6 +978,29 @@ img.mfp-img {
     margin-top: 5%;
 }
 
+.contacto {
+    display: flex;
+    min-height: 698px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif'); */
+    background-image: url('/img/finaldepag.avif');
+    background-size: contain                            ;
+    background-repeat: no-repeat;
+    /* justify-content: flex-end; */
+    position: relative;
+    bottom: -158px;
+
+}
+.flechass{
+    bottom: 514px;
+}
+.tituloprin{
+
+    min-height:200px
+}
+
 
 
 }
@@ -909,6 +1008,11 @@ img.mfp-img {
 
 
 @media(min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .tituloprin{
+            min-height: 300px;
+
+    }
 
     img.mfp-img {
         width: 80%;
@@ -984,13 +1088,45 @@ img.mfp-img {
 
 }
 
+
+@media (min-width: 1024px){
+.contacto {
+    display: flex;
+    min-height: 718px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('/img/fondo\ de\ abajo\ de\ todo.avif'); */
+    background-image: url('/img/finaldepag.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* justify-content: flex-end; */
+    position: relative;
+    bottom: 2px;
+}
+.flechass{
+    bottom: 524px;
+}
+}
+
+
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
     .contacto {
         display: flex;
-        min-height: 1000px;
+        min-height: 1181px;
         background-image: url('/img/finaldepag.avif');
         background-size: cover;
         /* justify-content: flex-end; */
+    }
+    .flechass{
+        bottom: 760px;
+    }
+    .flechass>img{
+    width: 70%;
+    }
+
+    .tituloprin{
+         min-height: 300px;
 
     }
 
@@ -1004,8 +1140,9 @@ img.mfp-img {
         justify-content: center;
         align-items: center;
 
-        margin-top: auto;
+        /* margin-top: auto; */
     }
+    
 
     img.mfp-img {
         width: 80%;
@@ -1069,6 +1206,7 @@ img.mfp-img {
 
 }
 
+
 /* Responsive breakpoints optimizados para teléfonos comunes en Argentina */
 
 /* XS: teléfonos muy pequeños */
@@ -1108,6 +1246,14 @@ img.mfp-img {
         height: 60px;
         cursor: pointer;
     }
+    .flechass{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: auto;
+    position: absolute;
+    bottom: 157px;
+}
 }
 
 /* SM: teléfonos comunes (Galaxy A12, Motorola G13/G22) */
@@ -1132,6 +1278,9 @@ img.mfp-img {
     .popup-button.boton a:active {
         transform: scale(1.06);
     }
+    .contacto{
+        bottom: -116px;
+    }
 
 }
 
@@ -1140,6 +1289,9 @@ img.mfp-img {
     body {
         font-size: 16px;
     }
+    .contacto{
+        bottom: -90px;
+    }
 }
 
 /* LG: teléfonos grandes / premium */
@@ -1147,6 +1299,7 @@ img.mfp-img {
     body {
         font-size: 17px;
     }
+    
 }
 
 /* XL: tablets pequeñas y plegables */
@@ -1172,3 +1325,18 @@ img.mfp-img {
         transition: 0.2s ease-in-out;
     }
 }
+@media (min-width: 768px) {
+    .tap-lottie {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 820px){
+    .contacto{
+        bottom: -125px;
+    }
+}
+
+
