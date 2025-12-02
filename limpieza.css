@@ -11,9 +11,15 @@
 :not(.btn-check)+.btn:active {
     color: red;
     background-color: #f5b338;
-    border-color: var(--bs-btn-active-border-color)
+    border-color: var(--bs-btn-active-border-color);
+    font-weight: bold;
 }
-
+ol,ul{
+    padding-left: 0rem;
+}
+/* .container{
+     --bs-gutter-x: 0rem; VER MAÑANA
+} */
 
   .tituloprin {
     display: none; /* Se activa con JS */
