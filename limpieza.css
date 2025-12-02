@@ -79,6 +79,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    /* font-size: 1.5em; */
 }
 
 /*probando menu*/
@@ -794,9 +795,9 @@ img.mfp-img {
 
 @media (max-width: 540px) {
 
-    .container{
+    /* .container{
         margin-bottom: 25px;
-    }
+    } */
     .titulo-1 {
         font-size: 1.5em;
     }
@@ -1086,10 +1087,20 @@ img.mfp-img {
         --bs-btn-font-size: 3rem; 
     }
 
+    .container>img{
+        width: 60px;
+        height: 60px;
+        margin: 5px 0px; 
+    }
+
 }
 
 
 @media (min-width: 1024px){
+
+main{
+margin-top: 35px;
+}
 .contacto {
     display: flex;
     min-height: 718px;
@@ -1107,6 +1118,11 @@ img.mfp-img {
 .flechass{
     bottom: 524px;
 }
+.container>img{
+        width: 60px;
+        height: 60px;
+        margin: 5px 0px; 
+    }
 }
 
 
@@ -1201,6 +1217,7 @@ img.mfp-img {
     .navbar-nav{
         font-size: 1.5rem;
     }
+    
 
 
 
@@ -1212,7 +1229,8 @@ img.mfp-img {
 /* XS: teléfonos muy pequeños */
 @media (max-width: 360px) {
     body {
-        font-size: 14px;
+        /* font-size: 14px; */
+        font-size: 1.2em;
     }
 
     img.mfp-img {
@@ -1260,7 +1278,9 @@ img.mfp-img {
 @media (min-width: 361px) and (max-width: 390px) {
     body {
         font-size: 15px;
+        padding-top: 19px;
     }
+   
 
     .popup-button.boton a {
         background-color: #25d366 !important;
@@ -1305,7 +1325,7 @@ img.mfp-img {
 /* XL: tablets pequeñas y plegables */
 @media (min-width: 481px) {
     body {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .popup-button.boton a {
@@ -1329,13 +1349,20 @@ img.mfp-img {
     .tap-lottie {
         display: none;
     }
+    body{
+        font-size: 1.8em;
 
+    }
+    
 
 }
 
 @media (min-width: 769px) and (max-width: 820px){
     .contacto{
         bottom: -125px;
+    }
+    body {
+        font-size: 24px;
     }
 }
 
