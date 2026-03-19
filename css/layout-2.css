@@ -1,0 +1,73 @@
+/* layout.css — estructura base */
+
+*  { box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #d0d0d0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 0;
+}
+
+/* También se repite en global, unificado aquí */
+section:not(:first-child) { /* evita doble padding */ }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+@media (max-width: 576px) {
+  .container { padding: 0 30px; }
+}
+
+/* ── Footer ── */
+#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-btn {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.footer-copy {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-btn { align-self: flex-start; }
+}

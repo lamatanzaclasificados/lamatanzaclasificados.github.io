@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #e30613;
+  --color-secondary: #f6c000;
+  --color-text: #333;
+  --font-base: Arial, Helvetica, sans-serif;
+}
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }

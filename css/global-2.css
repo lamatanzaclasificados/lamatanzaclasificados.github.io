@@ -1,0 +1,10 @@
+/* global.css — reset y base tipográfica */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Nota: footer y main están en layout.css — no los repetir acá */

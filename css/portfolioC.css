@@ -1,0 +1,157 @@
+/* portfolio.css — galería y popup */
+
+/* ── Grid ──
+   Isotope maneja el posicionamiento — NO usar display:grid
+   El ancho de cada item se controla con calc()            */
+.portfolio-grid .item {
+  width: calc(50% - 8px); /* mobile: 2 columnas, gap 16px */
+  margin-bottom: 16px;
+}
+
+.portfolio-grid .item img {
+  width: 100%;
+  height: auto;        /* FIX: era height:100%, rompe con Isotope */
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Items ── */
+.item { position: relative; }
+
+.item img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Menú de filtros ── */
+.portfolio-menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio-menu .filter-btn {
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #f1f1f1;
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.portfolio-menu .filter-btn:hover {
+  background: #ff3d00;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.portfolio-menu .filter-btn.active {
+  background: #ff3d00;
+  color: #fff;
+  border-color: #ff3d00;
+  box-shadow: 0 6px 15px rgba(20, 20, 20, 0.7);
+}
+
+/* ── Lottie wrappers (flechas y cierre del popup) ── */
+.lottie-button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.lottie-close-wrapper {
+  position: absolute;
+  z-index: 10000;
+}
+
+.lottie-wrapper {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.lottie-wrapper > #lottie-prev,
+.lottie-wrapper > #lottie-next {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+/* Sin fondo en ningún lottie */
+#lottie-prev,
+#lottie-next,
+#lottie-close {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* ── Botón WhatsApp en popup ── */
+.popup-button.boton a {
+  background-color: #25d366 !important;
+  padding: 14px 24px !important;
+  border-radius: 10px !important;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: white !important;
+}
+
+.popup-button.boton a:hover {
+  background-color: #228c15 !important;
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
+/* ── Magnific Popup: eliminar fondos y estilos no deseados ── */
+.mfp-arrow,
+.mfp-arrow::before,
+.mfp-arrow::after {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.mfp-close { display: none; }
+
+.mfp-content,
+.mfp-figure {
+  background: transparent !important;
+}
+
+.mfp-figure:after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.mfp-figure {
+  overflow: visible !important;
+}
+
+img.mfp-img {
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35) !important;
+}

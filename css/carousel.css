@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  /* height: 420px; */
+  overflow: hidden;
+
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-indicators .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,.5);
+  cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+  background: #fff;
+}

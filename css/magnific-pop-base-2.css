@@ -1,0 +1,111 @@
+/* magnific-pop-base.css — base del plugin Magnific Popup */
+
+/* ── Fondo ── */
+.mfp-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: #0b0b0b;
+  opacity: 0.8;
+}
+
+/* ── Wrapper ── */
+.mfp-wrap {
+  position: fixed !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 99999 !important;
+}
+
+/* ── Contenedor ── */
+.mfp-container {
+  inset: 0;
+  display: block;
+}
+
+.mfp-container::before { display: none !important; }
+
+/* ── Contenido ── */
+.mfp-content {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ── Imagen ── */
+img.mfp-img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* ── Ocultos ── */
+.mfp-hide { display: none !important; }
+
+/* ── Botón cerrar (ocultado, reemplazado por Lottie) ── */
+.mfp-close {
+  position: absolute;
+  top: 0; right: 0;
+  width: 44px; height: 44px;
+  font-size: 28px;
+  color: #fff;
+  opacity: 0.7;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.mfp-close:hover { opacity: 1; }
+
+/* ── Flechas (ocultadas, reemplazadas por Lottie) ── */
+.mfp-arrow {
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: 110px;
+  margin-top: -55px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.mfp-arrow:hover { opacity: 1; }
+.mfp-arrow-left  { left: 0; }
+.mfp-arrow-right { right: 0; }
+
+/* ── Figura ── */
+.mfp-figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ── Barra inferior ── */
+.mfp-bottom-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.mfp-title { color: #f3f3f3; }
+
+/* ── Contador (oculto) ── */
+.mfp-counter {
+  position: absolute;
+  top: 20px; right: 0;
+  background: rgba(0,0,0,.55);
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  z-index: 9999;
+  display: none !important;
+}

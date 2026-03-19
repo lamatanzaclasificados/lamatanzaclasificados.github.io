@@ -5,44 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/la matanza.ico">
+    <link rel="icon" href="/img/favicon.ico">
     <!-- Open Graph (Facebook, WhatsApp, Instagram) -->
     <meta property="og:title" content="La Matanza Clasificados">
     <meta property="og:description" content="Publicamos tu comercio o emprendimiento!">
-    <meta property="og:image" content="https://lamatanzaclasificados.github.io//img/v-previa.jpg">
+    <meta property="og:image" content="https://lamatanzaclasificados.github.io/img/v-previa.jpg">
     <meta property="og:url" content="https://lamatanzaclasificados.github.io/">
     <meta property="og:type" content="website">
 
 
-    <!-- <link rel="stylesheet" href="/magnific_popup_limpio.css"> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script> -->
-
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <!-- <link rel="stylesheet" href="estilos.css"> -->
-
-    <!-- Magnific Popup CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"> -->
-    <!-- <link rel="stylesheet" href="/css/magnific-popup.min.css"> -->
-    <link rel="stylesheet" href="/magnific_popup_limpio.css">
-
-    <!-- <dotlottie-player src="https://lottie.host/c9aa34b2-a08d-4192-a00a-af02df253106/XYufmjlDfT.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player> -->
-    <!-- <link rel="stylesheet" href="/css/estilos2.css"> -->
-    <!-- <link rel="stylesheet" href="/estilos_unificados2.css"> -->
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="limpieza.css">
-    <!-- <link rel="stylesheet" href="/estilos-unificados.css"> -->
+    <!-- <link rel="stylesheet" href="/css/magnific-pop-base.css"> -->
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- 
+    <script>AOS.init({ once: false, duration: 800, offset: 120 });</script> -->
+    
+    
 
     <title>La Matanza Clasificados</title>
     <style>
@@ -72,142 +53,106 @@
             pointer-events: none;
         }
 
-
-        /* .lottie-close-wrapper {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 10000;
-            width: auto;
-            height: auto;
-            margin: 0;
-            padding: 0;
-        }
-
-        #lottie-close {
-            position: absolute;
-           
-            right: 0;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            z-index: 9999;
-        }
-            .lottie-wrapper {
-            position: absolute;
-            top: 100%;
+        /* FIX: estilos del modal legal movidos aquí desde inline */
+        .modal-legal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
             left: 0;
-            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        .modal-legal-box {
+            background: white;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-legal-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .modal-legal-cerrar {
             margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-            }
-
-            .lottie-wrapper > #lottie-prev,
-            .lottie-wrapper > #lottie-next {
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            }
-
-            .lottie-wrapper > .popup-button {
-            flex: 1;
-            text-align: center;
-            }
-
-            .popup-button a {
-            padding: 10px 20px;
-            background-color: #2eb01e;
+            padding: 8px 12px;
+            border: none;
+            background: #444;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            } */
+            border-radius: 6px;
+            cursor: pointer;
+        }
     </style>
 
 </head>
 
 <body>
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container">
-                <img src="/img/la matanza.ico" alt="" height="auto" width="30px">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Galeria">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-disabled="page" href="#Contacto">Contactános</a>
-                        </li>
-                    </ul>
-                    <!-- <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-                </div>
-            </div>
-        </nav>
+    <header class="navbar">
+        <div class="navbar-container">
+
+            <a href="/" class="navbar-logo">
+                La Matanza Clasificados
+            </a>
+
+            <button class="navbar-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Galeria">Galeria</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
+
 
     <!--aqui-->
     <main>
         <section id="Inicio">
             <div class="portada">
-                <!-- <img src="img/portada (1).avif" alt=""> -->
-                <img src="img/cortto arriba.avif" alt="Portada" loading="lazy" width="984" height="690">
+                <picture>
+                    <source srcset="img/portada-animada-inicio.avif" media="(min-width: 1200px)">
+                    <img src="img/cortto-arriba.avif" alt="Portada" loading="lazy" decoding="async" width="984"
+                        height="690">
+                </picture>
 
             </div>
-            <div class="intro" data-aos="fade-left"> <img src="/img/Intro.avif" alt="" height="auto"></div>
+            <div class="intro" data-aos="fade-left"> <img src="/img/Intro.avif" alt="" loading="lazy" decoding="async"
+                    height="auto"></div>
 
 
 
-            <!-- <div class="prueba"> -->
 
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide foto-1 active"></div>
+                    <div class="carousel-slide foto-2"></div>
+                    <div class="carousel-slide foto-3"></div>
+                </div>
+
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item foto-1 active">
-
-                    </div>
-                    <div class="carousel-item foto-2">
-
-                    </div>
-                    <div class="carousel-item foto-3">
-
-                    </div>
-                </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
-
 
         </section>
-        <!-- </div> -->
-
-
 
         <div class="container">
 
@@ -217,20 +162,20 @@
                         <img src="/img/boton-2.webp" width="100%" height="auto" alt="">
                     </div>
                 </div>
-                <div> <img src="/img/filtros/titulo.avif" width="100%"></div>
+                <div> <img src="/img/filtros/titulo.avif" width="100%" loading="lazy" decoding="async"></div>
                 <div class="portfolio-menu mt-2 mb-4">
                     <ul>
-                        <li class="btn btn-outline-dark active" data-filter="*">Todo</li>
-                        <li class="btn btn-outline-dark" data-filter=".estet">Estetica</li>
-                        <li class="btn btn-outline-dark" data-filter=".tecnico">Tecnicos</li>
-                        <li class="btn btn-outline-dark text" data-filter=".abog">Abogados/Gestores</li>
-                        <li class="btn btn-outline-dark text" data-filter=".clases">Clases/Cursos</li>
-                        <li class="btn btn-outline-dark text" data-filter=".lava">Lavadero de autos</li>
-                        <li class="btn btn-outline-dark text" data-filter=".comidas">Comidas/Deliverys</li>
-                        <li class="btn btn-outline-dark text" data-filter=".barber">Barberias</li>
-                        <li class="btn btn-outline-dark text" data-filter=".pastel">Pasteleria</li>
-                        <li class="btn btn-outline-dark text" data-filter=".canina">Peluqueria canina</li>
-                        <li class="btn btn-outline-dark text" data-filter=".eventos">Alquiler/eventos</li>
+                        <li class="filter-btn active" data-filter="*">Todo</li>
+                        <li class="filter-btn" data-filter=".estet">Estetica</li>
+                        <li class="filter-btn" data-filter=".tecnico">Tecnicos</li>
+                        <li class="filter-btn text" data-filter=".abog">Abogados/Gestores</li>
+                        <li class="filter-btn text" data-filter=".clases">Clases/Cursos</li>
+                        <li class="filter-btn text" data-filter=".lava">Lavadero de autos</li>
+                        <li class="filter-btn text" data-filter=".comidas">Comidas/Deliverys</li>
+                        <li class="filter-btn text" data-filter=".barber">Barberias</li>
+                        <li class="filter-btn text" data-filter=".pastel">Pasteleria</li>
+                        <li class="filter-btn text" data-filter=".canina">Peluqueria canina</li>
+                        <li class="filter-btn text" data-filter=".eventos">Alquiler/eventos</li>
                     </ul>
                 </div>
 
@@ -240,118 +185,118 @@
 
 
 
-                <div class="portfolio-item row">
+                <div class="portfolio-grid">
 
-                    <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <div class="tap-lottie"></div>
+                    <div class="item gts estet gallery">
+
                         <a href="/img/negocio1.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/99wodj" name="Valentina" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio1.avif" alt="" loading="lazy">
+                            <img src="/img/negocio1.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item estet gallery">
                         <a href="/img/negocio2.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/y4o27e" name="Sol y Luna" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio2.avif" alt="">
+                            <img src="/img/negocio2.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item gts estet gallery">
                         <a href="/img/negocio3.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/99wodj" name="Joana" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio3.avif" alt="" loading="lazy">
+                            <img src="/img/negocio3.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item gts estet gallery">
                         <a href="/img/negocio4.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/y4o27e" name="Ro-Nails" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio4.avif" alt="" loading="lazy">
+                            <img src="/img/negocio4.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item gts estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item gts estet gallery">
                         <a href="/img/negocio5.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio5.avif" alt="">
+                            <img src="/img/negocio5.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item estet col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item estet gallery">
                         <a href="/img/negocio6.avif" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio6.avif" alt="">
+                            <img src="/img/negocio6.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item abog col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item abog gallery">
                         <a href="/img/negocio10.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio10.avif" alt="">
+                            <img src="/img/negocio10.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
+                    <div class="item tecnico gallery">
                         <a href="/img/negocio11.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/99wodj" data-fancybox-group="light">
                             <img class="img-fluid" src="/img/negocio11.avif" alt="">
                         </a>
                     </div>
-                    <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/negocio12.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item tecnico gallery">
+                        <a href="/img/negocio12.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio12.avif" alt="">
+                            <img src="/img/negocio12.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/negocio13.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item tecnico gallery">
+                        <a href="/img/negocio13.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio13.avif" alt="">
+                            <img src="/img/negocio13.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item lava col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/lavadero.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item lava gallery">
+                        <a href="/img/lavadero.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
                             <img class="img-fluid" src="/img/lavadero.avif" alt="">
                         </a>
                     </div>
-                    <div class="item tecnico col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/negocio21.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item tecnico gallery">
+                        <a href="/img/negocio21.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
                             <img class="img-fluid" src="/img/negocio21.avif" alt="" loading="lazy">
                         </a>
                     </div>
 
-                    <div class="item clases col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/negocio26.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item clases gallery">
+                        <a href="/img/negocio26.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio26.avif" alt="">
+                            <img src="/img/negocio26.avif" alt="" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item comidas col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/pizzeria.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item comidas gallery">
+                        <a href="/img/pizzeria.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/pizzeria.avif" alt="comidas">
+                            <img src="/img/pizzeria.avif" alt="comidas" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item barber col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/barberia.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item barber gallery">
+                        <a href="/img/barberia.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/barberia.avif" alt="Barberia" loading="lazy">
+                            <img src="/img/barberia.avif" alt="Barberia" loading="lazy">
                         </a>
                     </div>
-                    <div class="item pastel col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/reposteria.avif" class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item pastel gallery">
+                        <a href="/img/reposteria.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/reposteria.avif" alt="pasteleria">
+                            <img src="/img/reposteria.avif" alt="pasteleria" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item canina col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/peluqueria canina.avif"
-                            class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item canina gallery">
+                        <a href="/img/peluqueria-canina.avif"
+                            class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/peluqueria canina.avif" alt="pelu canina">
+                            <img src="/img/peluqueria-canina.avif" alt="pelu canina" loading="lazy" decoding="async">
                         </a>
                     </div>
-                    <div class="item eventos col-lg-3 col-md-4 col-6 col-sm gallery">
-                        <a href="/img/alquiler juegos.avif"
-                            class="fancylight popup-bt with-caption image-link popup-image"
+                    <div class="item eventos gallery">
+                        <a href="/img/alquiler-juegos.avif"
+                            class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/alquiler juegos.avif" alt="alquiler">
+                            <img src="/img/alquiler-juegos.avif" alt="alquiler" loading="lazy" decoding="async">
                         </a>
                     </div>
 
@@ -367,65 +312,41 @@
                 <div id="lottie-next" class="lottie-button" style="display: none;"></div>
             </div>
 
-
-
+            <div class="contactate">
+            </div>
         </div>
 
         <section class="contacto" id="Contacto">
-            <div class="flechass">
-                <img src="/img/flechass.png" data-aos="fade-right" data-aos-duration="1000" class="img-fluid">
-            </div>
+
 
             <div class="enlaces">
 
-                <a href="https://wa.link/t659hj" class="wsp-container"><img class="img-fluid" src="/img/wsp.webp"
-                        alt="whatsapp" loading="lazy"></a>
+                <a href="https://wa.link/t659hj" class="wsp-container"><img src="/img/wsp.webp" alt="whatsapp"
+                        loading="lazy" decoding="async"></a>
 
-                <a href="https://www.instagram.com/lamatanzaclasificados/"><img class="img-fluid"
-                        src="/img/instagram.webp" alt="instagram" loading="lazy"></a>
+                <a href="https://www.instagram.com/lamatanzaclasificados/"><img src="/img/instagram.webp"
+                        alt="instagram" loading="lazy" decoding="async"></a>
+                <a href="https://www.youtube.com/channel/UCz8_gBLOF-tv5rZjGviB9oA" class="wsp-container"><img
+                        src="/img/logos de youtube.webp" alt="youtube" loading="lazy" decoding="async"></a>
+                <a href="https://www.facebook.com/profile.php?id=61575281994371" class="wsp-container"><img
+                        src="/img/facebook lamatanza.webp" alt="facebook" loading="lazy" decoding="async"></a>
+                <a href="https://www.tiktok.com/@lamatanzaclasificados" class="wsp-container"><img
+                        src="/img/logo tiktok.webp" alt="facebook" loading="lazy"></a>
 
             </div>
-
-
-
-
         </section>
 
+
     </main>
-    <footer class="footer-matanza">
-        <div class="footer-container">
 
-            <div class="footer-links">
-                <a href="#" id="abrirModal">Términos y Condiciones</a>
-                <!-- <a href="#Contacto">Contáctanos</a> -->
-                <!-- <a href="#Galeria">Galería</a> -->
-            </div>
-            <div class="footer-copy">
-                &copy; 2025 La Matanza Clasificados - Todos los derechos reservados
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/lamatanzaclasificados/" class="instagram" aria-label="Instagram"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://wa.link/t659hj" class="whatsapp" aria-label="Whatsapp"><i
-                        class="bi bi-whatsapp"></i></a>
-                <a href="#" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            </div>
-
+    <footer id="footer">
+        <button id="abrirModal" class="footer-btn">
+            Aviso legal
+        </button>
+        <div class="footer-copy">
+            &copy; 2026 La Matanza Clasificados - Todos los derechos reservados -
         </div>
-
-
     </footer>
-
-
-
-    <!-- 
-    <footer>
-       
-        <p>&copy; 2025 La Matanza Clasificados</p>&nbsp;&nbsp;
-        <a href="#" id="abrirModal">Términos y Condiciones</a>
-    </footer> -->
-
-
 
 
 
@@ -439,281 +360,13 @@
     <!-- Isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
-    <!-- Bootstrap (solo uno, el más moderno que uses) -->
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <!-- eliminar el bootstrap 4.1.1 viejo -->
-
     <!-- Magnific Popup -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- Lottie -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
-
-    <!-- Tu script final -->
-    <script src="script.js"></script>
-
-
-
-
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-
-            jQuery(document).ready(function ($) {
-                var popup_btn = $('.popup-btn');
-                popup_btn.magnificPopup({
-                    type: 'image',
-                    gallery: {
-                        enabled: true
-                    },
-                    image: {
-                        titleSrc: function (item) {
-                            return item.el.find('img').attr('alt');
-                        }
-                    }
-
-
-
-                });
-
-
-                //prueba
-
-                jQuery(document).ready(function ($) {
-                    $('.popup-image').magnificPopup({
-                        type: 'image',
-                        gallery: {
-                            enabled: true
-                        },
-                        callbacks: {
-                            open: function () {
-                                agregarBotonEnlace(this.currItem);
-
-                                const mfpContent = document.querySelector('.mfp-content');
-                                const lottieWrapper = document.querySelector('.lottie-wrapper');
-                                const closeWrapper = document.querySelector('.lottie-close-wrapper');
-
-                                if (lottieWrapper && mfpContent && !mfpContent.contains(lottieWrapper)) {
-                                    mfpContent.appendChild(lottieWrapper);
-                                }
-                                if (closeWrapper && mfpContent && !mfpContent.contains(closeWrapper)) {
-                                    mfpContent.appendChild(closeWrapper);
-                                }
-
-                                $('.lottie-wrapper').css("display", "flex");
-                                $('#lottie-prev').css("display", "flex");
-                                $('#lottie-next').css("display", "flex");
-                                // $('#lottie-prev, #lottie-next, #lottie-close').show();
-                                $('.lottie-close-wrapper').css("display", "flex");
-                            },
-                            change: function () {
-                                const item = this.currItem;
-                                setTimeout(function () {
-                                    agregarBotonEnlace(item);
-                                }, 50); // pequeño retraso para esperar el DOM correcto
-                            },
-
-                            close: function () {
-                                $('.popup-button').remove();
-
-                                $('.lottie-wrapper').css("display", "none");
-                                $('.lottie-close-wrapper').css("display", "none");
-
-                                // Devuelve los botones a su lugar original en el body
-                                const lottieWrapper = document.querySelector('.lottie-wrapper');
-                                const closeWrapper = document.querySelector('.lottie-close-wrapper');
-                                if (lottieWrapper) document.body.appendChild(lottieWrapper);
-                                if (closeWrapper) document.body.appendChild(closeWrapper);
-                            }
-
-                        }
-                    });
-
-
-
-
-                    function agregarBotonEnlace(item) {
-                        $('.popup-button').remove();
-
-                        const link = $(item.el).attr('data-link');
-                        const nombre = $(item.el).attr('name') || 'WhatsApp';
-                        if (link) {
-                            const buttonHtml = `
-                            <div class="popup-button boton" style="text-align: center;">
-                            <a href="${link}" target="_blank" class="btn">
-                                
-                                <i class="fa-brands fa-whatsapp fa-lg boton" style="color: #ffffff;"></i> ${nombre}
-                            </a>
-                        </div>`;
-                            $('#lottie-next').before(buttonHtml);
-                        }
-                    }
-
-
-
-
-
-                    // Cargar animaciones Lottie solo una vez
-                    lottie.loadAnimation({
-                        container: document.getElementById('lottie-prev'),
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '/json/arrow-left.json'
-                    });
-                    lottie.loadAnimation({
-                        container: document.getElementById('lottie-next'),
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '/json/arrow-right.json'
-                    });
-                    lottie.loadAnimation({
-                        container: document.getElementById('lottie-close'),
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '/json/close.json'
-                    });
-
-
-                    $('#lottie-prev').on('click', function (e) {
-                        e.stopPropagation(); // ✅ evita que el clic cierre el popup
-                        $.magnificPopup.instance.prev();
-                    });
-
-                    $('#lottie-next').on('click', function (e) {
-                        e.stopPropagation();
-                        $.magnificPopup.instance.next();
-                    });
-
-                    $('#lottie-close').on('click', function (e) {
-                        e.stopPropagation();
-                        $.magnificPopup.close();
-                    });
-
-
-
-
-
-
-                });
-
-
-
-            });
-        });
-    </script>
-
-
-
-    <!-- para colocar el titulo-->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const gallery = document.querySelector(".portfolio-item");
-            const buttons = document.querySelectorAll(".portfolio-menu li");
-            const tituloFiltro = document.getElementById("titulo-filtro");
-
-            const textoFiltro = document.getElementById("texto-filtro");
-
-            buttons.forEach(btn => {
-                btn.addEventListener("click", function () {
-
-                    const texto = this.innerText.trim();
-
-                    tituloFiltro.style.display = "block";
-
-                    // Actualiza solo el título SIN borrar el párrafo
-                    textoFiltro.innerText = texto;
-
-                    // Cambiamos la imagen si existe
-                    if (imagenesFiltro[texto]) {
-                        tituloFiltro.style.backgroundImage = `url('${imagenesFiltro[texto]}')`;
-                    } else {
-                        tituloFiltro.style.backgroundImage = "none";
-                    }
-
-                    // Scroll en celulares
-                    setTimeout(() => {
-                        if (window.innerWidth < 768) {
-                            const y =
-                                tituloFiltro.getBoundingClientRect().top +
-                                window.scrollY -
-                                150;
-                            window.scrollTo({ top: y, behavior: "smooth" });
-                        }
-                    }, 200);
-
-                });
-            });
-
-        });
-    </script> -->
-
-    <!--Agrega background:-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const buttons = document.querySelectorAll(".portfolio-menu li");
-            const tituloFiltro = document.getElementById("titulo-filtro");
-
-            // Lista de fondos por categoría
-            const imagenesFiltro = {
-                "*": "/img/filtros/todo.avif",
-                ".estet": "/img/filtros/estetica.avif",
-                ".tecnico": "/img/filtros/tecnicos.avif",
-                ".abog": "/img/filtros/abogados.avif",
-                ".clases": "/img/filtros/clases.avif",
-                ".lava": "/img/filtros/lavadero.avif",
-                ".comidas": "/img/filtros/comidas.avif",
-                ".barber": "/img/filtros/barberia.avif",
-                ".pastel": "/img/filtros/pasteleria.avif",
-                ".canina": "/img/filtros/canina.avif",
-                ".eventos": "/img/filtros/eventos.avif"
-            };
-
-            buttons.forEach(btn => {
-
-                btn.addEventListener("click", function () {
-
-                    const filtro = this.getAttribute("data-filter");
-
-                    // Mostrar el contenedor
-                    tituloFiltro.style.display = "flex";
-
-                    // Cambiar la imagen si existe
-                    if (imagenesFiltro[filtro]) {
-                        tituloFiltro.style.backgroundImage =
-                            `url('${imagenesFiltro[filtro]}')`;
-                    } else {
-                        tituloFiltro.style.backgroundImage = "none";
-                        tituloFiltro.style.display = "none";
-                    }
-
-                    // Scroll en celulares
-                    /* setTimeout(() => {
-                         if (window.innerWidth < 768) {
-                             const y =
-                                 tituloFiltro.getBoundingClientRect().top +
-                                 window.scrollY - 80;
-                             window.scrollTo({ top: y, behavior: "smooth" });
-                         }
-                     }, 200);*/
-
-                });
-            });
-
-            // ⬅ Forzar filtro "Todo" al cargar
-            const botonTodo = document.querySelector('.portfolio-menu li[data-filter="*"]');
-            if (botonTodo) botonTodo.click();
-
-
-        });
-    </script>
-
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -723,116 +376,27 @@
             offset: 120
         });
     </script>
+    <script src="/js/portfolio-filter.js"></script>
+    <!-- <script src="/js/script-3.js"></script> -->
+     <script src="/js/scriptC.js"></script>
 
     <!-- Modal -->
-    <div id="modalLegal" style="
-    display:none;
-    position:fixed;
-    top:0; left:0;
-    width:100%; height:100%;
-    background:rgba(0,0,0,0.5);
-    justify-content:center;
-    align-items:center; z-index: 10000;
-">
-        <div style="
-        background:white;
-        padding:20px;
-        width:90%;
-        max-width:500px;
-        border-radius:10px;
-        text-align:left;
-        box-shadow:0 0 10px rgba(0,0,0,0.3);
-    ">
+    <div id="modalLegal" class="modal-legal-overlay">
+        <div class="modal-legal-box">
             <h3>Descargo de responsabilidad</h3>
             <p>
                 La Matanza Clasificados es solo una plataforma de anuncios.
                 No intervenimos, garantizamos ni tenemos relación con los servicios ofrecidos por terceros.
                 Los anuncios son responsabilidad exclusiva de quienes los ofrecen.
             </p>
-            <button id="cerrarModal" style="
-            margin-top:10px;
-            padding:8px 12px;
-            border:none;
-            background:#444;
-            color:white;
-            border-radius:6px;
-            cursor:pointer;
-        ">Cerrar</button>
+            <button id="cerrarModal" class="modal-legal-cerrar">Cerrar</button>
         </div>
     </div>
 
-    <!-- Script -->
-    <script>
-        document.getElementById("abrirModal").onclick = function (e) {
-            e.preventDefault();
-            document.getElementById("modalLegal").style.display = "flex";
-        };
-        document.getElementById("cerrarModal").onclick = function () {
-            document.getElementById("modalLegal").style.display = "none";
-        };
-    </script>
-
-    <script>
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (navbarCollapse.classList.contains('show')) {
-                    new bootstrap.Collapse(navbarCollapse).hide();
-                }
-            });
-        });
-    </script>
-
-
-
-    <!--Menu-->
-
-    <!-- <script>
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function() {
-    document.querySelectorAll('.nav-link').forEach(i => i.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script> -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            // Cargar animación en cada "tap-lottie"
-            document.querySelectorAll(".tap-lottie").forEach(el => {
-                lottie.loadAnimation({
-                    container: el,
-                    renderer: "svg",
-                    loop: true,
-                    autoplay: true,
-                    path: "/json/Touch animation blue.json"
-                });
-            });
-
-        });
-    </script>
-    <script>
-        document.querySelectorAll(".item").forEach(item => {
-            const div = document.createElement("div");
-            div.classList.add("tap-lottie");
-            item.prepend(div);
-        });
-
-    </script>
-
-    <!-- <script>
-        window.addEventListener("load", () => {
-            window.scrollTo(0, 0);
-        });
-
-    </script> -->
 
 
 </body>
+
+
 
 </html>

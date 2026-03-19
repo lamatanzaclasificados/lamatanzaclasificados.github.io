@@ -1,0 +1,402 @@
+/* responsive.css — todos los breakpoints organizados
+   Reemplaza versionsana.css (que era difícil de mantener)
+   Orden: mobile-first → de menor a mayor
+*/
+
+/* ─────────────────────────────────────
+   MOBILE PEQUEÑO  ≤ 360px
+───────────────────────────────────── */
+@media (max-width: 360px) {
+
+  .enlaces img       { width: 75vw; height: auto; }
+  .contacto a img    { width: 48%; }
+  .contacto          { background-position-x: center; }
+
+  img.mfp-img {
+    width: 95vw;
+    max-height: 90vh;
+    height: auto;
+  }
+
+  .lottie-close-wrapper { top: -15px; right: 21px; }
+  .lottie-wrapper       { bottom: -80px; }
+  .popup-button.boton a { margin-top: 15px; }
+
+  .mfp-container::before { display: none; }
+
+  .tituloprin { margin-bottom: 0; }
+}
+
+/* ─────────────────────────────────────
+   MOBILE NORMAL  361px – 576px
+───────────────────────────────────── */
+@media (min-width: 361px) and (max-width: 576px) {
+
+  .enlaces img   { width: 70vw; }
+  .contactate    { min-height: 150px; }
+  .tituloprin    { min-height: 130px; margin-bottom: 0; }
+
+  .contacto {
+    padding: 40px 15px;
+    background-position-x: center;
+  }
+
+  img.mfp-img {
+    max-width: 80vw;
+    max-height: 85vh;
+  }
+
+  .lottie-wrapper {
+    bottom: -70px;
+    align-items: center;
+  }
+
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+    width: 60px;
+    height: 60px;
+  }
+
+  .lottie-close-wrapper { top: -17px; right: 21px; }
+
+  .mfp-container { margin-bottom: 70px; }
+}
+
+/* ─────────────────────────────────────
+   MOBILE LANDSCAPE  ≤ 767px landscape
+───────────────────────────────────── */
+@media (max-width: 767px) and (orientation: landscape) {
+
+  .mfp-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mfp-container {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mfp-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+
+  img.mfp-img {
+    max-width: 95vw;
+    max-height: 80vh !important;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lottie-wrapper {
+    bottom: -45px;
+    align-items: center;
+  }
+
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+    width: 65px;
+    height: 65px;
+  }
+
+  .lottie-close-wrapper { top: 0; right: 25px; }
+  .lottie-button        { width: 40px; height: 40px; }
+
+  .popup-button.boton a { font-size: 14px; }
+
+  .contacto { min-height: 40vh; }
+
+  .contactate {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 97vw;
+    min-height: 215px;
+  }
+
+  .tituloprin {
+    display: none;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+/* ─────────────────────────────────────
+   TABLET PORTRAIT  577px – 767px
+───────────────────────────────────── */
+@media (min-width: 577px) and (max-width: 767px) and (orientation: portrait) {
+
+  .contacto {
+    min-height: 40vh;
+    background-position-x: center;
+  }
+
+  .mfp-container {
+    height: 100vh !important;
+    margin-top: 25px;
+  }
+
+  .mfp-content {
+    position: relative;
+    width: auto;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: block;
+    height: 98vh !important;
+  }
+
+  img.mfp-img {
+    max-width: 70vw;
+    max-height: 90vh;
+    height: auto;
+  }
+
+  .lottie-wrapper   { bottom: 25px; align-items: center; }
+  .lottie-close-wrapper { right: 19px; top: -15px; }
+}
+
+/* ─────────────────────────────────────
+   TABLET PORTRAIT  768px – 1023px
+───────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+
+  .mfp-container { margin-bottom: 70px; }
+  .mfp-container::before { display: none; }
+
+  .mfp-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  img.mfp-img {
+    width: 76vw;
+    max-height: 95vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px !important;
+  }
+
+  .lottie-wrapper {
+    bottom: -99px;
+    align-items: center;
+  }
+
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+    width: 80px;
+    height: 80px;
+  }
+
+  .lottie-close-wrapper { top: -10px; right: 10px; }
+  .lottie-button        { width: 85px; height: 85px; }
+
+  .popup-button.boton a {
+    margin-top: 15px;
+    font-size: 2.5em;
+  }
+
+  .enlaces img { width: 70vw; }
+
+  .contacto {
+    background-image: url('/img/fin.avif');
+    background-position-x: center;
+  }
+
+  .contactate  { min-height: 200px; }
+  .tituloprin  { min-height: 215px; }
+}
+
+/* ─────────────────────────────────────
+   TABLET LANDSCAPE  768px – 1023px
+───────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+
+  .mfp-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mfp-container {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mfp-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 20px;
+    height: 80vh;
+  }
+
+  img.mfp-img {
+    max-width: 90vw;
+    max-height: 90vh !important;
+    width: auto;
+    height: 80vh;
+    object-fit: contain;
+    border-radius: 18px;
+  }
+
+  .lottie-wrapper {
+    align-items: center;
+    bottom: -60px;
+  }
+
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+    width: 70px;
+    height: 70px;
+  }
+
+  .lottie-close-wrapper { top: -13px; right: 20px; }
+  .lottie-button        { width: 45px; height: 45px; }
+
+  .popup-button.boton a { font-size: 11px; }
+
+  .portfolio-grid .item { width: calc(33.333% - 11px); } /* 3 columnas */
+
+  .contactate {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 97vw;
+    min-height: 215px;
+    margin: 10px;
+  }
+
+  .tituloprin {
+    display: none;
+    min-height: 268px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+/* ─────────────────────────────────────
+   TABLET/LAPTOP  844px – 932px
+   (iPhone Max, algunos Android grandes)
+───────────────────────────────────── */
+@media (min-width: 844px) and (max-width: 932px) {
+  .tituloprin { min-height: 200px; }
+}
+
+/* ─────────────────────────────────────
+   DESKTOP  1024px – 1368px landscape
+───────────────────────────────────── */
+@media (min-width: 1024px) and (max-width: 1368px) and (orientation: landscape) {
+
+  .mfp-container { height: 100vh; }
+  .mfp-content   { bottom: 0; }
+
+  img.mfp-img {
+    max-width: 90vw;
+    max-height: 85vh !important;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px;
+  }
+
+  .popup-button.boton a { font-size: 1.5em; }
+
+  .lottie-button  { width: 70px; height: 70px; }
+  .lottie-wrapper { align-items: center; }
+  .lottie-close-wrapper { top: -19px; right: 18px; }
+
+  .portfolio-grid .item { width: calc(25% - 12px); } /* 4 columnas */
+  .contactate  { min-height: 282px; }
+
+  .contacto {
+    background-image: url('/img/fin-1.avif');
+    background-position-y: center;
+  }
+  .tituloprin{
+    min-height: 312px;
+  }
+
+}
+
+/* ─────────────────────────────────────
+   DESKTOP PORTRAIT  ≥ 1024px portrait
+───────────────────────────────────── */
+@media (min-width: 1024px) and (orientation: portrait) {
+
+  img.mfp-img { height: 80vh; }
+
+  .mfp-content  { bottom: 40px; }
+
+  .lottie-wrapper {
+    bottom: -132px;
+    align-items: center;
+  }
+
+  .lottie-wrapper > #lottie-prev,
+  .lottie-wrapper > #lottie-next {
+    width: 120px;
+    height: 120px;
+  }
+
+  .lottie-close-wrapper { top: -23px; right: 0; }
+  .lottie-button        { width: 90px; height: 90px; }
+
+  .popup-button.boton a { font-size: 3em; }
+
+  .contacto {
+    background-image: url('/img/fin.avif');
+    background-position-x: center;
+  }
+
+  .contactate  { min-height: 250px; }
+  .tituloprin  { min-height: 240px; }
+}
+
+/* ─────────────────────────────────────
+   DESKTOP WIDE  ≥ 1280px landscape
+───────────────────────────────────── */
+@media (min-width: 1280px) and (orientation: landscape) {
+  .contacto    { min-height: 70px; }
+  .tituloprin  { min-height: 316px; }
+  .contactate  { min-height: 286px; }
+  .portfolio-menu .filter-btn { font-size: 24px; }
+}
+
+/* ─────────────────────────────────────
+   DESKTOP XL  ≥ 1367px
+───────────────────────────────────── */
+@media (min-width: 1367px) {
+
+  img.mfp-img {
+    max-height: 80vh;
+    max-width: 70vw;
+  }
+
+  .portfolio-grid .item { width: calc(25% - 12px); } /* 4 columnas */
+  .lottie-wrapper { align-items: center; }
+}
