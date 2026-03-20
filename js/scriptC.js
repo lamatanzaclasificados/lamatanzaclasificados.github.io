@@ -132,6 +132,38 @@ $(function () {
         e.stopPropagation();
         $.magnificPopup.close();
     });
+
+
+    /* ── Swipe táctil en Magnific Popup ── */
+(function () {
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    document.addEventListener('touchstart', function (e) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', function (e) {
+        // Solo actuar si el popup está abierto
+        if (!$.magnificPopup.instance.isOpen) return;
+
+        const deltaX = e.changedTouches[0].clientX - touchStartX;
+        const deltaY = e.changedTouches[0].clientY - touchStartY;
+
+        // Ignorar si el gesto fue más vertical que horizontal
+        if (Math.abs(deltaY) > Math.abs(deltaX)) return;
+
+        // Mínimo 50px para considerar que fue un swipe intencional
+        if (Math.abs(deltaX) < 50) return;
+
+        if (deltaX < 0) {
+            $.magnificPopup.instance.next(); // swipe izquierda → siguiente
+        } else {
+            $.magnificPopup.instance.prev(); // swipe derecha → anterior
+        }
+    }, { passive: true });
+})();
 });
 
 
