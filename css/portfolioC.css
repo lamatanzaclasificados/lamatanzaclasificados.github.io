@@ -25,6 +25,7 @@
 /* ── Menú de filtros ── */
 .portfolio-menu {
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -41,7 +42,7 @@
 .portfolio-menu .filter-btn {
   padding: 10px 18px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 15px;
   cursor: pointer;
   background: #f1f1f1;

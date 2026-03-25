@@ -36,14 +36,23 @@
 .navbar-menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
 }
+
 
 .navbar-menu a:hover {
   color: #f6c000;
 }
 
 /* ===== HAMBURGUESA ===== */
+/* .navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+} */
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -51,6 +60,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding: 8px; /* FIX: área de toque más grande en mobile */
 }
 
 .navbar-toggle span {
@@ -88,4 +98,13 @@
     padding: 16px;
     gap: 16px;
   }
+
+   .navbar-menu a {
+    font-size: 16px;    /* mínimo iOS para evitar zoom automático */
+    padding: 6px 0;     /* FIX: área de toque más cómoda en cada link */
+    display: block;
+  }
+  
+
+  
 }
