@@ -324,3 +324,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+window.addEventListener('orientationchange', () => {
+  setTimeout(() => {
+    const $grid = $('.portfolio-grid');
+    if ($grid.data('isotope')) {
+      $grid.isotope('layout');
+    }
+  }, 300); // pequeño delay para que el browser termine de rotar
+});

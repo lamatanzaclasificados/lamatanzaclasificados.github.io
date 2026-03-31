@@ -367,6 +367,7 @@ h2{
   font-size: 2.8em;
   }
 
+
 }
 
 /* ─────────────────────────────────────
@@ -436,23 +437,21 @@ h2{
   }
 }
 
-/*_______SEO-TEXT_____*/
-/* .seo-text {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 25px;
-    text-align: center;
-} */
+
 .seo-text {
-    max-width: 95vw;
-    margin: 5px auto;
-    padding: 5px;
+    max-width: 700px;        /* legibilidad óptima en desktop */
+    margin: 16px auto;
+    padding: 8px 16px;
     text-align: center;
-    /* background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05); */
 }
 
+.seo-text h2 {
+    font-size: clamp(1.1rem, 3.5vw, 1.6rem);  /* responsive sin media queries */
+    font-weight: 600;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+}
 .seo-text p {
     font-size: clamp(16px, 2vw, 20px);
     line-height: 1.7;
@@ -460,7 +459,6 @@ h2{
     margin-bottom: 20px;
     font-weight: 600;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -470,3 +468,5 @@ h1, h2, .navbar-logo {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
 }
+
+

@@ -156,3 +156,24 @@ img.mfp-img {
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35) !important;
 }
+
+
+/* ── Landscape en teléfonos pequeños (alto < 500px) ── */
+@media (max-height: 500px) and (orientation: landscape) {
+
+  .portfolio-grid .item {
+    width: calc(33.333% - 11px);
+  }
+
+  /* Reemplazá el height fijo por aspect-ratio vertical */
+  .portfolio-grid .item img {
+    height: auto;          /* deja que la proporción mande */
+    aspect-ratio: 3 / 4;  /* proporción vertical, ajustá si tus fotos son más largas */
+    object-fit: cover;
+  }
+
+  .portfolio-menu .filter-btn {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+}

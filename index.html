@@ -129,6 +129,7 @@
                 Clasificados en La Matanza: servicios, productos y emprendimientos
             </h1>
             <div class="portada">
+              
                 <picture>
                     <source srcset="img/portada-animada-inicio.avif" media="(min-width: 1200px)">
                     <img src="img/cortto-arriba.avif" alt="Portada" fetchpriority="high" decoding="async" width="984"
@@ -136,27 +137,30 @@
                 </picture>
 
             </div>
-            <div class="intro" data-aos="fade-left">
-                <!-- <img src="/img/Intro.avif" alt="" loading="lazy" decoding="async" height="auto"> -->
-                <div class="seo-text">
-                    <h2>
-                        En La Matanza Clasificados, podés promocionarte y llegar a nuevos clientes
-                        de forma rápida, simple y efectiva.
-                    </h2>
-                </div>
+  
+            <div class="seo-text" data-aos="fade-left">
+                <h2>
+                    En La Matanza Clasificados, podés promocionarte y llegar
+                    a nuevos clientes de forma rápida, simple y efectiva.
+                </h2>
             </div>
-
-
-
-
-
 
 
             <div class="carousel">
                 <div class="carousel-track">
-                    <div class="carousel-slide foto-1 active"></div>
-                    <div class="carousel-slide foto-2"></div>
-                    <div class="carousel-slide foto-3"></div>
+                    <div class="carousel-slide active">
+                        <img src="img/unooo.avif" alt="Todos los servicios" loading="lazy" decoding="async">
+                        
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/dosssssss.avif" alt="negocios del barrio" loading="lazy" decoding="async">
+            
+
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/tres.avif" alt="publicalo aca" loading="lazy" decoding="async">
+
+                    </div>
                 </div>
 
                 <div class="carousel-indicators">
@@ -176,7 +180,7 @@
             <section id="Galeria">
                 <div class="row" data-aos="zoom-in">
                     <div class="col-lg-12 text-center my-2">
-                        <img src="/img/boton-2.webp" width="100%" height="auto" alt="">
+                        <img src="/img/busca-encontra.avif" width="100%" height="auto" alt="">
                     </div>
                 </div>
                 <div> <img src="/img/filtros/titulo.avif" width="100%" loading="lazy" decoding="async"></div>
@@ -274,7 +278,8 @@
                     <div class="item tecnico gallery">
                         <a href="/img/negocio21.avif" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light">
-                            <img class="img-fluid" src="/img/negocio21.avif" alt="comercio en la matanza" loading="lazy">
+                            <img class="img-fluid" src="/img/negocio21.avif" alt="comercio en la matanza"
+                                loading="lazy">
                         </a>
                     </div>
 
@@ -372,28 +377,36 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- imagesLoaded (necesario para Isotope + imágenes) -->
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <!-- Isotope -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
     <!-- Magnific Popup -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- Lottie -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-       AOS.init({
-            once: false, // Permite que se repita si hacés scroll varias veces
+        AOS.init({
+            once: false, 
             duration: 800,
             offset: 120
         });
-        
-    </script>
+
+    </script> -->
+
+    <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"
+        onload="AOS.init({ once: false, duration: 800, offset: 120 })">
+        </script>
+
+
+
     <script src="/js/portfolio-filter.js"></script>
     <!-- <script src="/js/script-3.js"></script> -->
     <script src="/js/scriptC.js"></script>
