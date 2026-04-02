@@ -111,7 +111,7 @@
   justify-content: center;
   width: 100%;
   min-height: 50vh;
-  background-image: url('/img/fin-1.avif');
+  background-image: url('/img/fin-11.avif');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -186,6 +186,6 @@
 .verde  { color: green; }
 
 /* ── Carousel fondos ── */
-.foto-1 { background: url(/img/unooo.avif) center center/cover no-repeat #000; }
+/* .foto-1 { background: url(/img/unooo.avif) center center/cover no-repeat #000; }
 .foto-2 { background: url(/img/dosssssss.avif) center center/cover no-repeat #000; }
-.foto-3 { background: url(/img/tres.avif) center center/cover no-repeat #000; }
+.foto-3 { background: url(/img/tres.avif) center center/cover no-repeat #000; } */
