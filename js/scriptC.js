@@ -231,7 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
         '.barber':  '/img/filtros/barberia.avif',
         '.pastel':  '/img/filtros/pasteleria.avif',
         '.canina':  '/img/filtros/canina.avif',
-        '.eventos': '/img/filtros/eventos.avif'
+        '.eventos': '/img/filtros/eventos.avif',
+        '.oficios': '/img/filtros/oficios.avif',
+        '.impresiones':'/img/filtros/impresiones.avif'        
     };
 
     buttons.forEach(btn => {
