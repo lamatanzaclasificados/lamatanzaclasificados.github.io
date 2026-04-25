@@ -4,8 +4,9 @@
    Isotope maneja el posicionamiento — NO usar display:grid
    El ancho de cada item se controla con calc()            */
 .portfolio-grid .item {
-  width: calc(50% - 8px); /* mobile: 2 columnas, gap 16px */
+  width: calc(50% - 10px); /* mobile: 2 columnas, gap 16px */
   margin-bottom: 16px;
+ display: block;
 }
 
 .portfolio-grid .item img {
@@ -72,9 +73,21 @@
   cursor: pointer;
 }
 
-.lottie-close-wrapper {
+/* .lottie-close-wrapper {
   position: absolute;
   z-index: 10000;
+} */
+
+.lottie-close-wrapper {
+ 
+position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10000;
+  width: 50px;
+  height: 50px;
+
+
 }
 
 .lottie-wrapper {
@@ -136,6 +149,7 @@
 
 .mfp-close { display: none; }
 
+
 .mfp-content,
 .mfp-figure {
   background: transparent !important;
@@ -150,11 +164,24 @@
   overflow: visible !important;
 }
 
+/* img.mfp-img {
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35) !important;
+} */
+
 img.mfp-img {
   padding: 0 !important;
   background: none !important;
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35) !important;
+  /* ↓ agregar estas dos líneas */
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 

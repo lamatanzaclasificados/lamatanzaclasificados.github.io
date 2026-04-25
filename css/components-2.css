@@ -71,13 +71,23 @@
   display: none;
   width: 100%;
   min-height: 100px;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 20px;
   opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease;
+
+   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 12px; /* opcional pero recomendado */
+
+  /* transform: translateY(0);
+  transition: all 0.6s ease; */
+}
+.tit-seleccionar img{
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 12px; /* opcional pero recomendado */
+
 }
 
 .animar-titulo {
@@ -164,7 +174,7 @@
 .enlaces img:hover { transform: scale(1.05); }
 
 /* ── Contactate (banner) ── */
-.contactate {
+/* .contactate {
   background-image: url("/img/filtros/contactate.avif");
   background-size: contain;
   background-repeat: no-repeat;
@@ -178,6 +188,26 @@
   min-height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
+} */
+
+.contactate {
+  background-image: url("/img/filtros/contactate.avif");
+  background-size: cover; /* 🔥 cambio clave */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 180px;
+
+  margin: 20px 0;
+  position: relative;
+
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 12px; /* opcional pero recomendado */
 }
 
 /* ── Colores utilitarios (si los usás en HTML) ── */

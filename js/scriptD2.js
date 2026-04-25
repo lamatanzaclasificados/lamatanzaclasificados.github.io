@@ -5,13 +5,23 @@
 ───────────────────────────────────── */
 jQuery(document).ready(function ($) {
 
-    var $grid = $('.portfolio-grid').isotope({
+ /*   var $grid = $('.portfolio-grid').isotope({
         itemSelector: '.item',
         layoutMode: 'fitRows',
         fitRows: {
             gutter: 16  /* mismo valor que margin-bottom de .item */
-        }
-    });
+       // }
+    //});
+
+
+    var $grid = $('.portfolio-grid').isotope({
+    itemSelector: '.item',
+    layoutMode: 'masonry',   // ← más robusto que fitRows
+    masonry: {
+        columnWidth: '.item', // lee el CSS directamente
+        gutter: 16
+    }
+});
     function actualizarActivos() {
     const iso = $grid.data('isotope');
     if (!iso) return;
@@ -21,11 +31,14 @@ jQuery(document).ready(function ($) {
     iso.filteredItems.forEach(item => {
         $(item.element).find('.popup-image').addClass('activo');
     });
+
+    
 }
 
 
 // Ejecutar en cada filtrado
 $grid.on('arrangeComplete', actualizarActivos);
+
 // Forzar primer estado
 //$grid.isotope('layout');
 
@@ -55,10 +68,14 @@ $grid.imagesLoaded(function () {
 });
 
 
+
+
+
 /* ─────────────────────────────────────
    MAGNIFIC POPUP + LOTTIE LAZY
 ───────────────────────────────────── */
 $(function () {
+  
 
     // Lottie se carga solo la primera vez que se abre un popup
     let lottieInicializado = false;
@@ -88,6 +105,8 @@ $(function () {
     }
 
     $('.portfolio-grid').magnificPopup({
+
+
     delegate: '.popup-image.activo', // 👈 SOLO LOS FILTRADOS
         type: 'image',
         gallery: { enabled: true },
@@ -127,6 +146,7 @@ $(function () {
                 if (closeWrapper)  document.body.appendChild(closeWrapper);
             }
         }
+            
     });
 
     function agregarBotonEnlace(item) {
@@ -260,8 +280,13 @@ document.addEventListener('DOMContentLoaded', () => {
         '.canina':  '/img/filtros/canina.avif',
         '.eventos': '/img/filtros/eventos.avif',
         '.oficios': '/img/filtros/oficios.avif',
-        '.graficas':'/img/filtros/graficas.avif'
-
+        '.graficas':'/img/filtros/graficas.avif',
+        '.comercios':'/img/filtros/comercios.avif',
+        '.gym':'/img/filtros/gym.avif',
+        '.salud':'/img/filtros/salud.avif',
+        '.mecanica':'/img/filtros/mecanicos.avif',
+        '.modista':'/img/filtros/modista.avif',
+        '.indumentaria':'/img/filtros/indumentaria.avif'
     };
 
     buttons.forEach(btn => {
@@ -321,9 +346,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const botones = document.querySelectorAll('.filter-btn');
     const titulo  = document.querySelector('.tituloprin');
 
-    function scrollPremium(target, duration = 800) {
+// 👇 función mejorada
+function scrollPremium(target, duration = 800) {
+    const start = window.pageYOffset;
+
+    // getBoundingClientRect da la posición real en el viewport en el momento
+    // del click; sumando pageYOffset obtenemos la posición absoluta en el
+    // documento, sin depender del tamaño de los divs contenedores.
+    // El offset se calcula dinámicamente según la altura real del navbar,
+    // para que funcione igual en todos los dispositivos.
+    const navbar = document.querySelector('.navbar') || document.querySelector('nav');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+    const offset = navbarHeight - 50; // 10px de margen visual extra
+    const end = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    const distance = end - start;
+    let startTime = null;
+
+    function easeInOutCubic(t) {
+        return t < 0.5
+            ? 4 * t * t * t
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        window.scrollTo(0, start + distance * easeInOutCubic(progress));
+
+        if (elapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
+
+    /*function scrollPremium(target, duration = 800) {
         const start    = window.pageYOffset;
-        const end      = target.getBoundingClientRect().top + start - 30;
+        const end      = target.getBoundingClientRect().top + start - 0;
         const distance = end - start;
         let startTime  = null;
 
@@ -342,16 +406,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         requestAnimationFrame(animation);
-    }
+    }*/
 
-    botones.forEach(boton => {
+
+        const $grid = $('.portfolio-grid');
+
+botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+
+        // Esperar a que Isotope termine de ordenar
+        $grid.one('arrangeComplete', function () {
+
+            // Doble requestAnimationFrame: el primero avisa al browser que
+            // queremos medir, el segundo espera a que el browser haya
+            // terminado de pintar el nuevo layout (incluyendo el #titulo-filtro
+            // que pasó de display:none a display:flex). Sin este delay,
+            // getBoundingClientRect devuelve la posición pre-layout en
+            // dispositivos lentos y el scroll termina más abajo.
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    scrollPremium(titulo);
+
+                    // reiniciar animación del título
+                    titulo.classList.remove('animar-titulo');
+                    void titulo.offsetWidth;
+                    titulo.classList.add('animar-titulo');
+                });
+            });
+
+        });
+
+    });
+});
+
+    /*botones.forEach(boton => {
         boton.addEventListener('click', () => {
             scrollPremium(titulo);
             titulo.classList.remove('animar-titulo');
             void titulo.offsetWidth; // fuerza reflow para reiniciar animación
             titulo.classList.add('animar-titulo');
         });
-    });
+    });*/
 
 });
 
