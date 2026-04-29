@@ -133,38 +133,6 @@
 
 
 
-/* .tap-lottie::before {
-    content: '👆';
-    font-size: 22px;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: tap-bounce 1.4s ease-in-out infinite;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
-}
-
-.tap-lottie::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.25);
-    animation: tap-ripple 1.4s ease-out infinite;
-} */
-
-/* @keyframes tap-bounce {
-    0%, 100% { transform: translateY(0) scale(1);    opacity: 0.85; }
-    50%       { transform: translateY(-5px) scale(1.15); opacity: 1;    }
-}
-
-@keyframes tap-ripple {
-    0%   { transform: scale(0.6); opacity: 0.6; }
-    100% { transform: scale(1.6); opacity: 0;   }
-} */
-
-
 /* Reemplaza las ~70 instancias de Lottie */
 .tap-lottie {
    position: absolute;
@@ -177,13 +145,6 @@
     background: url('/img/Touch-animation.webp')center/contain no-repeat;
   
   }
-/* 
-@keyframes tap-pulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50%       { transform: scale(1.2); opacity: 1; }
-} */
- /**/
-
 
 /* ── Contacto ── */
 .contacto {
@@ -245,22 +206,7 @@
 
 .enlaces img:hover { transform: scale(1.05); }
 
-/* ── Contactate (banner) ── */
-/* .contactate {
-  background-image: url("/img/filtros/contactate.avif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  position: relative;
-  min-height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
+
 
 .contactate {
   background-image: url("/img/filtros/contactate.avif");
@@ -287,7 +233,3 @@
 .violet { color: rgb(143, 2, 199); }
 .verde  { color: green; }
 
-/* ── Carousel fondos ── */
-/* .foto-1 { background: url(/img/unooo.avif) center center/cover no-repeat #000; }
-.foto-2 { background: url(/img/dosssssss.avif) center center/cover no-repeat #000; }
-.foto-3 { background: url(/img/tres.avif) center center/cover no-repeat #000; } */
