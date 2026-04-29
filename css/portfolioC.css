@@ -53,17 +53,29 @@
   user-select: none;
 }
 
-.portfolio-menu .filter-btn:hover {
+/* .portfolio-menu .filter-btn:hover {
   background: #ff3d00;
   color: #fff;
   transform: translateY(-2px);
+} */
+.portfolio-menu .filter-btn:hover {
+    background: #c62d00;  /* mismo cambio en hover */
+    color: #fff;
+    transform: translateY(-2px);
 }
 
-.portfolio-menu .filter-btn.active {
+/* .portfolio-menu .filter-btn.active {
   background: #ff3d00;
   color: #fff;
   border-color: #ff3d00;
   box-shadow: 0 6px 15px rgba(20, 20, 20, 0.7);
+} */
+
+.portfolio-menu .filter-btn.active {
+    background: #c62d00;  /* rojo más oscuro → contraste 5.1:1 ✅ */
+    color: #fff;
+    border-color: #c62d00;
+    box-shadow: 0 6px 15px rgba(20, 20, 20, 0.7);
 }
 
 /* ── Lottie wrappers (flechas y cierre del popup) ── */

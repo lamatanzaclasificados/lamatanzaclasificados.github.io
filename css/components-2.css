@@ -142,7 +142,8 @@
     height: 60px;
     z-index: 2;
     pointer-events: none;
-    background: url('/img/Touch-animation.webp')center/contain no-repeat;
+    /* background: url('/img/Touch-animation.avif')center/contain no-repeat; */
+    background: url('/img/Touch-animation.webp')center/contain;
   
   }
 
