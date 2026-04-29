@@ -101,7 +101,7 @@
 }
 
 /* ── Tap Lottie (ícono de toque en cards) ── */
-.tap-lottie {
+/* .tap-lottie {
   position: absolute;
   bottom: -4px;
   left: 60%;
@@ -111,7 +111,79 @@
   z-index: 10;
   pointer-events: none;
   opacity: 0.9;
+} */
+
+
+/*tap */
+
+ /* ── Tap indicator CSS (reemplaza 70 instancias de Lottie) ── */
+.item {
+    position: relative; /* necesario si no lo tenía */
 }
+
+.tap-lottie {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+
+/* .tap-lottie::before {
+    content: '👆';
+    font-size: 22px;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: tap-bounce 1.4s ease-in-out infinite;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+
+.tap-lottie::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    animation: tap-ripple 1.4s ease-out infinite;
+} */
+
+/* @keyframes tap-bounce {
+    0%, 100% { transform: translateY(0) scale(1);    opacity: 0.85; }
+    50%       { transform: translateY(-5px) scale(1.15); opacity: 1;    }
+}
+
+@keyframes tap-ripple {
+    0%   { transform: scale(0.6); opacity: 0.6; }
+    100% { transform: scale(1.6); opacity: 0;   }
+} */
+
+
+/* Reemplaza las ~70 instancias de Lottie */
+.tap-lottie {
+   position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    pointer-events: none;
+    background: url('/img/Touch-animation.webp')center/contain no-repeat;
+  
+  }
+/* 
+@keyframes tap-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50%       { transform: scale(1.2); opacity: 1; }
+} */
+ /**/
+
 
 /* ── Contacto ── */
 .contacto {

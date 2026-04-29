@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ── Tap Lottie (ícono de toque en cada card) ── */
-    document.querySelectorAll('.item').forEach(item => {
+   /* document.querySelectorAll('.item').forEach(item => {
         const div = document.createElement('div');
         div.classList.add('tap-lottie');
         item.prepend(div);
@@ -339,7 +339,14 @@ document.addEventListener('DOMContentLoaded', () => {
             autoplay: true,
             path: '/json/Touch animation blue.json'
         });
-    });
+    });*/
+
+    /* ── Tap indicator (CSS, sin Lottie) ── */
+document.querySelectorAll('.item').forEach(item => {
+    const div = document.createElement('div');
+    div.classList.add('tap-lottie');
+    item.prepend(div);
+});
 
 
     /* ── Scroll premium al filtrar ── */
