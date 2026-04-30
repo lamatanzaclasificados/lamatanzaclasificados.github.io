@@ -867,6 +867,8 @@
                 offset: 50
             });
             AOS.refresh(); // recalcula posiciones
+             // Segunda pasada por si el layout se acomodó después del load
+            setTimeout(() => AOS.refresh(), 500);
 
         });
     </script>
