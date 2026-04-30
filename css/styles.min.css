@@ -410,7 +410,7 @@ img.mfp-img {
 
 
 .animar-titulo {
-    animation: entradaPremium 1s ease forwards;
+    animation: entradaPremium 2s ease forwards;
 }
 
 @keyframes entradaPremium {
