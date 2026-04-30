@@ -14,13 +14,17 @@
     <meta property="og:type" content="website">
 
 
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://code.jquery.com">
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/styles.min.css">
+
     
 
 
@@ -726,7 +730,7 @@
                 </div>
             </section>
             <div class="contactate" data-aos="fade-up">
-                </div>
+            </div>
 
 
         </div>
@@ -815,15 +819,16 @@
         </div>
     </div>
 
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="/js/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> -->
     <script>
         window.addEventListener('load', function () {
             AOS.init({
                 once: false,
-                duration: 500,
+                duration: 300,
                 offset: 50
             });
+            AOS.refresh(); // recalcula posiciones
 
         });
     </script>
