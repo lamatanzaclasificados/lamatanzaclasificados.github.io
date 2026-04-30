@@ -90,7 +90,7 @@
 
 }
 
-.animar-titulo {
+/* .animar-titulo {
   animation: entradaPremium 0.8s ease;
 }
 
@@ -98,6 +98,17 @@
   0%   { opacity: 0; transform: translateY(40px); }
   60%  { opacity: 1; transform: translateY(-8px); }
   100% { transform: translateY(0); }
+} */
+
+
+.animar-titulo {
+    animation: entradaPremium 1s ease forwards;
+}
+
+@keyframes entradaPremium {
+    0%   { opacity: 0; transform: translateY(40px); }
+    60%  { opacity: 1; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* ── Tap Lottie (ícono de toque en cards) ── */
@@ -121,31 +132,25 @@
     position: relative; /* necesario si no lo tenía */
 }
 
-.tap-lottie {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 34px;
-    height: 34px;
-    z-index: 2;
-    pointer-events: none;
-}
+
 
 
 
 /* Reemplaza las ~70 instancias de Lottie */
-.tap-lottie {
-   position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    pointer-events: none;
-    /* background: url('/img/Touch-animation.avif')center/contain no-repeat; */
-    background: url('/img/touch-animacion.webp')center/contain;
-  
-  }
+
+   .tap-lottie {
+  position: absolute;
+  bottom: -4px;
+  left: 60%;
+  width: 60px;
+  height: 60px;
+  background: url('/img/touch-animacion.webp')center/contain;
+  transform: translateX(22%);
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.9;
+
+}
 
 /* ── Contacto ── */
 .contacto {
@@ -159,6 +164,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position-x: center;
 }
 
 .contacto::before {
