@@ -866,11 +866,13 @@
                 duration: 500,
                 offset: 50
             });
-            AOS.refresh(); // recalcula posiciones
-             // Segunda pasada por si el layout se acomodó después del load
-            setTimeout(() => AOS.refresh(), 500);
-
+            
         });
+        window.addEventListener('load', function () {
+        AOS.refresh(); // recalcula posiciones
+
+        setTimeout(() => AOS.refresh(), 500); // Segunda pasada por si el layout se acomodó después del load
+    });
     </script>
 
 
