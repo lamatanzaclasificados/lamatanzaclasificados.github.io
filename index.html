@@ -868,10 +868,17 @@
             });
             
         });
-        window.addEventListener('load', function () {
+       /* window.addEventListener('load', function () {
         AOS.refresh(); // recalcula posiciones
 
-        setTimeout(() => AOS.refresh(), 500); // Segunda pasada por si el layout se acomodó después del load
+        setTimeout(() => AOS.refresh(), 500); 
+    });*/ 
+
+    window.addEventListener('load', function () {
+        // Espera que todas las imágenes del grid estén cargadas
+        imagesLoaded('.portfolio-grid', function () {
+            AOS.refresh();
+        });
     });
     </script>
 
