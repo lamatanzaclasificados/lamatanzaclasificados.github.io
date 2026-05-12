@@ -465,3 +465,40 @@ window.addEventListener('orientationchange', () => {
     }
   }, 300); // pequeño delay para que el browser termine de rotar
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const items = document.querySelectorAll('.portfolio-grid .item');
+
+    let visibleItems = 12;
+    const step = 12;
+
+    items.forEach((item, index) => {
+        if (index >= visibleItems) {
+            item.style.display = 'none';
+        }
+    });
+
+    const button = document.getElementById('load-more-btn');
+
+    button.addEventListener('click', () => {
+
+        visibleItems += step;
+
+        items.forEach((item, index) => {
+            if (index < visibleItems) {
+                item.style.display = '';
+            }
+        });
+
+        // refresca isotope
+        $('.portfolio-grid').isotope('layout');
+
+        // ocultar botón si ya no quedan más
+        if (visibleItems >= items.length) {
+            button.style.display = 'none';
+        }
+
+    });
+
+});
