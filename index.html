@@ -1040,6 +1040,22 @@
         });
     </script>
 
+    <script>
+      document.querySelectorAll('.portfolio-grid .item a[href]').forEach(function(link) {
+        var preloaded = false;
+        function preload() {
+          if (preloaded) return;
+          preloaded = true;
+          new Image().src = link.getAttribute('href');
+        }
+        link.addEventListener('mouseenter', preload);
+        link.addEventListener('touchstart', preload, { passive: true });
+      });
+    </script>
+
+</body>
+</html>
+
 
 
 </body>
