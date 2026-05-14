@@ -52,7 +52,7 @@ main {
     border-radius: 10px;
     background: #111;
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
     transition: 0.3s;
 }

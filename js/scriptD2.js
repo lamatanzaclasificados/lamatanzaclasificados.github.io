@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
             gutter: 16
         }
     });
-    function actualizarActivos() {
+    /*function actualizarActivos() {
         const iso = $grid.data('isotope');
         if (!iso) return;
 
@@ -33,6 +33,20 @@ jQuery(document).ready(function ($) {
         });
 
 
+    }*/
+
+    window.actualizarActivos = function() {
+        const iso = $('.portfolio-grid').data('isotope');
+        if (!iso) return;
+
+        $('.popup-image').removeClass('activo');
+
+        iso.filteredItems.forEach(item => {
+            const el = item.element;
+            if (el.style.display !== 'none') {
+                $(el).find('.popup-image').addClass('activo');
+            }
+        });
     }
 
 
@@ -58,13 +72,27 @@ jQuery(document).ready(function ($) {
     });
 
     // Filtro del menú
-    $('.portfolio-menu ul li').click(function () {
+    /*$('.portfolio-menu ul li').click(function () {
         $('.portfolio-menu ul li').removeClass('active');
         $(this).addClass('active');
         var selector = $(this).attr('data-filter');
         $grid.isotope({ filter: selector });
         return false;
+    });*/
+
+    // Filtro del menú — reemplaza el bloque actual
+    $('.portfolio-menu ul li').click(function () {
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+        var selector = $(this).attr('data-filter');
+        window.currentFilter = selector;
+        if (window.resetLoadMore) window.resetLoadMore(selector);
+        // Ya no llamar a $grid.isotope({ filter: selector }) acá,
+        // applyVisibility lo hace internamente
+        return false;
     });
+
+
 });
 
 
@@ -449,52 +477,50 @@ document.addEventListener("DOMContentLoaded", () => {
         return items.filter(item => item.matches(filter));
     }
 
-    /*function applyVisibility() {
+    function applyVisibility(soloLayout = false) {
         const filter = window.currentFilter || '*';
         const filteredItems = getFilteredItems(filter);
+        const isTodo = filter === '*';
 
         items.forEach(item => {
             const inFilter = filter === '*' || item.matches(filter);
-            const inPage = filteredItems.indexOf(item) < visibleCount;
+            // En "Todo" se pagina; en cualquier otra sección se muestran todas
+            const idx = filteredItems.indexOf(item);
+            const inPage = isTodo ? idx < visibleCount : idx >= 0;
             item.style.display = (inFilter && inPage) ? '' : 'none';
         });
 
-        Recalcular layout de Isotope tras cambiar display
-        $('.portfolio-grid').isotope('layout');
-
-        button.style.display = (filter === '*' && visibleCount < filteredItems.length) ? '' : 'none';
-    }*/
-
-    function applyVisibility() {
-        const filter = window.currentFilter || '*';
-        const filteredItems = getFilteredItems(filter);
-
-        items.forEach(item => {
-            const inFilter = filter === '*' || item.matches(filter);
-            const inPage = filteredItems.indexOf(item) < visibleCount;
-            item.style.display = (inFilter && inPage) ? '' : 'none';
-        });
-
-        // Solo llamar si Isotope ya fue inicializado
         const $grid = $('.portfolio-grid');
+
         if ($grid.data('isotope')) {
-            $grid.isotope('layout');
+            if (soloLayout) {
+                $grid.isotope('layout');
+                window.actualizarActivos && window.actualizarActivos();
+            } else {
+                $grid.one('arrangeComplete', function () {
+                    window.actualizarActivos && window.actualizarActivos();
+                });
+                $grid.isotope({ filter: filter });
+            }
+        } else {
+            window.actualizarActivos && window.actualizarActivos();
         }
 
-        button.style.display = (filter === '*' && visibleCount < filteredItems.length) ? '' : 'none';
+        // El botón solo aparece en "Todo" y si quedan items por mostrar
+        button.style.display = (isTodo && visibleCount < filteredItems.length) ? '' : 'none';
     }
 
     window.resetLoadMore = function (newFilter) {
         window.currentFilter = newFilter;
-        visibleCount = 8;
-        applyVisibility();
+        visibleCount = 8;   // se resetea siempre, pero solo importa en "*"
+        applyVisibility(false);
     };
 
     const button = document.getElementById('load-more-btn');
-    applyVisibility();
+    applyVisibility(false);
 
     button.addEventListener('click', () => {
         visibleCount += step;
-        applyVisibility();
+        applyVisibility(true);
     });
 });
