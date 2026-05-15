@@ -504,7 +504,7 @@ img.mfp-img {
   left: 60%;
   width: 60px;
   height: 60px;
-  background: url('/img/Touch-animation-b.webp')center/contain;
+  background: url('/img/Touch-animation-bb.webp')center/contain;
   transform: translateX(22%);
   z-index: 10;
   pointer-events: none;
