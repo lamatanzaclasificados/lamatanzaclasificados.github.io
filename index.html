@@ -104,7 +104,28 @@
     </style>
 
     <!-- <link rel="preload" as="image" href="/img/unooo_compressed.avif" type="image/avif"> -->
-    <link rel="preload" as="image" href="/img/unooo_compressed.avif" type="image/avif" fetchpriority="high">
+    <!-- <link rel="preload" as="image" href="/img/unooo_compressed.avif" type="image/avif" fetchpriority="high"> -->
+   
+    <!-- Reemplazar el link rel="preload" por esto -->
+<script>
+(function () {
+    var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    var slow = conn && (conn.saveData || 
+               conn.effectiveType === 'slow-2g' || 
+               conn.effectiveType === '2g' || 
+               conn.effectiveType === '3g');
+    if (!slow) {
+        var pre = document.createElement('link');
+        pre.rel = 'preload';
+        pre.as = 'image';
+        pre.href = '/img/unooo_compressed.avif';
+        pre.type = 'image/avif';
+        pre.fetchPriority = 'high';
+        document.head.appendChild(pre);
+    }
+    if (slow) document.documentElement.classList.add('lite-mode');
+})();
+</script>
 
 </head>
 
@@ -143,9 +164,10 @@
             <div class="portada">
 
                 <picture>
-                    <source srcset="img/portada-animada-inicio_compressed.avif" media="(min-width: 1200px)">
-                    <img src="img/cortto-arriba_compressed.avif" alt="Portada" fetchpriority="high" decoding="async"
-                        width="984" height="690">
+                    <source data-srcset="img/portada-animada-inicio_compressed.avif" media="(min-width: 1200px)">
+                  <!--  <img src="img/cortto-arriba_compressed.avif" alt="Portada" fetchpriority="high" decoding="async"
+                        width="984" height="690"> -->
+                    <img data-src="img/cortto-arriba_compressed.avif" data-src-lite="img/portada-lite.avif" fetchpriority="high" decoding="async" width="984" height="690">    
                 </picture>
 
             </div>
@@ -161,8 +183,10 @@
             <div class="carousel">
                 <div class="carousel-track">
                     <div class="carousel-slide active">
-                        <img src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
-                            fetchpriority="high" decoding="async">
+                        <!--<img src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
+                            fetchpriority="high" decoding="async">-->
+                        <img data-src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
+                            fetchpriority="high" decoding="async">    
 
                     </div>
                     <div class="carousel-slide">
@@ -1051,12 +1075,12 @@
     // ── Detección de conexión (compartida) ──
     function getIsSlow() {
         // ← TEMPORAL para testing, sacar antes de subir
-      // return true;
+       return true;
 
-       const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-       const saveData = conn?.saveData || false;
-       const effectiveType = conn?.effectiveType || null;
-       return saveData || effectiveType === 'slow-2g' || effectiveType === '2g';
+       //const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+     //  const saveData = conn?.saveData || false;
+     //  const effectiveType = conn?.effectiveType || null;
+     //  return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
     }
 
     // ── DOMContentLoaded: actualizar href ANTES de que Isotope arranque ──
@@ -1069,7 +1093,57 @@
         }
     }); comento para probar lo que sigue*/
 
+
     document.addEventListener('DOMContentLoaded', () => {
+    //const isLite = document.documentElement.classList.contains('lite-mode');
+    const isLite = getIsSlow();
+
+    // ── Portada ──
+    const portadaImg    = document.querySelector('.portada img');
+    const portadaSource = document.querySelector('.portada source');
+    if (portadaImg) {
+        portadaImg.src = isLite
+            ? (portadaImg.dataset.srcLite || 'img/portada-lite.avif')
+            : portadaImg.dataset.src;
+        portadaImg.removeAttribute('data-src');
+    }
+    //if (portadaSource) portadaSource.srcset = isLite ? '' : portadaSource.dataset.srcset || '';
+
+    // Solo activar la variante desktop si conexión es rápida
+if (!isLite && portadaSource) {
+    portadaSource.srcset = portadaSource.dataset.srcset;
+}
+
+
+
+    // ── Carousel ──
+    const carousel     = document.querySelector('.carousel');
+    const carouselLite = document.querySelector('.carousel-lite');
+    if (isLite) {
+        if (carousel)     carousel.style.display = 'none';
+        if (carouselLite) carouselLite.style.display = 'block';
+    } else {
+        // carga normal de slides
+        document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
+            img.src = img.dataset.src;
+        });
+    }
+
+ 
+
+    // ── Swap hrefs del popup ──
+    if (isLite) {
+        document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
+            if (!a.href.includes('/img/low/'))
+                a.href = a.href.replace('/img/', '/img/low/');
+        });
+    }
+});
+
+
+
+
+   /* document.addEventListener('DOMContentLoaded', () => {
     if (getIsSlow()) {
 
         // ── Swap portada ──
@@ -1097,7 +1171,7 @@
         });
 
     }
-});
+});*/
 
 
 
@@ -1131,7 +1205,8 @@
         a.href = a.href.replace('/img/', '/img/low/');
     });
 
-    document.body.classList.add('lite-mode');
+   // document.body.classList.add('lite-mode');
+    document.documentElement.classList.add('lite-mode');
 }
 
         if (typeof AOS !== 'undefined') {
