@@ -81,6 +81,36 @@ section:not(:first-child) { /* evita doble padding */ }
   margin-top: 20px;
 }
 
+/*Manejo del spinner*/
+.portada { position: relative; }
+
+.img-spinner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.img-spinner::after {
+    content: '';
+    width: 36px;
+    height: 36px;
+    border: 3px solid #ddd;
+    border-top-color: #e6b800; /* amarillo de tu marca */
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.portada.loaded .img-spinner {
+    display: none;
+}
+/*fin spinner*/
 
 /*conexion lenta*/
 
@@ -2024,15 +2054,15 @@ h2 {
     bottom: -81px;
   }
   .fallback-button {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     font-size: 60px;
   }
   .fallback-close-wrapper{
     top: -30px;
-    right: 30px;
-    width: 70px;
-    height: 70px;
+    right: 12px;
+    width: 65px;
+    height: 65px;
   }
   .mfp-content{
     margin-top: -74px;

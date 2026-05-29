@@ -163,6 +163,8 @@
             </h1>
             <div class="portada">
 
+                <div class="img-spinner"></div>
+
                 <picture>
                     <source data-srcset="img/portada-animada-inicio_compressed.avif" media="(min-width: 1200px)">
                   <!--  <img src="img/cortto-arriba_compressed.avif" alt="Portada" fetchpriority="high" decoding="async"
@@ -1074,7 +1076,7 @@
     // ── Detección de conexión (compartida) ──
     function getIsSlow() {
         // ← TEMPORAL para testing, sacar antes de subir
-     //  return true;
+      // return true;
 
        const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
        const saveData = conn?.saveData || false;
@@ -1106,6 +1108,15 @@
             : portadaImg.dataset.src;
         portadaImg.removeAttribute('data-src');
     }
+
+    portadaImg.addEventListener('load', () => {
+    portadaImg.closest('.portada').classList.add('loaded');
+});
+portadaImg.addEventListener('error', () => {
+    portadaImg.closest('.portada').classList.add('loaded'); // oculta spinner igual
+});
+
+
     //if (portadaSource) portadaSource.srcset = isLite ? '' : portadaSource.dataset.srcset || '';
 
     // Solo activar la variante desktop si conexión es rápida
