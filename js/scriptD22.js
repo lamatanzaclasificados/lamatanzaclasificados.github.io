@@ -399,7 +399,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ── Tap indicator (CSS, sin Lottie) ── */
-    if(!isLite){
+    const { isSlow } = detectarConexion();
+    if(!isSlow){
     document.querySelectorAll('.item').forEach(item => {
         const div = document.createElement('div');
         div.classList.add('tap-lottie');
@@ -418,7 +419,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const navbar = document.querySelector('.navbar') || document.querySelector('nav');
         const navbarHeight = navbar ? navbar.offsetHeight : 0;
         const offset = navbarHeight - 50;
-        const end = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        //const end = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        // ✅ Después — posición absoluta en el documento, siempre correcta
+        const end = target.offsetTop - offset;
         const distance = end - start;
         let startTime = null;
 
