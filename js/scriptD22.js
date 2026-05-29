@@ -171,6 +171,20 @@ $(function () {
                 $('#lottie-next').css('display', 'flex');
                 $('.lottie-close-wrapper').css('display', 'flex');
             },
+            beforeChange: function () {
+                // Ocultar imagen al cambiar
+                const mfpImg = document.querySelector('.mfp-img');
+                if (mfpImg) mfpImg.style.opacity = '0';
+            },
+
+            imageLoadComplete: function () {
+                // Mostrar imagen cuando terminó de cargar
+                const mfpImg = document.querySelector('.mfp-img');
+                if (mfpImg) {
+                    mfpImg.style.transition = 'opacity 0.3s ease';
+                    mfpImg.style.opacity = '1';
+                }
+            },
             change: function () {
                 const item = this.currItem;
                 setTimeout(() => agregarBotonEnlace(item), 50);
@@ -400,13 +414,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ── Tap indicator (CSS, sin Lottie) ── */
     const { isSlow } = detectarConexion();
-    if(!isSlow){
-    document.querySelectorAll('.item').forEach(item => {
-        const div = document.createElement('div');
-        div.classList.add('tap-lottie');
-        item.prepend(div);
-    
-    });
+    if (!isSlow) {
+        document.querySelectorAll('.item').forEach(item => {
+            const div = document.createElement('div');
+            div.classList.add('tap-lottie');
+            item.prepend(div);
+
+        });
     }
 
 
@@ -420,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const navbarHeight = navbar ? navbar.offsetHeight : 0;
         const offset = navbarHeight - 50;
         //const end = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        
+
         // ✅ Después — posición absoluta en el documento, siempre correcta
         const end = target.offsetTop - offset;
         const distance = end - start;
