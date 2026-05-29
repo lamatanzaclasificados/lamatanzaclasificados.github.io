@@ -89,6 +89,14 @@ section:not(:first-child) { /* evita doble padding */ }
   transition: none !important;
 }
 
+/* Por defecto: normal visible, lite oculta */
+.busca-lite   { display: none; }
+
+/* En lite-mode: se invierten */
+.lite-mode .busca-normal { display: none; }
+.lite-mode .busca-lite   { display: block; }
+
+
 .fallback-close-wrapper {
     position: absolute;
     top: -17px;

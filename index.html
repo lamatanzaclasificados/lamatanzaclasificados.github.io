@@ -225,8 +225,11 @@
             <section id="Galeria" class="galeria">
                 <div class="row" data-aos="zoom-in">
                     <div class="col-lg-12 text-center my-2">
-                        <img src="/img/busca-encontra.avif" width="1200" height="400" alt="busca y encuentra"
+                        <img src="/img/busca-encontra.avif" class="busca-normal" width="1200" height="400" alt="busca y encuentra"
                             loading="lazy" decoding="async" style="width:100%; height:auto;">
+                        
+                        <img src="/img/busca-encontra-lite.avif" class="busca-lite" width="616" height="185" alt="busca y encuentra"
+                            loading="lazy" decoding="async" style="width:100%; height:auto;">    
                     </div>
                 </div>
                 <div class="tit-seleccionar" data-aos="fade-up"> <img src="/img/filtros/titulo.avif" width="1200"
@@ -941,10 +944,6 @@
                         </a>
                     </div>
 
-
-
-
-
                 </div>
 
 
@@ -1075,12 +1074,12 @@
     // ── Detección de conexión (compartida) ──
     function getIsSlow() {
         // ← TEMPORAL para testing, sacar antes de subir
-       return true;
+     //  return true;
 
-    //   const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-    //   const saveData = conn?.saveData || false;
-    //   const effectiveType = conn?.effectiveType || null;
-    //   return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
+       const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+       const saveData = conn?.saveData || false;
+       const effectiveType = conn?.effectiveType || null;
+      return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
     }
 
     // ── DOMContentLoaded: actualizar href ANTES de que Isotope arranque ──
