@@ -1075,12 +1075,12 @@
     // ── Detección de conexión (compartida) ──
     function getIsSlow() {
         // ← TEMPORAL para testing, sacar antes de subir
-      // return true;
+       return true;
 
-       const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-       const saveData = conn?.saveData || false;
-       const effectiveType = conn?.effectiveType || null;
-       return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
+    //   const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    //   const saveData = conn?.saveData || false;
+    //   const effectiveType = conn?.effectiveType || null;
+    //   return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
     }
 
     // ── DOMContentLoaded: actualizar href ANTES de que Isotope arranque ──
@@ -1137,6 +1137,8 @@ if (!isLite && portadaSource) {
             if (!a.href.includes('/img/low/'))
                 a.href = a.href.replace('/img/', '/img/low/');
         });
+
+               
     }
 });
 

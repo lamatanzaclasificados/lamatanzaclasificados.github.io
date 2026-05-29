@@ -399,11 +399,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ── Tap indicator (CSS, sin Lottie) ── */
+    if(!isLite){
     document.querySelectorAll('.item').forEach(item => {
         const div = document.createElement('div');
         div.classList.add('tap-lottie');
         item.prepend(div);
+    
     });
+    }
 
 
     /* ── Scroll premium al filtrar ── */
