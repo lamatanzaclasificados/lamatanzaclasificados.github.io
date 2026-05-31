@@ -110,6 +110,12 @@ section:not(:first-child) { /* evita doble padding */ }
 .portada.loaded .img-spinner {
     display: none;
 }
+
+/*spinner carousel*/
+.carousel-slide { position: relative; }
+.carousel-slide.loaded .img-spinner { display: none; }
+
+
 /*fin spinner*/
 
 .portada img {

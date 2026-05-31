@@ -29,8 +29,8 @@
     <!-- <link rel="stylesheet" href="/css/styles.min.css"> -->
     <!-- <link rel="stylesheet" href="/css/style-prueba.css"> -->
     <!-- <link rel="stylesheet" href="/css/style-prueba-z1.css">  -->
-     <!-- <link rel="stylesheet" href="/css/style-prueba-z3.css">  -->
-     <!-- <link rel="stylesheet" href="/css/style-prueba-z7.css">  -->
+    <!-- <link rel="stylesheet" href="/css/style-prueba-z3.css">  -->
+    <!-- <link rel="stylesheet" href="/css/style-prueba-z7.css">  -->
     <link rel="stylesheet" href="/css/styles.min.css">
 
 
@@ -105,27 +105,27 @@
 
     <!-- <link rel="preload" as="image" href="/img/unooo_compressed.avif" type="image/avif"> -->
     <!-- <link rel="preload" as="image" href="/img/unooo_compressed.avif" type="image/avif" fetchpriority="high"> -->
-   
+
     <!-- Reemplazar el link rel="preload" por esto -->
-<script>
-(function () {
-    var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-    var slow = conn && (conn.saveData || 
-               conn.effectiveType === 'slow-2g' || 
-               conn.effectiveType === '2g' || 
-               conn.effectiveType === '3g');
-    if (!slow) {
-        var pre = document.createElement('link');
-        pre.rel = 'preload';
-        pre.as = 'image';
-        pre.href = '/img/unooo_compressed.avif';
-        pre.type = 'image/avif';
-        pre.fetchPriority = 'high';
-        document.head.appendChild(pre);
-    }
-    if (slow) document.documentElement.classList.add('lite-mode');
-})();
-</script>
+    <script>
+        (function () {
+            var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            var slow = conn && (conn.saveData ||
+                conn.effectiveType === 'slow-2g' ||
+                conn.effectiveType === '2g' ||
+                conn.effectiveType === '3g');
+            if (!slow) {
+                var pre = document.createElement('link');
+                pre.rel = 'preload';
+                pre.as = 'image';
+                pre.href = '/img/unooo_compressed.avif';
+                pre.type = 'image/avif';
+                pre.fetchPriority = 'high';
+                document.head.appendChild(pre);
+            }
+            if (slow) document.documentElement.classList.add('lite-mode');
+        })();
+    </script>
 
 </head>
 
@@ -167,9 +167,10 @@
 
                 <picture>
                     <source data-srcset="img/portada-animada-inicio_compressed.avif" media="(min-width: 1200px)">
-                  <!--  <img src="img/cortto-arriba_compressed.avif" alt="Portada" fetchpriority="high" decoding="async"
+                    <!--  <img src="img/cortto-arriba_compressed.avif" alt="Portada" fetchpriority="high" decoding="async"
                         width="984" height="690"> -->
-                    <img data-src="img/cortto-arriba_compressed.avif" data-src-lite="img/portada-lite.avif" fetchpriority="high" decoding="async" width="984" height="690" alt="Portada">    
+                    <img data-src="img/cortto-arriba_compressed.avif" data-src-lite="img/portada-lite.avif"
+                        fetchpriority="high" decoding="async" width="984" height="690" alt="Portada">
                 </picture>
 
             </div>
@@ -184,13 +185,21 @@
 
             <div class="carousel">
                 <div class="carousel-track">
-                    <div class="carousel-slide active">
-                        <!--<img src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
-                            fetchpriority="high" decoding="async">-->
-                        <img data-src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
-                            fetchpriority="high" decoding="async">    
+                    <!-- <div class="carousel-slide active">
 
+                        <img data-src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
+                            fetchpriority="high" decoding="async">
+
+                    </div> -->
+
+                    <div class="carousel-slide active">
+                        <div class="img-spinner"></div>
+                        <img data-src="img/unooo_compressed.avif" alt="Todos los servicios" loading="eager"
+                            fetchpriority="high" decoding="async">
                     </div>
+
+
+
                     <div class="carousel-slide">
                         <img src="img/dosssssss_compressed.avif" alt="negocios del barrio" loading="lazy"
                             decoding="async">
@@ -210,12 +219,9 @@
                 </div>
             </div>
 
-             <!-- Lite mode: reemplaza el carousel -->
-            <img class="carousel-lite"
-                 src="img/primero.avif"
-                 alt="Todos los servicios"
-                 width="984" height="690"
-                 style="display:none; width:100%; height:auto;">
+            <!-- Lite mode: reemplaza el carousel -->
+            <img class="carousel-lite" src="img/primero.avif" alt="Todos los servicios" width="984" height="690"
+                style="display:none; width:100%; height:auto;">
 
         </section>
 
@@ -227,11 +233,11 @@
             <section id="Galeria" class="galeria">
                 <div class="row" data-aos="zoom-in">
                     <div class="col-lg-12 text-center my-2">
-                        <img src="/img/busca-encontra.avif" class="busca-normal" width="1200" height="400" alt="busca y encuentra"
-                            loading="lazy" decoding="async" style="width:100%; height:auto;">
-                        
-                        <img src="/img/busca-encontra-lite.avif" class="busca-lite" width="616" height="185" alt="busca y encuentra"
-                            loading="lazy" decoding="async" style="width:100%; height:auto;">    
+                        <img src="/img/busca-encontra.avif" class="busca-normal" width="1200" height="400"
+                            alt="busca y encuentra" loading="lazy" decoding="async" style="width:100%; height:auto;">
+
+                        <img src="/img/busca-encontra-lite.avif" class="busca-lite" width="616" height="185"
+                            alt="busca y encuentra" loading="lazy" decoding="async" style="width:100%; height:auto;">
                     </div>
                 </div>
                 <div class="tit-seleccionar" data-aos="fade-up"> <img src="/img/filtros/titulo.avif" width="1200"
@@ -276,8 +282,8 @@
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/j92vbb" data-fancybox-group="light" name="Contactar">
 
-                            <img src="/img/thumb/servicio-tecnico-roman-thumb.webp" width="320" height="572" alt="Tecnico-4"
-                                loading="lazy" decoding="async">
+                            <img src="/img/thumb/servicio-tecnico-roman-thumb.webp" width="320" height="572"
+                                alt="Tecnico-4" loading="lazy" decoding="async">
                         </a>
                     </div>
 
@@ -294,7 +300,7 @@
                     <div class="item gts estet gallery">
 
                         <a href="/img/lashes-almaa.webp" class="fancylight popup-btn popup-image"
-                            data-link="https://wa.link/99wodj"  data-fancybox-group="light" name="Contactar">
+                            data-link="https://wa.link/99wodj" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/lashes-almaa-thumb.webp" width="320" height="572" alt="encanto_lashes"
                                 loading="lazy" decoding="async">
                         </a>
@@ -308,14 +314,14 @@
                     </div>
                     <div class="item gts estet gallery">
                         <a href="/img/relax_con_joa.webp" class="fancylight popup-btn popup-image"
-                            data-link="https://wa.link/99wodj"  data-fancybox-group="light" name="Contactar">
+                            data-link="https://wa.link/99wodj" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/relax_con_joa-thumb.webp" width="320" height="572"
                                 alt="masajes-pediduria-pestañas" loading="lazy" decoding="async">
                         </a>
                     </div>
                     <div class="item gts tecnico gallery">
                         <a href="/img/Matias-Ponce-Tecnico.webp" class="fancylight popup-btn popup-image"
-                            data-link="https://wa.link/99wodj"  data-fancybox-group="light" name="Contactar">
+                            data-link="https://wa.link/99wodj" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/Matias-Ponce-Tecnico-thumb.webp" width="320" height="572"
                                 alt="Matias-Ponce-Tecnico" loading="lazy" decoding="async">
                         </a>
@@ -343,7 +349,7 @@
                     </div>
                     <div class="item gts estet gallery">
                         <a href="/img/podologa_brenda.webp" class="fancylight popup-btn popup-image"
-                            data-link="https://wa.link/y4o27e"  data-fancybox-group="light" name="Contactar">
+                            data-link="https://wa.link/y4o27e" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/podologa_brenda-thumb.webp" width="320" height="572"
                                 alt="podologa_brenda" loading="lazy" decoding="async">
                         </a>
@@ -422,10 +428,11 @@
                         </a>
                     </div>
                     <div class="item comidas gallery">
-                        <a href="/img/rotiseria-la-familia.webp" class="fancylight popup-btn with-caption image-link popup-image"
+                        <a href="/img/rotiseria-la-familia.webp"
+                            class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y4o27e" data-fancybox-group="light" name="Contactar">
-                            <img src="/img/thumb/rotiseria-la-familia-thumb.webp" width="320" height="572" alt="rotiseria-la-familia"
-                                loading="lazy" decoding="async">
+                            <img src="/img/thumb/rotiseria-la-familia-thumb.webp" width="320" height="572"
+                                alt="rotiseria-la-familia" loading="lazy" decoding="async">
                         </a>
                     </div>
                     <div class="item barber gallery">
@@ -980,7 +987,7 @@
         <div class="fallback-close-wrapper" style="display: none;">
             <button id="fallback-close" class="fallback-button">✕</button>
         </div>
-        
+
 
         <div class="fallback-wrapper" style="display: none;">
             <button id="fallback-prev" class="fallback-button">‹</button>
@@ -1055,7 +1062,7 @@
     <script defer src="js/portfolio-filter.js"></script>
 
 
-    <script defer src="js/scriptD22.js"></script>  
+    <script defer src="js/scriptD22.js"></script>
     <!-- Modal -->
     <div id="modalLegal" class="modal-legal-overlay">
         <div class="modal-legal-box">
@@ -1073,163 +1080,170 @@
 
 
     <script>
-    // ── Detección de conexión (compartida) ──
-    function getIsSlow() {
-        // ← TEMPORAL para testing, sacar antes de subir
-       //return true;
+        // ── Detección de conexión (compartida) ──
+        function getIsSlow() {
+            // ← TEMPORAL para testing, sacar antes de subir
+            //return true;
 
-        const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-        const saveData = conn?.saveData || false;
-        const effectiveType = conn?.effectiveType || null;
-      return saveData || effectiveType === 'slow-2g' || effectiveType === '2g'|| effectiveType === '3g';
-    }
+            const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            const saveData = conn?.saveData || false;
+            const effectiveType = conn?.effectiveType || null;
+            return saveData || effectiveType === 'slow-2g' || effectiveType === '2g' || effectiveType === '3g';
+        }
 
-    // ── DOMContentLoaded: actualizar href ANTES de que Isotope arranque ──
-    /*document.addEventListener('DOMContentLoaded', () => {
-        if (getIsSlow()) {
-            document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
-                if (a.href.includes('/img/low/')) return;
-                a.href = a.href.replace('/img/', '/img/low/');
+        // ── DOMContentLoaded: actualizar href ANTES de que Isotope arranque ──
+        /*document.addEventListener('DOMContentLoaded', () => {
+            if (getIsSlow()) {
+                document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
+                    if (a.href.includes('/img/low/')) return;
+                    a.href = a.href.replace('/img/', '/img/low/');
+                });
+            }
+        }); comento para probar lo que sigue*/
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            //const isLite = document.documentElement.classList.contains('lite-mode');
+            const isLite = getIsSlow();
+
+            // ── Portada ──
+            const portadaImg = document.querySelector('.portada img');
+            const portadaSource = document.querySelector('.portada source');
+            if (portadaImg) {
+                portadaImg.src = isLite
+                    ? (portadaImg.dataset.srcLite || 'img/portada-lite.avif')
+                    : portadaImg.dataset.src;
+                portadaImg.removeAttribute('data-src');
+            }
+
+            portadaImg.addEventListener('load', () => {
+                portadaImg.closest('.portada').classList.add('loaded');
             });
-        }
-    }); comento para probar lo que sigue*/
+            portadaImg.addEventListener('error', () => {
+                portadaImg.closest('.portada').classList.add('loaded'); // oculta spinner igual
+            });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-    //const isLite = document.documentElement.classList.contains('lite-mode');
-    const isLite = getIsSlow();
+            //if (portadaSource) portadaSource.srcset = isLite ? '' : portadaSource.dataset.srcset || '';
 
-    // ── Portada ──
-    const portadaImg    = document.querySelector('.portada img');
-    const portadaSource = document.querySelector('.portada source');
-    if (portadaImg) {
-        portadaImg.src = isLite
-            ? (portadaImg.dataset.srcLite || 'img/portada-lite.avif')
-            : portadaImg.dataset.src;
-        portadaImg.removeAttribute('data-src');
-    }
-
-    portadaImg.addEventListener('load', () => {
-    portadaImg.closest('.portada').classList.add('loaded');
-});
-portadaImg.addEventListener('error', () => {
-    portadaImg.closest('.portada').classList.add('loaded'); // oculta spinner igual
-});
-
-
-    //if (portadaSource) portadaSource.srcset = isLite ? '' : portadaSource.dataset.srcset || '';
-
-    // Solo activar la variante desktop si conexión es rápida
-if (!isLite && portadaSource) {
-    portadaSource.srcset = portadaSource.dataset.srcset;
-}
+            // Solo activar la variante desktop si conexión es rápida
+            if (!isLite && portadaSource) {
+                portadaSource.srcset = portadaSource.dataset.srcset;
+            }
 
 
 
-    // ── Carousel ──
-    const carousel     = document.querySelector('.carousel');
-    const carouselLite = document.querySelector('.carousel-lite');
-    if (isLite) {
-        if (carousel)     carousel.style.display = 'none';
-        if (carouselLite) carouselLite.style.display = 'block';
-    } else {
-        // carga normal de slides
-        document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
-            img.src = img.dataset.src;
-        });
-    }
+            // ── Carousel ──
+            const carousel = document.querySelector('.carousel');
+            const carouselLite = document.querySelector('.carousel-lite');
+            if (isLite) {
+                if (carousel) carousel.style.display = 'none';
+                if (carouselLite) carouselLite.style.display = 'block';
+            } else {
+                // carga normal de slides
+                document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
+                    img.src = img.dataset.src;
+                });
+            }
+            /*agregamos spinner */
+            document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
+                img.src = img.dataset.src;
+                const slide = img.closest('.carousel-slide');
+                img.addEventListener('load', () => slide.classList.add('loaded'));
+                img.addEventListener('error', () => slide.classList.add('loaded'));
+            });
 
- 
 
-    // ── Swap hrefs del popup ──
-    if (isLite) {
-        document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
-            if (!a.href.includes('/img/low/'))
-                a.href = a.href.replace('/img/', '/img/low/');
+
+            // ── Swap hrefs del popup ──
+            if (isLite) {
+                document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
+                    if (!a.href.includes('/img/low/'))
+                        a.href = a.href.replace('/img/', '/img/low/');
+                });
+
+
+            }
         });
 
-               
-    }
-});
+
+
+
+        /* document.addEventListener('DOMContentLoaded', () => {
+         if (getIsSlow()) {
+     
+             // ── Swap portada ──
+             const portadaImg = document.querySelector('.portada img');
+             const portadaSource = document.querySelector('.portada source');
+             if (portadaImg) {
+                 portadaImg.src = 'img/portada-lite.avif';
+                 portadaImg.srcset = '';          // anula el srcset si hubiera
+             }
+             if (portadaSource) {
+                 portadaSource.srcset = '';       // desactiva la variante desktop
+             }
+                // ── Carousel → imagen estática ──
+             const carousel = document.querySelector('.carousel');
+             const carouselLite = document.querySelector('.carousel-lite');
+             if (carousel)     carousel.style.display = 'none';
+             if (carouselLite) carouselLite.style.display = 'block';
+     
+     
+     
+             // ── Swap hrefs del popup ──
+             document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
+                 if (a.href.includes('/img/low/')) return;
+                 a.href = a.href.replace('/img/', '/img/low/');
+             });
+     
+         }
+     });*/
 
 
 
 
-   /* document.addEventListener('DOMContentLoaded', () => {
-    if (getIsSlow()) {
 
-        // ── Swap portada ──
-        const portadaImg = document.querySelector('.portada img');
-        const portadaSource = document.querySelector('.portada source');
-        if (portadaImg) {
-            portadaImg.src = 'img/portada-lite.avif';
-            portadaImg.srcset = '';          // anula el srcset si hubiera
-        }
-        if (portadaSource) {
-            portadaSource.srcset = '';       // desactiva la variante desktop
-        }
-           // ── Carousel → imagen estática ──
-        const carousel = document.querySelector('.carousel');
-        const carouselLite = document.querySelector('.carousel-lite');
-        if (carousel)     carousel.style.display = 'none';
-        if (carouselLite) carouselLite.style.display = 'block';
+        // ── Load: imágenes y AOS ──
+        window.addEventListener('load', () => {
+            const isSlow = getIsSlow();
 
+            if (isSlow) {
+                // Thumbnails del grid → img/thumb/low/
+                document.querySelectorAll('img[src*="/img/thumb/"]').forEach(img => {
+                    if (img.src.includes('/img/thumb/low/')) return; // ya convertida
+                    img.src = img.src.replace('/img/thumb/', '/img/thumb/low/');
+                });
 
+                // Resto de imágenes (excluir thumb, filtros, avif y low ya convertidas)
+                document.querySelectorAll('img[src*="/img/"]').forEach(img => {
+                    if (
+                        img.src.includes('/img/thumb/') ||
+                        img.src.includes('/img/filtros/') ||
+                        img.src.includes('/img/low/') ||
+                        img.src.includes('.avif')
+                    ) return;
+                    img.src = img.src.replace('/img/', '/img/low/');
+                });
 
-        // ── Swap hrefs del popup ──
-        document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
-            if (a.href.includes('/img/low/')) return;
-            a.href = a.href.replace('/img/', '/img/low/');
+                // Enlaces del popup
+                document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
+                    if (a.href.includes('/img/low/')) return;
+                    a.href = a.href.replace('/img/', '/img/low/');
+                });
+
+                // document.body.classList.add('lite-mode');
+                document.documentElement.classList.add('lite-mode');
+            }
+
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ disable: isSlow, duration: isSlow ? 0 : 500, offset: 250, once: true });
+            }
+
+            if (!isSlow && typeof imagesLoaded !== 'undefined') {
+                imagesLoaded('.portfolio-grid', () => AOS.refresh());
+            }
         });
-
-    }
-});*/
-
-
-
-
-
-    // ── Load: imágenes y AOS ──
-    window.addEventListener('load', () => {
-        const isSlow = getIsSlow();
-
-        if (isSlow) {
-    // Thumbnails del grid → img/thumb/low/
-    document.querySelectorAll('img[src*="/img/thumb/"]').forEach(img => {
-        if (img.src.includes('/img/thumb/low/')) return; // ya convertida
-        img.src = img.src.replace('/img/thumb/', '/img/thumb/low/');
-    });
-
-    // Resto de imágenes (excluir thumb, filtros, avif y low ya convertidas)
-    document.querySelectorAll('img[src*="/img/"]').forEach(img => {
-        if (
-            img.src.includes('/img/thumb/') ||
-            img.src.includes('/img/filtros/') ||
-            img.src.includes('/img/low/') ||
-            img.src.includes('.avif')
-        ) return;
-        img.src = img.src.replace('/img/', '/img/low/');
-    });
-
-    // Enlaces del popup
-    document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
-        if (a.href.includes('/img/low/')) return;
-        a.href = a.href.replace('/img/', '/img/low/');
-    });
-
-   // document.body.classList.add('lite-mode');
-    document.documentElement.classList.add('lite-mode');
-}
-
-        if (typeof AOS !== 'undefined') {
-            AOS.init({ disable: isSlow, duration: isSlow ? 0 : 500, offset: 250, once: true });
-        }
-
-        if (!isSlow && typeof imagesLoaded !== 'undefined') {
-            imagesLoaded('.portfolio-grid', () => AOS.refresh());
-        }
-    });
-</script>
+    </script>
 
 
     <script>
