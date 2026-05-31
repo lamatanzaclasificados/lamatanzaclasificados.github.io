@@ -600,7 +600,7 @@ img.mfp-img {
 
 /* Reemplaza las ~70 instancias de Lottie */
 
-   .tap-lottie {
+   /* .tap-lottie {
   position: absolute;
   bottom: 60px;
   left: 60%;
@@ -612,7 +612,7 @@ img.mfp-img {
   pointer-events: none;
   opacity: 0.9;
 
-}
+} */
 
 /* ── Contacto ── */
 .contacto {
