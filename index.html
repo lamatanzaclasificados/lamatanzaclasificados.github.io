@@ -1160,19 +1160,22 @@
                 if (carousel) carousel.style.display = 'none';
                 if (carouselLite) carouselLite.style.display = 'block';
             } else {
-                document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
-                    img.src = img.dataset.src;
-                    const slide = img.closest('.carousel-slide');
+    document.querySelectorAll('.carousel-slide img').forEach(img => {
+        // Si tiene data-src, asignarlo
+        if (img.dataset.src) {
+            img.src = img.dataset.src;
+        }
+        
+        const slide = img.closest('.carousel-slide');
 
-                    if (img.complete && img.naturalWidth > 0) {
-                        slide.classList.add('loaded');
-                    } else {
-                        img.addEventListener('load', () => slide.classList.add('loaded'));
-                        img.addEventListener('error', () => slide.classList.add('loaded'));
-                    }
-                });
-            }
-
+        if (img.complete && img.naturalWidth > 0) {
+            slide.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => slide.classList.add('loaded'));
+            img.addEventListener('error', () => slide.classList.add('loaded'));
+        }
+    });
+}
 
 
             // ── Swap hrefs del popup ──

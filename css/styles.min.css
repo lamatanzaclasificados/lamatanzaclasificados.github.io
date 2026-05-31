@@ -115,7 +115,14 @@ section:not(:first-child) { /* evita doble padding */ }
 .carousel-slide { position: relative; }
 .carousel-slide.loaded .img-spinner { display: none; }
 
+.carousel-slide img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.carousel-slide.loaded img {
+    opacity: 1;
+}
 /*fin spinner*/
 
 .portada img {
@@ -1021,7 +1028,7 @@ img.mfp-img {
   }
 
   img.mfp-img {
-    width: 90vw;
+    width: 75vw;
     max-height: 90vh;
     height: auto;
   }
