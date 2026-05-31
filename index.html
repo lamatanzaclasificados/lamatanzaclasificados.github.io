@@ -1134,24 +1134,44 @@
 
 
             // ── Carousel ──
+            /* const carousel = document.querySelector('.carousel');
+             const carouselLite = document.querySelector('.carousel-lite');
+             if (isLite) {
+                 if (carousel) carousel.style.display = 'none';
+                 if (carouselLite) carouselLite.style.display = 'block';
+             } else {
+                 // carga normal de slides
+                 document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
+                     img.src = img.dataset.src;
+                 });
+             }
+            
+             document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
+                 img.src = img.dataset.src;
+                 const slide = img.closest('.carousel-slide');
+                 img.addEventListener('load', () => slide.classList.add('loaded'));
+                 img.addEventListener('error', () => slide.classList.add('loaded'));
+             });*/
+            // ── Carousel ──
             const carousel = document.querySelector('.carousel');
             const carouselLite = document.querySelector('.carousel-lite');
+
             if (isLite) {
                 if (carousel) carousel.style.display = 'none';
                 if (carouselLite) carouselLite.style.display = 'block';
             } else {
-                // carga normal de slides
                 document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
                     img.src = img.dataset.src;
+                    const slide = img.closest('.carousel-slide');
+
+                    if (img.complete && img.naturalWidth > 0) {
+                        slide.classList.add('loaded');
+                    } else {
+                        img.addEventListener('load', () => slide.classList.add('loaded'));
+                        img.addEventListener('error', () => slide.classList.add('loaded'));
+                    }
                 });
             }
-            /*agregamos spinner */
-            document.querySelectorAll('.carousel-slide img[data-src]').forEach(img => {
-                img.src = img.dataset.src;
-                const slide = img.closest('.carousel-slide');
-                img.addEventListener('load', () => slide.classList.add('loaded'));
-                img.addEventListener('error', () => slide.classList.add('loaded'));
-            });
 
 
 
