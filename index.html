@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/favicon.ico">
     <!-- Open Graph (Facebook, WhatsApp, Instagram) -->
@@ -16,21 +15,15 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-
-
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap"> -->
 
     <!-- AOS CSS -->
     <!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="/css/aos.css">
-    <!-- <link rel="stylesheet" href="/css/styles.min.css"> -->
-    <!-- <link rel="stylesheet" href="/css/style-prueba.css"> -->
-    <!-- <link rel="stylesheet" href="/css/style-prueba-z1.css">  -->
-    <!-- <link rel="stylesheet" href="/css/style-prueba-z3.css">  -->
-    <!-- <link rel="stylesheet" href="/css/style-prueba-z7.css">  -->
+
     <link rel="stylesheet" href="/css/styles.min.css">
 
 
@@ -233,7 +226,7 @@
             <section id="Galeria" class="galeria">
                 <div class="row" data-aos="zoom-in">
                     <div class="col-lg-12 text-center my-2">
-                        <img src="/img/busca-encontra.avif" class="busca-normal" width="1200" height="400"
+                        <img src="/img/busca-encontra.avif" class="busca-normal" width="616" height="185"
                             alt="busca y encuentra" loading="lazy" decoding="async" style="width:100%; height:auto;">
 
                         <img src="/img/busca-encontra-lite.avif" class="busca-lite" width="616" height="185"
@@ -1053,11 +1046,9 @@
     <!-- Magnific Popup -->
 
     <script defer src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Lottie -->
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script> -->
     <script defer src="js/lottie.min.js"></script>
     <!-- Font Awesome -->
-    <script defer src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script> -->
 
     <script defer src="js/portfolio-filter.js"></script>
 
@@ -1188,43 +1179,6 @@
 
             }
         });
-
-
-
-
-        /* document.addEventListener('DOMContentLoaded', () => {
-         if (getIsSlow()) {
-     
-             // ── Swap portada ──
-             const portadaImg = document.querySelector('.portada img');
-             const portadaSource = document.querySelector('.portada source');
-             if (portadaImg) {
-                 portadaImg.src = 'img/portada-lite.avif';
-                 portadaImg.srcset = '';          // anula el srcset si hubiera
-             }
-             if (portadaSource) {
-                 portadaSource.srcset = '';       // desactiva la variante desktop
-             }
-                // ── Carousel → imagen estática ──
-             const carousel = document.querySelector('.carousel');
-             const carouselLite = document.querySelector('.carousel-lite');
-             if (carousel)     carousel.style.display = 'none';
-             if (carouselLite) carouselLite.style.display = 'block';
-     
-     
-     
-             // ── Swap hrefs del popup ──
-             document.querySelectorAll('a.popup-image[href*="/img/"]').forEach(a => {
-                 if (a.href.includes('/img/low/')) return;
-                 a.href = a.href.replace('/img/', '/img/low/');
-             });
-     
-         }
-     });*/
-
-
-
-
 
         // ── Load: imágenes y AOS ──
         window.addEventListener('load', () => {
