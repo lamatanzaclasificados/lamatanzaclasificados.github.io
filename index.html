@@ -1088,7 +1088,7 @@
             // ← TEMPORAL para testing, sacar antes de subir
             //return true;
 
-            const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+          const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
             const saveData = conn?.saveData || false;
             const effectiveType = conn?.effectiveType || null;
             return saveData || effectiveType === 'slow-2g' || effectiveType === '2g' || effectiveType === '3g';

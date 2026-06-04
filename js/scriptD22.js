@@ -205,7 +205,7 @@ $(function () {
 
     });
 
-    function agregarBotonEnlace(item) {
+ /*   function agregarBotonEnlace(item) {
         $('.popup-button').remove();
         const link = $(item.el).attr('data-link');
         const nombre = $(item.el).attr('name') || 'WhatsApp';
@@ -234,7 +234,68 @@ $(function () {
                 </div>`;
             $('#lottie-next').before(buttonHtml);
         }
+    }*/
+
+    /* corregimos aparicion del boton*/
+
+        function agregarBotonEnlace(item) {
+    $('.popup-button').remove();
+    const link = $(item.el).attr('data-link');
+    const nombre = $(item.el).attr('name') || 'WhatsApp';
+    if (!link) return;
+
+    const { isSlow, isMedium } = detectarConexion();
+
+    if (isSlow || isMedium) {
+        // Intentar insertar, con reintentos si fallback-wrapper aún no existe
+        let intentos = 0;
+        const maxIntentos = 10;
+
+        function intentarInsertar() {
+            const fallbackWrapper = document.querySelector('.fallback-wrapper');
+
+            if (fallbackWrapper) {
+                // Ya existe, insertar normalmente
+                const btn = document.createElement('div');
+                btn.className = 'popup-button boton';
+                btn.innerHTML = `<a href="${link}" target="_blank" class="btn">
+                    <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
+                </a>`;
+                const nextBtn = document.getElementById('fallback-next');
+                fallbackWrapper.insertBefore(btn, nextBtn);
+
+            } else if (intentos < maxIntentos) {
+                // Aún no existe, reintentar en 200ms
+                intentos++;
+                setTimeout(intentarInsertar, 200);
+
+            } else {
+                // Último recurso: insertar en mfp-content directamente
+                const mfpContent = document.querySelector('.mfp-content');
+                if (mfpContent) {
+                    const btn = document.createElement('div');
+                    btn.className = 'popup-button boton';
+                    btn.style.textAlign = 'center';
+                    btn.innerHTML = `<a href="${link}" target="_blank" class="btn">
+                        <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
+                    </a>`;
+                    mfpContent.appendChild(btn);
+                }
+            }
+        }
+
+        intentarInsertar();
+
+    } else {
+        const buttonHtml = `
+            <div class="popup-button boton" style="text-align:center;">
+                <a href="${link}" target="_blank" class="btn">
+                    <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
+                </a>
+            </div>`;
+        $('#lottie-next').before(buttonHtml);
     }
+}
 
     /* ── Controles Lottie ── */
     $('#lottie-prev').on('click', function (e) {
