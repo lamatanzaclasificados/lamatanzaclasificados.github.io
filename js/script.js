@@ -33,11 +33,13 @@ jQuery(document).ready(function ($) {
 
     $grid.on('arrangeComplete', actualizarActivos);
 
-    $grid.imagesLoaded(function () {
+   $grid.imagesLoaded(function () {
         $grid.isotope('layout');
         actualizarActivos();
         setTimeout(actualizarActivos, 300);
     });
+
+       
 
     $grid.imagesLoaded().progress(function () {
         $grid.isotope('layout');

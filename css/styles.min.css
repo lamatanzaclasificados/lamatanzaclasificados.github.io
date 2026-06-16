@@ -40,6 +40,44 @@ main {
   border: 0;
 }
 
+/* ── SEO Info debajo de cada card ── */
+.seo-info {
+  padding: 5px 6px 8px;
+  text-align: center;
+}
+
+.seo-info h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 2px;
+  line-height: 1.3;
+}
+
+.seo-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  line-height: 1.3;
+}
+.item .seo-info h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* el título en una sola línea con "..." */
+}
+
+.item .seo-info p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  overflow: hidden;
+}
+/*fin seo*/
+
 
 .load-more-container {
     text-align: center;
