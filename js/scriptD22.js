@@ -39,6 +39,7 @@ jQuery(document).ready(function ($) {
         setTimeout(actualizarActivos, 300);
     });
 
+   
     $grid.imagesLoaded().progress(function () {
         $grid.isotope('layout');
     });

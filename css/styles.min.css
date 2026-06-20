@@ -76,6 +76,16 @@ main {
   line-clamp: 3;
   overflow: hidden;
 }
+/*hoy*/
+
+.seo-info h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.seo-info h3 a:hover {
+  color: #f6c000;
+  text-decoration: underline;
+}
 /*fin seo*/
 
 
