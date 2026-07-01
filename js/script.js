@@ -380,7 +380,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.salud': '/img/filtros/salud.avif',
         '.mecanica': '/img/filtros/mecanicos.avif',
         '.modista': '/img/filtros/modista.avif',
-        '.indumentaria': '/img/filtros/indumentaria.avif'
+        '.indumentaria': '/img/filtros/indumentaria.avif',
+        '.turismo': '/img/filtros/turismo.avif'
     };
 
     buttons.forEach(btn => {
