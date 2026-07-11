@@ -381,7 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.mecanica': '/img/filtros/mecanicos.avif',
         '.modista': '/img/filtros/modista.avif',
         '.indumentaria': '/img/filtros/indumentaria.avif',
-        '.turismo': '/img/filtros/turismo.avif'
+        '.turismo': '/img/filtros/turismo.avif',
+        '.ferreteria': '/img/filtros/ferreteria.avif'
     };
 
     buttons.forEach(btn => {
