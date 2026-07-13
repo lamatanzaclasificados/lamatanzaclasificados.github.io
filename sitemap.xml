@@ -387,4 +387,14 @@
       <image:title>La Panadería</image:title>
     </image:image>
   </url>
+  <url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/estetica-briela-isidro-casanova.html</loc>
+  <lastmod>2026-07-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/estetica-briela.webp</image:loc>
+    <image:title>Estética Briela - peluquería y centro de estética en Isidro Casanova</image:title>
+  </image:image>
+</url>
 </urlset>
