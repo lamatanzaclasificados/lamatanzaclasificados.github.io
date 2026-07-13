@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/</loc>
     <lastmod>2026-06-20</lastmod>
@@ -11,229 +12,379 @@
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/LIDA-PODOESTETICA.webp</image:loc>
+      <image:title>Lida Podoestética</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/lideres-previsionales.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/Lideres-previsionales.webp</image:loc>
+      <image:title>Líderes Previsionales</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/pasteleria-y-reposteria-c-c.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/reposteria.webp</image:loc>
+      <image:title>Pastelería y Repostería C&amp;C</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/pasteleria-dulce-noemi.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/dulce-noemi.webp</image:loc>
+      <image:title>Pastelería Dulce Noemí</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/diversiones-j-l-e.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/cascada-chocolate-Rafael-Castillo.webp</image:loc>
+      <image:title>Diversiones J.L.E</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/todo-casero-dona-zully.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/Todo-casero.webp</image:loc>
+      <image:title>Todo Casero Doña Zully</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/unas-a-presion.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/press-on-nails-uñas-a-presion.webp</image:loc>
+      <image:title>Uñas a presión</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/manicura-profesional.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/elena-manicura-profesional.webp</image:loc>
+      <image:title>Manicura Profesional</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/servicio-tecnico-de-refrigeracion-roman.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/servicio-tecnico-roman.webp</image:loc>
+      <image:title>Servicio Técnico de Refrigeración Román</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/manos-arriba-r-castillo.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/manos-arriba-R-Castillo.webp</image:loc>
+      <image:title>Manos Arriba - R. Castillo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/el-tallercito.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/el-tallercito.webp</image:loc>
+      <image:title>El Tallercito</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/estudio-de-pilates-marisa.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/estudio-pilates-marisa.webp</image:loc>
+      <image:title>Estudio de Pilates Marisa</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/clases-particulares-de-ingles.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/clases-particulares-de-ingles.webp</image:loc>
+      <image:title>Clases particulares de inglés en Gregorio de Laferrere</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/so-spinning.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/SO-SPINNING.webp</image:loc>
+      <image:title>So Spinning</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/fotocopias-e-impresiones.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/libreria-impresiones.webp</image:loc>
+      <image:title>Fotocopias e Impresiones</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/electricista-domiciliario.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/electricista-Laferrere.webp</image:loc>
+      <image:title>Electricista domiciliario</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/sublimaciones-fenix.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/sublimaciones-fenix.webp</image:loc>
+      <image:title>Sublimaciones Fénix</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/saty-nails-studio.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/saty-nails-studio.webp</image:loc>
+      <image:title>Saty Nails Studio</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/beauty-pelos.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/beauty-pelos.webp</image:loc>
+      <image:title>Beauty Pelos</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/servicio-tecnico-az.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/Servicio-tecnico-AZ.webp</image:loc>
+      <image:title>Servicio Técnico AZ</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/papeleria-creativa.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/papeleria-creativa.webp</image:loc>
+      <image:title>Papelería Creativa</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/alquiler-de-juegos-en-rafael-castillo.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/alquiler-de-juegos.webp</image:loc>
+      <image:title>Alquileres Tito</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/masajista-en-rafael-castillo.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/masajista-paula.webp</image:loc>
+      <image:title>Masajes Paula</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/electricista-en-rafael-castillo.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/electricista-en-rafael-castillo.webp</image:loc>
+      <image:title>Electricista en Rafael Castillo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/diseno-y-venta-de-banners-en-laferrere.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/digital-project.webp</image:loc>
+      <image:title>Digital Project</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/masajes-terapeuticos-en-laferrere.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/masokinergista.webp</image:loc>
+      <image:title>Bellos Mimos Spa</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/podologia-integral-en-laferrere.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/podologia-integral.webp</image:loc>
+      <image:title>Podología Integral</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/electricidad-del-automovil.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url> 
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/electricidad-del-automovil.webp</image:loc>
+      <image:title>SOLUCIONES ELÉCTRICAS PARA TU VEHÍCULO</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/h-p-moda-estilo.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/h-p-moda-estilo.webp</image:loc>
+      <image:title>H&amp;P Moda &amp; Estilo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/manicura-y-podoestetica-en-rafael-castillo.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/myrian-manos-y-pies.webp</image:loc>
+      <image:title>Myrian Manos &amp; Pies</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/arpy-turismo.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/arpy-turismo.webp</image:loc>
+      <image:title>Arpy Turismo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/kiosco-y-creaciones-los-3-hermanos.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/kiosco-los-3-hermanos.webp</image:loc>
+      <image:title>Kiosco y Creaciones 3 Hermanos</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/estetica-vehicular-myg.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/estetica-vehicular-myg.webp</image:loc>
+      <image:title>Estética Vehicular M&amp;G</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/mecanica-dental-en-laferrere.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/mecanica-dental.webp</image:loc>
+      <image:title>Mecánica Dental</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/asesoramiento-en-adicciones-en-laferrere.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/fenix-asesoramiento-adicciones.webp</image:loc>
+      <image:title>Fenix</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/multiservicios-hogar-la-matanza.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/albanil-construccion.webp</image:loc>
+      <image:title>Marcelo Jaime — Albañilería, Pintura, Electricidad y Plomería</image:title>
+    </image:image>
   </url>
-    <url>
+  <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/pinturas-romii-laferrere.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/pinturas-laferrere.webp</image:loc>
+      <image:title>Pinturas Romii</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/panaderia-gregorio-de-laferrere.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/panaderia-laferrere.webp</image:loc>
+      <image:title>La Panadería</image:title>
+    </image:image>
   </url>
-
 </urlset>
-
