@@ -397,4 +397,14 @@
     <image:title>Estética Briela - peluquería y centro de estética en Isidro Casanova</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/peluqueria-canina-chicho-gonzalez-catan.html</loc>
+  <lastmod>2026-07-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/peluqueria-canina-chicho.webp</image:loc>
+    <image:title>Peluquería Canina - Chicho - González Catán</image:title>
+  </image:image>
+</url>
 </urlset>
