@@ -407,4 +407,26 @@
     <image:title>Peluquería Canina - Chicho - González Catán</image:title>
   </image:image>
 </url>
+
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/herreria-laferrere.html</loc>
+  <lastmod>2026-07-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/herrero.webp</image:loc>
+    <image:title>Herrería - Laferrere</image:title>
+  </image:image>
+</url>
+
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/esteticamente-lina-laferrere.html</loc>
+  <lastmod>2026-07-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/estetica-mente-lina.webp</image:loc>
+    <image:title>Estética Lina - cuidado de la piel en Laferrere</image:title>
+  </image:image>
+</url>
 </urlset>
