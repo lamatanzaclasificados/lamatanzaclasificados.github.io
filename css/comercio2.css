@@ -1,0 +1,127 @@
+/* comercio.css — estilos compartidos para las páginas individuales de /comercio/ */
+
+:root { --color-accent: #f6c000; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8e6e0;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(0,0,0,0.02) 40px, rgba(0,0,0,0.02) 80px);
+}
+
+main { flex: 1; width: 100%; }
+
+h1, .logo-mini {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Barra superior */
+.topbar {
+  background: #111;
+  border-bottom: 3px solid #f6c000;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-mini { color: #fff; text-decoration: none; font-size: 18px; }
+.topbar .volver {
+  color: #f6c000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container { max-width: 700px; margin: 0 auto; padding: 0 16px; }
+
+.comercio-hero { padding: 28px 16px 12px; text-align: center; }
+.comercio-hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: #111;
+  margin: 0 0 8px;
+}
+.comercio-hero .rubro {
+  display: inline-block;
+  background: #f6c000;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.comercio-imagen { max-width: 320px; margin: 0 auto 20px; }
+.comercio-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.comercio-texto {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-left: 5px solid #f6c000;
+  margin-bottom: 20px;
+}
+.comercio-texto p {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.7;
+  color: #222;
+  margin: 0;
+  font-weight: 500;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+.btn-whatsapp:hover { background-color: #228c15; transform: scale(1.04); }
+
+.btn-directorio {
+  color: #555 !important;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.mini-footer { text-align: center; padding: 14px; font-size: 0.75rem; color: #777; }
+
+.volver {
+    display: inline-flex;  /* Hace que el enlace se comporte como flexbox pero no ocupe todo el ancho */
+    align-items: center;   /* Alinea la flecha y el texto perfectamente al centro vertical */
+    gap: 8px;              /* Controla la separación exacta entre la flecha y el texto (ajustalo a gusto) */
+    text-decoration: none; /* Opcional: saca el subrayado del enlace */
+}
+
+.flecha-grande {
+    font-size: 30px;       /* El tamaño que le quieras dar a la flecha */
+    line-height: 1;        /* Evita que el alto de línea propio de la fuente rompa la alineación */
+}
