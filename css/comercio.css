@@ -112,7 +112,22 @@ h1, .logo-mini {
   font-size: 0.9rem;
 }
 
-.mini-footer { text-align: center; padding: 14px; font-size: 0.75rem; color: #777; }
+.mini-footer {
+  background: #111;
+  border-top: 3px solid #f6c000;
+  color: #bbb;
+  text-align: center;
+  padding: 18px 16px;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+}
+.mini-footer a {
+  color: #f6c000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mini-footer a:hover { text-decoration: underline; }
 
 .volver {
     display: inline-flex;  /* Hace que el enlace se comporte como flexbox pero no ocupe todo el ancho */
