@@ -470,4 +470,24 @@
     <image:title>Cerrajería Gobatt - urgencias, aperturas y cajas de seguridad en Laferrere</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/pizzas-por-metro-laferrere.html</loc>
+  <lastmod>2026-07-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/alina-pizza-burger-laferrere.webp</image:loc>
+    <image:title>Pizzas Por Metro - Laferrere</image:title>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/arreglos-de-ropa-villa-luzuriaga.html</loc>
+  <lastmod>2026-07-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/arreglos-confecciones.webp</image:loc>
+    <image:title>Arreglos y Confecciones Cristina - Villa Luzuriaga</image:title>
+  </image:image>
+</url>
 </urlset>
