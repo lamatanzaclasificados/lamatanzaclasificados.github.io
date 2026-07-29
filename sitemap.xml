@@ -490,4 +490,14 @@
     <image:title>Arreglos y Confecciones Cristina - Villa Luzuriaga</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/pizza-a-la-piedra-rafael-castillo.html</loc>
+  <lastmod>2026-07-29</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/pizza-a-la-piedra-rafael-castillo.webp</image:loc>
+    <image:title>Pizza a la Piedra - Rafael Castillo</image:title>
+  </image:image>
+</url>
 </urlset>
