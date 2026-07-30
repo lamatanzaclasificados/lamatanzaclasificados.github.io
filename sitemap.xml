@@ -500,4 +500,14 @@
     <image:title>Pizza a la Piedra - Rafael Castillo</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/barberia-ciudad-evita.html</loc>
+  <lastmod>2026-07-29</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/barberia-ciudad-evita.webp</image:loc>
+    <image:title>Barber Shop - Ciudad Evita</image:title>
+  </image:image>
+</url>
 </urlset>
