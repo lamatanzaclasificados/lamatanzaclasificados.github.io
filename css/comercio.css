@@ -121,11 +121,19 @@ h1, .logo-mini {
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.3px;
+  width: 100%;
 }
 .mini-footer a {
-  color: #f6c000;
+  /* color: #f6c000 */
+  color:#e8e6e0; 
   text-decoration: none;
   font-weight: 600;
+}
+.mini-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* separación entre el ícono y el texto */
+  font-size: 1rem;
 }
 .mini-footer a:hover { text-decoration: underline; }
 
@@ -139,4 +147,88 @@ h1, .logo-mini {
 .flecha-grande {
     font-size: 30px;       /* El tamaño que le quieras dar a la flecha */
     line-height: 1;        /* Evita que el alto de línea propio de la fuente rompa la alineación */
+}
+
+
+/**/
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  
+}
+.footer-redes a svg {
+  transition: opacity 0.2s ease;
+}
+.footer-redes a:hover svg {
+  opacity: 0.7;
+}
+
+
+
+
+/**/
+
+
+.footer-comercio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #111;
+  border-top: 3px solid #f6c000;
+  padding: 18px 16px;
+  gap: 10px; /* espacio entre copy y mini-footer */
+  margin-top: 50px;
+}
+
+.copy {
+  font-size: 1.3rem;
+  color: #b9b8b8;
+  margin: 0;
+}
+
+.mini-footer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* espacio entre "Seguinos..." y la fila de íconos */
+  color: #bbb;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+p.seguinos {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* espacio entre Instagram y Facebook */
+  flex-wrap: wrap;
+}
+
+.footer-redes a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espacio entre el texto y su ícono */
+  color: #e8e6e0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer-redes a:hover {
+  text-decoration: underline;
+}
+
+.footer-redes a svg {
+  transition: opacity 0.2s ease;
+}
+
+.footer-redes a:hover svg {
+  opacity: 0.7;
 }
