@@ -42,7 +42,7 @@ h1, .logo-mini {
 
 .comercio-hero { padding: 28px 16px 12px; text-align: center; }
 .comercio-hero h1 {
-  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-size: clamp(1.5rem, 5vw, 2.6rem);
   color: #111;
   margin: 0 0 8px;
 }
@@ -194,7 +194,7 @@ h1, .logo-mini {
 }
 
 .copy {
-  font-size: 1.3rem;
+  font-size: 0.85rem;
   color: #b9b8b8;
   margin: 0;
 }
@@ -211,7 +211,7 @@ h1, .logo-mini {
 }
 
 p.seguinos {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
 }
 
