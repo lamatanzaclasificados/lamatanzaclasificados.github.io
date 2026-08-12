@@ -75,12 +75,23 @@ h1, .logo-mini {
   border-left: 5px solid #f6c000;
   margin-bottom: 20px;
 }
-.comercio-texto p {
+/* .comercio-texto p {
   font-size: clamp(16px, 2vw, 18px);
   line-height: 1.7;
   color: #222;
   margin: 0;
   font-weight: 500;
+} */
+
+/**/
+
+.comercio-texto p {
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 1.75;
+  color: #333;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.1px;
 }
 
 .botones {
@@ -232,3 +243,6 @@ p.seguinos {
 .footer-redes a:hover svg {
   opacity: 0.7;
 }
+
+
+
