@@ -540,4 +540,14 @@
     <image:title>Mini Fletes - Laferrere</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/alisados-laferrere.html</loc>
+  <lastmod>2026-08-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/alisados-en-laferrere.webp</image:loc>
+    <image:title>Alisados - Laferrere</image:title>
+  </image:image>
+</url>
 </urlset>
