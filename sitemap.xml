@@ -550,4 +550,14 @@
     <image:title>Alisados - Laferrere</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/la-galeria-casa-de-te-gonzalez-catan.html</loc>
+  <lastmod>2026-08-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/casa-de-te.webp</image:loc>
+    <image:title>La Galería - González Catan</image:title>
+  </image:image>
+</url>
 </urlset>
