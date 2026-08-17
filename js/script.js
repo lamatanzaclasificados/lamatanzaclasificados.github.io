@@ -382,7 +382,9 @@ document.addEventListener('DOMContentLoaded', () => {
         '.modista': '/img/filtros/modista.avif',
         '.indumentaria': '/img/filtros/indumentaria.avif',
         '.turismo': '/img/filtros/turismo.avif',
-        '.ferreteria': '/img/filtros/ferreteria.avif'
+        '.ferreteria': '/img/filtros/ferreteria.avif',
+        '.terrenos': '/img/filtros/alquiler-venta.avif',
+        '.trasporte': '/img/filtros/fletes-trasportes.avif'
     };
 
     buttons.forEach(btn => {
