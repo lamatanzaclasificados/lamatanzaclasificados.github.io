@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lamatanzaclasificados.com.ar/sitemap.xml
+Sitemap: https://www.lamatanzaclasificados.com.ar/sitemap.xml

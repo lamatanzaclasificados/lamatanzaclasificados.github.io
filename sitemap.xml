@@ -560,4 +560,23 @@
     <image:title>La Galería - González Catan</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/ecografias-gonzalez-catan-km32.html</loc>
+  <lastmod>2026-08-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/ecografias.webp</image:loc>
+    <image:title>Ecografías - González Catan (Km32)</image:title>
+  </image:image>
+</url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/venta-de-lotes-canuelas.html</loc>
+  <lastmod>2026-08-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/venta-de-lotes-canuelas.webp</image:loc>
+    <image:title>Venta de Lotes - Canuelas</image:title>
+  </image:image>
 </urlset>
