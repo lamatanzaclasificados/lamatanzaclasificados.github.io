@@ -580,4 +580,14 @@
     <image:title>Venta de Lotes - Canuelas</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/salon-de-eventos-casanova.html</loc>
+  <lastmod>2026-08-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/salon-de-eventos-casanova.webp</image:loc>
+    <image:title>Salón de Eventos - Casanova</image:title>
+  </image:image>
+</url>
 </urlset>
