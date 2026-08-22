@@ -590,4 +590,14 @@
     <image:title>Salón de Eventos - Casanova</image:title>
   </image:image>
 </url>
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/experiencia-bienestar.html</loc>
+  <lastmod>2026-08-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/experiencia-bienestar.webp</image:loc>
+    <image:title>Experiencia Bienestar - Composición Corporal</image:title>
+  </image:image>
+</url>
 </urlset>
