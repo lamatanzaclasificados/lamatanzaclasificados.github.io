@@ -244,5 +244,19 @@ p.seguinos {
   opacity: 0.7;
 }
 
+/* Botón para links de sitio web oficial (usar junto con btn-whatsapp dentro de .botones) */
+.btn-web {
+  background-color: #f6c000;
+  color: #111 !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+.btn-web:hover { background-color: #d9a800; transform: scale(1.04); }
 
 
