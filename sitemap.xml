@@ -639,5 +639,15 @@
     <image:loc>https://www.lamatanzaclasificados.com.ar/img/reparacion-motores.webp</image:loc>
     <image:title>Bobinado y Reparación de Motores - La Tablada</image:title>
   </image:image>
-</url>
+</url> 
+<url>
+  <loc>https://www.lamatanzaclasificados.com.ar/comercio/terapias-interdisciplinarias-ramos-mejia.html</loc>
+  <lastmod>2026-09-02</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/ameri.webp</image:loc>
+    <image:title>Equipo Ameri - Terapias interdisciplinarias en Ramos Mejía</image:title>
+  </image:image>
+</url> 
 </urlset>
