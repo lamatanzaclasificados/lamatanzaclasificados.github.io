@@ -1,0 +1,1360 @@
+[1mdiff --git a/comercio/alisados-laferrere.html b/comercio/alisados-laferrere.html[m
+[1mindex 3f09846..f451625 100644[m
+[1m--- a/comercio/alisados-laferrere.html[m
+[1m+++ b/comercio/alisados-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Andrea Iraola - Alisados en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/alquiler-de-juegos-en-rafael-castillo.html b/comercio/alquiler-de-juegos-en-rafael-castillo.html[m
+[1mindex 16014e2..cd488b3 100644[m
+[1m--- a/comercio/alquiler-de-juegos-en-rafael-castillo.html[m
+[1m+++ b/comercio/alquiler-de-juegos-en-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Alquiler de Juegos para Eventos en Rafael Castillo | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/alquileres-combo-fiestas-rafael-castillo.html b/comercio/alquileres-combo-fiestas-rafael-castillo.html[m
+[1mindex b6a109f..97fdc66 100644[m
+[1m--- a/comercio/alquileres-combo-fiestas-rafael-castillo.html[m
+[1m+++ b/comercio/alquileres-combo-fiestas-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Alquileres Tito - Combo Fiestas - La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/arpy-turismo.html b/comercio/arpy-turismo.html[m
+[1mindex 1f95c55..21a3371 100644[m
+[1m--- a/comercio/arpy-turismo.html[m
+[1m+++ b/comercio/arpy-turismo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Arpy Turismo - Pasajes y Paquetes Turísticos en González Catán</title>[m
+[1mdiff --git a/comercio/arreglos-de-ropa-villa-luzuriaga.html b/comercio/arreglos-de-ropa-villa-luzuriaga.html[m
+[1mindex eaf03a7..1d03509 100644[m
+[1m--- a/comercio/arreglos-de-ropa-villa-luzuriaga.html[m
+[1m+++ b/comercio/arreglos-de-ropa-villa-luzuriaga.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Arreglos y Confecciones Cristina | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/asesoramiento-en-adicciones-en-laferrere.html b/comercio/asesoramiento-en-adicciones-en-laferrere.html[m
+[1mindex df2ed2f..8517255 100644[m
+[1m--- a/comercio/asesoramiento-en-adicciones-en-laferrere.html[m
+[1m+++ b/comercio/asesoramiento-en-adicciones-en-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Asesoramiento en Adicciones en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/asesoramiento-obra-social-ramos-mejia.html b/comercio/asesoramiento-obra-social-ramos-mejia.html[m
+[1mindex 92a278e..f630382 100644[m
+[1m--- a/comercio/asesoramiento-obra-social-ramos-mejia.html[m
+[1m+++ b/comercio/asesoramiento-obra-social-ramos-mejia.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Víncea Salud - Asesoramiento en Obra Social</title>[m
+[1mdiff --git a/comercio/axe-costuras.html b/comercio/axe-costuras.html[m
+[1mindex 4d2faa7..9302b88 100644[m
+[1m--- a/comercio/axe-costuras.html[m
+[1m+++ b/comercio/axe-costuras.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Axé Costuras - Confecciones Personalizadas en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/barberia-ciudad-evita.html b/comercio/barberia-ciudad-evita.html[m
+[1mindex 4459e68..691105b 100644[m
+[1m--- a/comercio/barberia-ciudad-evita.html[m
+[1m+++ b/comercio/barberia-ciudad-evita.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Barber Shop - Cortes de Excelencia | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/beauty-pelos.html b/comercio/beauty-pelos.html[m
+[1mindex 9f3ce10..af6fb79 100644[m
+[1m--- a/comercio/beauty-pelos.html[m
+[1m+++ b/comercio/beauty-pelos.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Beauty Pelos - Estética Facial y Capilar en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/bobinado-de-motores-la-tablada.html b/comercio/bobinado-de-motores-la-tablada.html[m
+[1mindex f0600d1..0fa7d83 100644[m
+[1m--- a/comercio/bobinado-de-motores-la-tablada.html[m
+[1m+++ b/comercio/bobinado-de-motores-la-tablada.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Bobinado y Reparación de Motores</title>[m
+[1mdiff --git a/comercio/cerrajeria-laferrere.html b/comercio/cerrajeria-laferrere.html[m
+[1mindex 6d4d464..0abcf9f 100644[m
+[1m--- a/comercio/cerrajeria-laferrere.html[m
+[1m+++ b/comercio/cerrajeria-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Cerrajería Gobatt - Cerrajería y Tecnico matriculado | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/clases-de-yoga-laferrere.html b/comercio/clases-de-yoga-laferrere.html[m
+[1mindex 9f9ce98..2daf0de 100644[m
+[1m--- a/comercio/clases-de-yoga-laferrere.html[m
+[1m+++ b/comercio/clases-de-yoga-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Yoga con July - Clases de Yoga en Laferrere</title>[m
+[1mdiff --git a/comercio/clases-particulares-de-ingles.html b/comercio/clases-particulares-de-ingles.html[m
+[1mindex cd4ad4b..dc4746d 100644[m
+[1m--- a/comercio/clases-particulares-de-ingles.html[m
+[1m+++ b/comercio/clases-particulares-de-ingles.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Clases particulares de inglés en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/comidas-caseras-laferrere.html b/comercio/comidas-caseras-laferrere.html[m
+[1mindex dd8bf95..aff77a5 100644[m
+[1m--- a/comercio/comidas-caseras-laferrere.html[m
+[1m+++ b/comercio/comidas-caseras-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Comidas Elvira - Tartas y Comida Casera | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/diseno-y-venta-de-banners-en-laferrere.html b/comercio/diseno-y-venta-de-banners-en-laferrere.html[m
+[1mindex 297e0bd..febfd9c 100644[m
+[1m--- a/comercio/diseno-y-venta-de-banners-en-laferrere.html[m
+[1m+++ b/comercio/diseno-y-venta-de-banners-en-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <link rel="icon" href="/img/favicon.ico">[m
+[1mdiff --git a/comercio/diversiones-j-l-e.html b/comercio/diversiones-j-l-e.html[m
+[1mindex 1b810cd..d5f15fc 100644[m
+[1m--- a/comercio/diversiones-j-l-e.html[m
+[1m+++ b/comercio/diversiones-j-l-e.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Diversiones J.L.E - Alquiler de Inflables en Rafael Castillo | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/ecografias-gonzalez-catan-km32.html b/comercio/ecografias-gonzalez-catan-km32.html[m
+[1mindex 18874ac..e68d829 100644[m
+[1m--- a/comercio/ecografias-gonzalez-catan-km32.html[m
+[1m+++ b/comercio/ecografias-gonzalez-catan-km32.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Ecografías en González Catán KM 32 | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/el-tallercito.html b/comercio/el-tallercito.html[m
+[1mindex 6fe9c20..61731d3 100644[m
+[1m--- a/comercio/el-tallercito.html[m
+[1m+++ b/comercio/el-tallercito.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>El Tallercito - Costura y Arreglos de Ropa en González Catán | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/electricidad-del-automovil.html b/comercio/electricidad-del-automovil.html[m
+[1mindex 9db21cd..9542651 100644[m
+[1m--- a/comercio/electricidad-del-automovil.html[m
+[1m+++ b/comercio/electricidad-del-automovil.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Electricidad del Automóvil - en Rafael Castillo</title>[m
+[1mdiff --git a/comercio/electricista-domiciliario.html b/comercio/electricista-domiciliario.html[m
+[1mindex 12b51e0..97cbc2c 100644[m
+[1m--- a/comercio/electricista-domiciliario.html[m
+[1m+++ b/comercio/electricista-domiciliario.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Electricista domiciliario - Electricista en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/electricista-en-rafael-castillo.html b/comercio/electricista-en-rafael-castillo.html[m
+[1mindex 710d767..5e8fdcc 100644[m
+[1m--- a/comercio/electricista-en-rafael-castillo.html[m
+[1m+++ b/comercio/electricista-en-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Electricista en Rafael Castillo | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/estetica-briela-isidro-casanova.html b/comercio/estetica-briela-isidro-casanova.html[m
+[1mindex 60b8149..0170129 100644[m
+[1m--- a/comercio/estetica-briela-isidro-casanova.html[m
+[1m+++ b/comercio/estetica-briela-isidro-casanova.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Estética Briela | Peluquería y Estética en Isidro Casanova</title>[m
+[1mdiff --git a/comercio/estetica-vehicular-myg.html b/comercio/estetica-vehicular-myg.html[m
+[1mindex e71ade1..76e5107 100644[m
+[1m--- a/comercio/estetica-vehicular-myg.html[m
+[1m+++ b/comercio/estetica-vehicular-myg.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Estética Vehicular - Lavadero y Detailing de Autos</title>[m
+[1mdiff --git a/comercio/esteticamente-lina-laferrere.html b/comercio/esteticamente-lina-laferrere.html[m
+[1mindex a4c1da2..86f830b 100644[m
+[1m--- a/comercio/esteticamente-lina-laferrere.html[m
+[1m+++ b/comercio/esteticamente-lina-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>EsteticaMente Lina - Limpieza de Cutis</title>[m
+[1mdiff --git a/comercio/estudio-de-pilates-marisa.html b/comercio/estudio-de-pilates-marisa.html[m
+[1mindex a87782a..392de82 100644[m
+[1m--- a/comercio/estudio-de-pilates-marisa.html[m
+[1m+++ b/comercio/estudio-de-pilates-marisa.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Estudio de Pilates Marisa en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/experiencia-bienestar.html b/comercio/experiencia-bienestar.html[m
+[1mindex d12f5df..28438c5 100644[m
+[1m--- a/comercio/experiencia-bienestar.html[m
+[1m+++ b/comercio/experiencia-bienestar.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Experiencia Bienestar - Composición Corporal</title>[m
+[1mdiff --git a/comercio/fotocopias-e-impresiones.html b/comercio/fotocopias-e-impresiones.html[m
+[1mindex 2608e8c..0044eec 100644[m
+[1m--- a/comercio/fotocopias-e-impresiones.html[m
+[1m+++ b/comercio/fotocopias-e-impresiones.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Fotocopias e Impresiones - Librería y Fotocopias en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/fotografo-laferrere.html b/comercio/fotografo-laferrere.html[m
+[1mindex 395b29f..6551837 100644[m
+[1m--- a/comercio/fotografo-laferrere.html[m
+[1m+++ b/comercio/fotografo-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Santiago Foto y Video - Laferrere</title>[m
+[1mdiff --git a/comercio/h-p-moda-estilo.html b/comercio/h-p-moda-estilo.html[m
+[1mindex b9dcc03..ad30036 100644[m
+[1m--- a/comercio/h-p-moda-estilo.html[m
+[1m+++ b/comercio/h-p-moda-estilo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>H&P Moda & Estilo en La Tablada | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/herreria-laferrere.html b/comercio/herreria-laferrere.html[m
+[1mindex 8522567..ac2c767 100644[m
+[1m--- a/comercio/herreria-laferrere.html[m
+[1m+++ b/comercio/herreria-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>SOLDAMAX - Herrería a Domicilio en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/inflables-y-decoraciones-laferrere.html b/comercio/inflables-y-decoraciones-laferrere.html[m
+[1mindex c5e0bc6..3bcc239 100644[m
+[1m--- a/comercio/inflables-y-decoraciones-laferrere.html[m
+[1m+++ b/comercio/inflables-y-decoraciones-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Inflables y Decoraciones ZD - Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/kiosco-y-creaciones-los-3-hermanos.html b/comercio/kiosco-y-creaciones-los-3-hermanos.html[m
+[1mindex b14c5ed..05b8c6c 100644[m
+[1m--- a/comercio/kiosco-y-creaciones-los-3-hermanos.html[m
+[1m+++ b/comercio/kiosco-y-creaciones-los-3-hermanos.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Kiosco, Pollería y Copias en Rafael Castillo</title>[m
+[1mdiff --git a/comercio/la-galeria-casa-de-te-gonzalez-catan.html b/comercio/la-galeria-casa-de-te-gonzalez-catan.html[m
+[1mindex 7b92e9f..16c6d08 100644[m
+[1m--- a/comercio/la-galeria-casa-de-te-gonzalez-catan.html[m
+[1m+++ b/comercio/la-galeria-casa-de-te-gonzalez-catan.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>La Galería - Casa de Té y Picadas | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/lida-podoestetica.html b/comercio/lida-podoestetica.html[m
+[1mindex 53ad247..5358430 100644[m
+[1m--- a/comercio/lida-podoestetica.html[m
+[1m+++ b/comercio/lida-podoestetica.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Lida Podoestética y reflexologia en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/lideres-previsionales.html b/comercio/lideres-previsionales.html[m
+[1mindex 2c83d67..ff1fa5e 100644[m
+[1m--- a/comercio/lideres-previsionales.html[m
+[1m+++ b/comercio/lideres-previsionales.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Abogados en Laferrere - Líderes Previsionales</title>[m
+[1mdiff --git a/comercio/limpieza-de-piscinas.html b/comercio/limpieza-de-piscinas.html[m
+[1mindex 6cc503a..286dff5 100644[m
+[1m--- a/comercio/limpieza-de-piscinas.html[m
+[1m+++ b/comercio/limpieza-de-piscinas.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Limpieza y Mantenimiento de Piscinas | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/manicura-profesional.html b/comercio/manicura-profesional.html[m
+[1mindex e41fb02..60af12c 100644[m
+[1m--- a/comercio/manicura-profesional.html[m
+[1m+++ b/comercio/manicura-profesional.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Manicura Profesional en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/manicura-y-podoestetica-en-rafael-castillo.html b/comercio/manicura-y-podoestetica-en-rafael-castillo.html[m
+[1mindex 74cab66..1b15a5f 100644[m
+[1m--- a/comercio/manicura-y-podoestetica-en-rafael-castillo.html[m
+[1m+++ b/comercio/manicura-y-podoestetica-en-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Manicuría y Podoestética en Rafael Castillo - Myrian Manos & Pies</title>[m
+[1mdiff --git a/comercio/manos-arriba-r-castillo.html b/comercio/manos-arriba-r-castillo.html[m
+[1mindex e4b22d6..2dae838 100644[m
+[1m--- a/comercio/manos-arriba-r-castillo.html[m
+[1m+++ b/comercio/manos-arriba-r-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Manos Arriba - Manicura en Rafael Castillo | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/masajes-terapeuticos-en-laferrere.html b/comercio/masajes-terapeuticos-en-laferrere.html[m
+[1mindex b86476b..060a55a 100644[m
+[1m--- a/comercio/masajes-terapeuticos-en-laferrere.html[m
+[1m+++ b/comercio/masajes-terapeuticos-en-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Masajes Terapéuticos en Laferrere - Masokinergista</title>[m
+[1mdiff --git a/comercio/masajista-en-rafael-castillo.html b/comercio/masajista-en-rafael-castillo.html[m
+[1mindex 1cdacd9..8f9b0f4 100644[m
+[1m--- a/comercio/masajista-en-rafael-castillo.html[m
+[1m+++ b/comercio/masajista-en-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Masajes en Rafael Castillo - Masajes Paula | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/mecanica-dental-en-laferrere.html b/comercio/mecanica-dental-en-laferrere.html[m
+[1mindex 717efff..62d9745 100644[m
+[1m--- a/comercio/mecanica-dental-en-laferrere.html[m
+[1m+++ b/comercio/mecanica-dental-en-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Mecánica Dental en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/mini-fletes-laferrere.html b/comercio/mini-fletes-laferrere.html[m
+[1mindex 718072c..913c17c 100644[m
+[1m--- a/comercio/mini-fletes-laferrere.html[m
+[1m+++ b/comercio/mini-fletes-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Mini Fletes - Remis y Traslados | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/multiservicios-hogar-la-matanza.html b/comercio/multiservicios-hogar-la-matanza.html[m
+[1mindex fce41ed..d1e9209 100644[m
+[1m--- a/comercio/multiservicios-hogar-la-matanza.html[m
+[1m+++ b/comercio/multiservicios-hogar-la-matanza.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Marcelo Jaime - Multiservicios para el Hogar | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/ng-home-studio-laferrere.html b/comercio/ng-home-studio-laferrere.html[m
+[1mindex db03aa5..68d0749 100644[m
+[1m--- a/comercio/ng-home-studio-laferrere.html[m
+[1m+++ b/comercio/ng-home-studio-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>NG Home Studio - Pestañas y Cejas | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/panaderia-gregorio-de-laferrere.html b/comercio/panaderia-gregorio-de-laferrere.html[m
+[1mindex 21b9f0e..1ac8179 100644[m
+[1m--- a/comercio/panaderia-gregorio-de-laferrere.html[m
+[1m+++ b/comercio/panaderia-gregorio-de-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Panadería en Gregorio de Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/papeleria-creativa.html b/comercio/papeleria-creativa.html[m
+[1mindex b3a4815..99a1e17 100644[m
+[1m--- a/comercio/papeleria-creativa.html[m
+[1m+++ b/comercio/papeleria-creativa.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Papelería Creativa - Impresiones y Fotocopias en González Catán</title>[m
+[1mdiff --git a/comercio/pasteleria-dulce-noemi.html b/comercio/pasteleria-dulce-noemi.html[m
+[1mindex 0b0d064..73d8af6 100644[m
+[1m--- a/comercio/pasteleria-dulce-noemi.html[m
+[1m+++ b/comercio/pasteleria-dulce-noemi.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Pastelería Dulce Noemí | Pastelería y Panadería en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/pasteleria-y-reposteria-c-c.html b/comercio/pasteleria-y-reposteria-c-c.html[m
+[1mindex 6391840..a8c1672 100644[m
+[1m--- a/comercio/pasteleria-y-reposteria-c-c.html[m
+[1m+++ b/comercio/pasteleria-y-reposteria-c-c.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Pastelería y Repostería C&C en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/peluqueria-canina-chicho-gonzalez-catan.html b/comercio/peluqueria-canina-chicho-gonzalez-catan.html[m
+[1mindex 8acaa79..429b8b4 100644[m
+[1m--- a/comercio/peluqueria-canina-chicho-gonzalez-catan.html[m
+[1m+++ b/comercio/peluqueria-canina-chicho-gonzalez-catan.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Chicho - Peluquería Canina y Pet Shop | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/peluqueria-y-estetica-laferrere.html b/comercio/peluqueria-y-estetica-laferrere.html[m
+[1mindex bf5b31b..9c81263 100644[m
+[1m--- a/comercio/peluqueria-y-estetica-laferrere.html[m
+[1m+++ b/comercio/peluqueria-y-estetica-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Grecia | Peluquería y Estética - Laferrere</title>[m
+[1mdiff --git a/comercio/pinturas-romii-laferrere.html b/comercio/pinturas-romii-laferrere.html[m
+[1mindex a2820be..2645da4 100644[m
+[1m--- a/comercio/pinturas-romii-laferrere.html[m
+[1m+++ b/comercio/pinturas-romii-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Pinturas Romii - Venta de Pinturas | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/pizza-a-la-piedra-rafael-castillo.html b/comercio/pizza-a-la-piedra-rafael-castillo.html[m
+[1mindex a3c5687..91b2c57 100644[m
+[1m--- a/comercio/pizza-a-la-piedra-rafael-castillo.html[m
+[1m+++ b/comercio/pizza-a-la-piedra-rafael-castillo.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Pizza a la Piedra - Rafael Castillo | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/pizzas-por-metro-laferrere.html b/comercio/pizzas-por-metro-laferrere.html[m
+[1mindex e66428a..fb0c167 100644[m
+[1m--- a/comercio/pizzas-por-metro-laferrere.html[m
+[1m+++ b/comercio/pizzas-por-metro-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Alina Pizza and Burger - Pizzas por Metro | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/podologia-integral-en-laferrere.html b/comercio/podologia-integral-en-laferrere.html[m
+[1mindex 53272a6..c1076b8 100644[m
+[1m--- a/comercio/podologia-integral-en-laferrere.html[m
+[1m+++ b/comercio/podologia-integral-en-laferrere.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Podología Integral en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/salon-de-eventos-casanova.html b/comercio/salon-de-eventos-casanova.html[m
+[1mindex 1728aad..365b347 100644[m
+[1m--- a/comercio/salon-de-eventos-casanova.html[m
+[1m+++ b/comercio/salon-de-eventos-casanova.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Dulce Fantasía Eventos - Casanova | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/saty-nails-studio.html b/comercio/saty-nails-studio.html[m
+[1mindex 7690d5e..8d92ec9 100644[m
+[1m--- a/comercio/saty-nails-studio.html[m
+[1m+++ b/comercio/saty-nails-studio.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Saty Nails Studio - Manicura y Spa de Manos en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/servicio-tecnico-az.html b/comercio/servicio-tecnico-az.html[m
+[1mindex 4fd1cd9..84263ed 100644[m
+[1m--- a/comercio/servicio-tecnico-az.html[m
+[1m+++ b/comercio/servicio-tecnico-az.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Servicio Técnico AZ - Service de Celulares en La Tablada | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/servicio-tecnico-de-refrigeracion-roman.html b/comercio/servicio-tecnico-de-refrigeracion-roman.html[m
+[1mindex df3b3a5..585bafa 100644[m
+[1m--- a/comercio/servicio-tecnico-de-refrigeracion-roman.html[m
+[1m+++ b/comercio/servicio-tecnico-de-refrigeracion-roman.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Servicio Técnico de Refrigeración Román - Laferrere</title>[m
+[1mdiff --git a/comercio/so-spinning.html b/comercio/so-spinning.html[m
+[1mindex 8dadcc3..190f2a6 100644[m
+[1m--- a/comercio/so-spinning.html[m
+[1m+++ b/comercio/so-spinning.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Spinning y Cycling en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/sublimaciones-fenix.html b/comercio/sublimaciones-fenix.html[m
+[1mindex dc1538f..c0c1262 100644[m
+[1m--- a/comercio/sublimaciones-fenix.html[m
+[1m+++ b/comercio/sublimaciones-fenix.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Sublimaciones Fénix - Sublimación y Estampados en González Catán | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/terapias-interdisciplinarias-ramos-mejia.html b/comercio/terapias-interdisciplinarias-ramos-mejia.html[m
+[1mindex fcabc2a..a160c39 100644[m
+[1m--- a/comercio/terapias-interdisciplinarias-ramos-mejia.html[m
+[1m+++ b/comercio/terapias-interdisciplinarias-ramos-mejia.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Equipo Ameri - Terapias Interdisciplinarias | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/todo-casero-dona-zully.html b/comercio/todo-casero-dona-zully.html[m
+[1mindex e07541d..3722ad7 100644[m
+[1m--- a/comercio/todo-casero-dona-zully.html[m
+[1m+++ b/comercio/todo-casero-dona-zully.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Todo Casero Doña Zully - Panadería Casera en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/tortas-dulces-creaciones.html b/comercio/tortas-dulces-creaciones.html[m
+[1mindex 5af9f66..1a504f5 100644[m
+[1m--- a/comercio/tortas-dulces-creaciones.html[m
+[1m+++ b/comercio/tortas-dulces-creaciones.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Panadería Casera y Tartas en Laferrere | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/unas-a-presion.html b/comercio/unas-a-presion.html[m
+[1mindex e2b4213..7c15ffe 100644[m
+[1m--- a/comercio/unas-a-presion.html[m
+[1m+++ b/comercio/unas-a-presion.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Uñas a Presion en Isidro Casanova | La Matanza Clasificados</title>[m
+[1mdiff --git a/comercio/venta-de-lotes-canuelas.html b/comercio/venta-de-lotes-canuelas.html[m
+[1mindex b305534..6660066 100644[m
+[1m--- a/comercio/venta-de-lotes-canuelas.html[m
+[1m+++ b/comercio/venta-de-lotes-canuelas.html[m
+[36m@@ -1,6 +1,15 @@[m
+ <!DOCTYPE html>[m
+ <html lang="es">[m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+ <meta charset="UTF-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+ <title>Venta de Lotes en Cañuelas - El Porvenir</title>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex caadf96..454a1e9 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -2,6 +2,15 @@[m
+ <html lang="es">[m
+ [m
+ <head>[m
+[32m+[m[32m<!-- Google tag (gtag.js) -->[m
+[32m+[m[32m<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2W337NNG"></script>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m  window.dataLayer = window.dataLayer || [];[m
+[32m+[m[32m  function gtag(){dataLayer.push(arguments);}[m
+[32m+[m[32m  gtag('js', new Date());[m
+[32m+[m[32m  gtag('config', 'G-3Y2W337NNG');[m
+[32m+[m[32m</script>[m
+[32m+[m
+     <meta charset="UTF-8">[m
+     <link rel="canonical" href="https://www.lamatanzaclasificados.com.ar/" />[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
