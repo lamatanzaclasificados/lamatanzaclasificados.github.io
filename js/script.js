@@ -216,6 +216,7 @@ $(function () {
         $('.popup-button').remove();
         const link = $(item.el).attr('data-link');
         const nombre = $(item.el).attr('name') || 'WhatsApp';
+        const nombreComercio = $(item.el).closest('.item').find('.link-comercio').text().trim() || nombre; // ← NUEVA LÍNEA
         if (!link) return;
 
         const { isSlow, isMedium } = detectarConexion();
@@ -225,7 +226,7 @@ $(function () {
             if (!fallbackWrapper) return; // ya no necesita reintentos
             const btn = document.createElement('div');
             btn.className = 'popup-button boton';
-            btn.innerHTML = `<a href="${link}" target="_blank" class="btn">
+            btn.innerHTML = `<a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
                 <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
             </a>`;
             const nextBtn = document.getElementById('fallback-next');
@@ -233,7 +234,7 @@ $(function () {
         } else {
             const buttonHtml = `
                 <div class="popup-button boton" style="text-align:center;">
-                    <a href="${link}" target="_blank" class="btn">
+                    <a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
                         <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
                     </a>
                 </div>`;
