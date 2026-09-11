@@ -385,7 +385,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.turismo': '/img/filtros/turismo.avif',
         '.ferreteria': '/img/filtros/ferreteria.avif',
         '.terrenos': '/img/filtros/alquiler-venta.avif',
-        '.trasporte': '/img/filtros/fletes-trasportes.avif'
+        '.trasporte': '/img/filtros/fletes-trasportes.avif',
+        '.vivero': '/img/filtros/vivero.avif'
     };
 
     buttons.forEach(btn => {

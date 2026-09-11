@@ -60,16 +60,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/unas-a-presion.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/press-on-nails-uñas-a-presion.webp</image:loc>
-      <image:title>Uñas a presión</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/manicura-profesional.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -90,16 +80,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/manos-arriba-r-castillo.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/manos-arriba-R-Castillo.webp</image:loc>
-      <image:title>Manos Arriba - R. Castillo</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/el-tallercito.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -109,26 +89,7 @@
       <image:title>El Tallercito</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/estudio-de-pilates-marisa.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/estudio-pilates-marisa.webp</image:loc>
-      <image:title>Estudio de Pilates Marisa</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/clases-particulares-de-ingles.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/clases-particulares-de-ingles.webp</image:loc>
-      <image:title>Clases particulares de inglés en Gregorio de Laferrere</image:title>
-    </image:image>
-  </url>
+  
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/so-spinning.html</loc>
     <lastmod>2026-06-20</lastmod>
