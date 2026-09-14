@@ -213,34 +213,54 @@ $(function () {
     });
 
     function agregarBotonEnlace(item) {
-        $('.popup-button').remove();
-        const link = $(item.el).attr('data-link');
-        const nombre = $(item.el).attr('name') || 'WhatsApp';
-        const nombreComercio = $(item.el).closest('.item').find('.link-comercio').text().trim() || nombre; // ← NUEVA LÍNEA
-        if (!link) return;
+    $('.popup-button').remove();
+    $('.popup-brand').remove();
+    const link = $(item.el).attr('data-link');
+    const nombre = $(item.el).attr('name') || 'WhatsApp';
+    const nombreComercio = $(item.el).closest('.item').find('.link-comercio').text().trim() || nombre;
 
-        const { isSlow, isMedium } = detectarConexion();
+    const { isSlow, isMedium } = detectarConexion();
+    const brandHtml = `
+        <div class="popup-brand" style="text-align:center;">
+            <img src="/img/mini-logo.webp" alt="La Matanza Clasificados" class="popup-brand-logo">
+            <span>lamatanzaclasificados.com.ar</span>
+        </div>`;
 
-        if (isSlow || isMedium) {
-            const fallbackWrapper = document.querySelector('.fallback-wrapper');
-            if (!fallbackWrapper) return; // ya no necesita reintentos
-            const btn = document.createElement('div');
-            btn.className = 'popup-button boton';
-            btn.innerHTML = `<a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
-                <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
-            </a>`;
-            const nextBtn = document.getElementById('fallback-next');
-            fallbackWrapper.insertBefore(btn, nextBtn);
-        } else {
-            const buttonHtml = `
-                <div class="popup-button boton" style="text-align:center;">
-                    <a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
-                        <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
-                    </a>
-                </div>`;
-            $('#lottie-next').before(buttonHtml);
+    if (isSlow || isMedium) {
+        const fallbackWrapper = document.querySelector('.fallback-wrapper');
+        if (!fallbackWrapper) return;
+        const nextBtn = document.getElementById('fallback-next');
+
+        if (!link) {
+            const brand = document.createElement('div');
+            brand.className = 'popup-brand';
+            brand.innerHTML = `<img src="/img/mini-logo.webp" alt="La Matanza Clasificados" class="popup-brand-logo">
+                <span>lamatanzaclasificados.com.ar</span>`;
+            fallbackWrapper.insertBefore(brand, nextBtn);
+            return;
         }
+
+        const btn = document.createElement('div');
+        btn.className = 'popup-button boton';
+        btn.innerHTML = `<a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
+            <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
+        </a>`;
+        fallbackWrapper.insertBefore(btn, nextBtn);
+    } else {
+        if (!link) {
+            $('#lottie-next').before(brandHtml);
+            return;
+        }
+
+        const buttonHtml = `
+            <div class="popup-button boton" style="text-align:center;">
+                <a href="${link}" target="_blank" class="btn" data-business="${nombreComercio}">
+                    <i class="fa-brands fa-whatsapp fa-lg boton" style="color:#ffffff;"></i> ${nombre}
+                </a>
+            </div>`;
+        $('#lottie-next').before(buttonHtml);
     }
+}    
 
     /* ── Controles Lottie ── */
     $('#lottie-prev').on('click', function (e) {
