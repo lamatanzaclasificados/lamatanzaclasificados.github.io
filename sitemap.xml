@@ -623,7 +623,7 @@
     <image:loc>https://www.lamatanzaclasificados.com.ar/img/techista-zinguero-laferrere.webp</image:loc>
     <image:title>Techista Zinguero Alejo Junio'r - Laferrere</image:title>
   </image:image>
-</url> Beauty Center Yamila - González Catán
+</url> 
  <url>
   <loc>https://www.lamatanzaclasificados.com.ar/comercio/centro-de-belleza-gonzalez-catan.html</loc>
   <lastmod>2026-09-18</lastmod>
@@ -632,6 +632,16 @@
   <image:image>
     <image:loc>https://www.lamatanzaclasificados.com.ar/img/yamila-estetica.webp</image:loc>
     <image:title>Beauty Center Yamila - González Catán</image:title>
+  </image:image>
+</url>
+<url>
+  <loc>"https://www.lamatanzaclasificados.com.ar/img/estetica-gilob.webp"</loc>
+  <lastmod>2026-09-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://www.lamatanzaclasificados.com.ar/img/estetica-gilob.webp</image:loc>
+    <image:title>Estética Gilob - Microblading y Cejas</image:title>
   </image:image>
 </url>
 </urlset>
