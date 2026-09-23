@@ -16,8 +16,8 @@ body {
 main { flex: 1; width: 100%; }
 
 h1, .logo-mini {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* Barra superior */
@@ -42,9 +42,10 @@ h1, .logo-mini {
 
 .comercio-hero { padding: 28px 16px 12px; text-align: center; }
 .comercio-hero h1 {
-  font-size: clamp(1.5rem, 5vw, 2.6rem);
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
   color: #111;
   margin: 0 0 8px;
+  line-height: 1.05;
 }
 .comercio-hero .rubro {
   display: inline-block;
@@ -52,7 +53,7 @@ h1, .logo-mini {
   color: #111;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 12px;
