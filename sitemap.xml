@@ -37,38 +37,10 @@
       <image:title>Pastelería y Repostería C&amp;C</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/pasteleria-dulce-noemi.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/dulce-noemi.webp</image:loc>
-      <image:title>Pastelería Dulce Noemí</image:title>
-    </image:image>
-  </url>
+  
 
 
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/todo-casero-dona-zully.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/Todo-casero.webp</image:loc>
-      <image:title>Todo Casero Doña Zully</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/manicura-profesional.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/elena-manicura-profesional.webp</image:loc>
-      <image:title>Manicura Profesional</image:title>
-    </image:image>
-  </url>
+
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/servicio-tecnico-de-refrigeracion-roman.html</loc>
     <lastmod>2026-06-20</lastmod>
@@ -79,16 +51,7 @@
       <image:title>Servicio Técnico de Refrigeración Román</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/el-tallercito.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/el-tallercito.webp</image:loc>
-      <image:title>El Tallercito</image:title>
-    </image:image>
-  </url>
+  
   
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/so-spinning.html</loc>
@@ -100,56 +63,8 @@
       <image:title>So Spinning</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/fotocopias-e-impresiones.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/libreria-impresiones.webp</image:loc>
-      <image:title>Fotocopias e Impresiones</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/electricista-domiciliario.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/electricista-Laferrere.webp</image:loc>
-      <image:title>Electricista domiciliario</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/sublimaciones-fenix.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/sublimaciones-fenix.webp</image:loc>
-      <image:title>Sublimaciones Fénix</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/saty-nails-studio.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/saty-nails-studio.webp</image:loc>
-      <image:title>Saty Nails Studio</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/beauty-pelos.html</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/beauty-pelos.webp</image:loc>
-      <image:title>Beauty Pelos</image:title>
-    </image:image>
-  </url>
+
+
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/servicio-tecnico-az.html</loc>
     <lastmod>2026-06-20</lastmod>
@@ -180,36 +95,7 @@
       <image:title>Alquileres Tito</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/masajista-en-rafael-castillo.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/masajista-paula.webp</image:loc>
-      <image:title>Masajes Paula</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/electricista-en-rafael-castillo.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/electricista-en-rafael-castillo.webp</image:loc>
-      <image:title>Electricista en Rafael Castillo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/diseno-y-venta-de-banners-en-laferrere.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/digital-project.webp</image:loc>
-      <image:title>Digital Project</image:title>
-    </image:image>
-  </url>
+  
   <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/masajes-terapeuticos-en-laferrere.html</loc>
     <lastmod>2026-06-30</lastmod>
@@ -654,4 +540,14 @@
     <image:title>Herrería SyE - Laferrere</image:title>
   </image:image>
 </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/diseno-y-venta-de-banners-en-laferrere.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/digital-project.webp</image:loc>
+      <image:title>Digital Project</image:title>
+    </image:image>
+  </url>
 </urlset>
