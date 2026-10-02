@@ -550,4 +550,16 @@
       <image:title>Digital Project</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/studio-make-up-laferrere-canuelas.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/studio-make-up-laferrere-canuelas.webp</image:loc>
+      <image:title>Studio Make Up Mariela Rivero - Laferrere y Cañuelas</image:title>
+    </image:image>
+  </url>
+
+
 </urlset>
