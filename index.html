@@ -13,7 +13,7 @@
                 location.protocol === 'file:' ||
                 h === '' || h === 'localhost' || h === '127.0.0.1' || h === '[::1]' ||
                 /^(192\.168\.|10\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h) ||
-                h.endsWith('.local');
+                h.endsWith('.local') || h.endsWith('.devtunnels.ms');
 
             if (esLocal) return;
 
@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="/css/aos.css">
 
 
-    <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="stylesheet" href="/css/styles.min.css?v=2">
 
 
     <title>La Matanza Clasificados</title>
@@ -641,35 +641,58 @@
                         height="180" loading="lazy" decoding="async" alt="Categorías de servicios"
                         style="width:100%; height:auto;">
                 </div>
+                <div class="buscador">
+                    <input type="search" id="buscador" placeholder="Buscá: manicura, electricista, pizza..."
+                        aria-label="Buscar negocios">
+
+                    <div class="zonas-scroll">
+                        <div class="zonas">
+                            <button type="button" class="zona-chip active" data-zona="">Todas las zonas</button>
+                            <button type="button" class="zona-chip" data-zona="laferrere">Laferrere</button>
+                            <button type="button" class="zona-chip" data-zona="catan">González Catán</button>
+                            <button type="button" class="zona-chip" data-zona="rafael castillo">Rafael Castillo</button>
+                            <button type="button" class="zona-chip" data-zona="ramos mejia">Ramos Mejía</button>
+                            <button type="button" class="zona-chip" data-zona="casanova">Isidro Casanova</button>
+                            <button type="button" class="zona-chip" data-zona="la tablada">La Tablada</button>
+                            <button type="button" class="zona-chip" data-zona="ciudad evita">Ciudad Evita</button>
+                            <button type="button" class="zona-chip" data-zona="villa luzuriaga">Villa Luzuriaga</button>
+                            <button type="button" class="zona-chip" data-zona="canuelas">Cañuelas</button>
+                        </div>
+                        <button type="button" class="zonas-flecha zonas-flecha-izq" aria-label="Ver zonas anteriores">‹</button>
+                        <button type="button" class="zonas-flecha zonas-flecha-der" aria-label="Ver más zonas">›</button>
+                    </div>
+                    <p class="zonas-hint">Deslizá para ver más zonas →</p>
+                </div>
+
                 <div class="portfolio-menu mt-2 mb-4">
                     <ul>
                         <li class="filter-btn active" data-filter="*">Todo</li>
-                        <li class="filter-btn" data-filter=".estet">Estética</li>
+                        <li class="filter-btn cat-top" data-filter=".estet">Estética</li>
+                        <li class="filter-btn cat-top text" data-filter=".oficios">Oficios</li>
+                        <li class="filter-btn cat-top text" data-filter=".salud">Salud y bienestar</li>
+                        <li class="filter-btn cat-top text" data-filter=".eventos">Alquiler/Eventos</li>
+                        <li class="filter-btn cat-top text" data-filter=".comidas">Comidas/Deliverys</li>
+                        <li class="filter-btn cat-top text" data-filter=".graficas">Gráficas</li>
+                        <li class="filter-btn cat-top text" data-filter=".pastel">Panaderias/Pastelerias</li>
+                        <li class="filter-btn cat-top text" data-filter=".gym">Gym-Fitness</li>
+
                         <li class="filter-btn" data-filter=".tecnico">Técnicos</li>
                         <li class="filter-btn text" data-filter=".abog">Abogados/Gestores</li>
                         <!-- <li class="filter-btn text" data-filter=".clases">Clases/Cursos</li> -->
                         <li class="filter-btn text" data-filter=".lava">Lavadero de autos</li>
-                        <li class="filter-btn text" data-filter=".comidas">Comidas/Deliverys</li>
                         <li class="filter-btn text" data-filter=".barber">Barberias</li>
-                        <li class="filter-btn text" data-filter=".pastel">Panaderias/Pastelerias</li>
                         <li class="filter-btn text" data-filter=".canina">Peluquería canina</li>
-                        <li class="filter-btn text" data-filter=".eventos">Alquiler/Eventos</li>
-                        <li class="filter-btn text" data-filter=".graficas">Gráficas</li>
-                        <li class="filter-btn text" data-filter=".salud">Salud y bienestar</li>
                         <li class="filter-btn text" data-filter=".comercios">Comercios Locales</li>
-                        <li class="filter-btn text" data-filter=".gym">Gym-Fitness</li>
                         <li class="filter-btn text" data-filter=".mecanica">Mecánicos</li>
                         <li class="filter-btn text" data-filter=".modista">Modistas</li>
                         <li class="filter-btn text" data-filter=".indumentaria">Indumentaria</li>
-                        <li class="filter-btn text" data-filter=".oficios">Oficios</li>
                         <li class="filter-btn text" data-filter=".turismo">Turismo</li>
                         <li class="filter-btn text" data-filter=".ferreteria">Ferreterias/Pinturas</li>
                         <li class="filter-btn text" data-filter=".trasporte">Fletes/remises</li>
                         <li class="filter-btn text" data-filter=".terrenos">Alquileres/ventas</li>
                         <li class="filter-btn text" data-filter=".vivero">Viveros/Jardinería</li>
-
-
                     </ul>
+                    <button type="button" id="ver-todas" class="ver-todas" aria-expanded="false">Ver todas las categorías ▼</button>
                 </div>
 
                 <div class="tituloprin" id="titulo-filtro" style="display:none;">
@@ -680,7 +703,7 @@
 
                 <div class="portfolio-grid">
 
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="ramos mejia">
                         <a href="/img/ameri.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/ylr20h" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/ameri-thumb.webp" width="320" height="572"
@@ -701,7 +724,7 @@
                         </div>
                     </div>
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
 
                         <a href="/img/grecia-peluqueria-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
@@ -722,7 +745,7 @@
 
                     </div>
 
-                    <div class="item oficios gallery">
+                    <div class="item oficios gallery" data-zona="laferrere gonzalez catan casanova ciudad evita virrey del pino ramos mejia la tablada rafael castillo villa luzuriaga">
                         <a href="/img/techista-zinguero-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/rybn9j" data-fancybox-group="light" name="Contactar">
@@ -739,7 +762,7 @@
                         </div>
                     </div>
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="gonzalez catan">
                         <a href="/img/yamila-estetica.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/wrql9q" data-fancybox-group="light" name="Contactar">
@@ -757,7 +780,7 @@
                     </div>
 
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/estetica-gilob.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/bqqa5f" data-fancybox-group="light" name="Contactar">
@@ -773,7 +796,7 @@
                         </div>
                     </div>
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/mesoterapia-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/07v764" data-fancybox-group="light" name="Contactar">
@@ -796,7 +819,7 @@
 
 
 
-                    <div class="item tecnico gallery">
+                    <div class="item tecnico gallery" data-zona="laferrere catan casanova ciudad evita virrey del pino ramos mejia la tablada rafael castillo villa luzuriaga">
                         <a href="/img/servicio-tecnico-roman.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/yv15v3" data-fancybox-group="light" name="Contactar">
@@ -811,7 +834,7 @@
 
                         </div>
                     </div>
-                    <div class="item pastel gallery">
+                    <div class="item pastel gallery" data-zona="laferrere">
                         <a href="/img/reposteria.webp" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/rwn4oz" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/reposteria-thumb.webp" width="320" height="572"
@@ -825,7 +848,7 @@
                                 productos de confitería.</p>
                         </div>
                     </div>
-                    <div class="item oficios gallery">
+                    <div class="item oficios gallery" data-zona="laferrere">
                         <a href="/img/herreria-sye-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/ry7n16" data-fancybox-group="light" name="Contactar">
@@ -843,7 +866,7 @@
                         </div>
                     </div>
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere canuelas">
                         <a href="/img/studio-make-up-laferrere-canuelas.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/idajv2" data-fancybox-group="light" name="Contactar">
@@ -861,7 +884,7 @@
                     </div>
 
 
-                    <div class="item eventos gallery">
+                    <div class="item eventos gallery" data-zona="rafael castillo">
                         <a href="/img/alquiler-combo-fiesta.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y15ho5" data-fancybox-group="light" name="Contactar">
@@ -880,7 +903,7 @@
 
 
 
-                    <div class="item vivero gallery">
+                    <div class="item vivero gallery" data-zona="casanova">
                         <a href="/img/vivero-en-casanova.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/99prm3" data-fancybox-group="light" name="Contactar">
@@ -900,7 +923,7 @@
 
 
 
-                    <div class="item comidas gallery">
+                    <div class="item comidas gallery" data-zona="laferrere">
                         <a href="/img/frutas-congeladas.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/lhp17m" data-fancybox-group="light" name="Contactar">
@@ -920,7 +943,7 @@
 
 
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/LIDA-PODOESTETICA.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/95ogaf" data-fancybox-group="light" name="Contactar">
@@ -942,7 +965,7 @@
                     </div>
 
 
-                    <div class="item abog gallery">
+                    <div class="item abog gallery" data-zona="laferrere">
                         <a href="/img/Lideres-previsionales.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/uakgp8" data-fancybox-group="light" name="Contactar">
@@ -959,7 +982,7 @@
                     </div>
 
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/alisados-en-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/0dmafm" data-fancybox-group="light" name="Contactar">
@@ -973,7 +996,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item mecanica gallery">
+                    <div class="item mecanica gallery" data-zona="la tablada">
                         <a href="/img/reparacion-motores.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/6galeu" data-fancybox-group="light" name="Contactar">
@@ -992,7 +1015,7 @@
 
 
 
-                    <div class="item eventos gallery">
+                    <div class="item eventos gallery" data-zona="laferrere">
                         <a href="/img/inflables-decoraciones-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/uzf6bm" data-fancybox-group="light" name="Contactar">
@@ -1009,7 +1032,7 @@
                     </div>
 
 
-                    <div class="item gts oficios gallery">
+                    <div class="item gts oficios gallery" data-zona="laferrere">
                         <a href="/img/herrero.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/y0ht3s" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/herrero-thumb.webp" width="320" height="572"
@@ -1025,7 +1048,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts estet gallery">
+                    <div class="item gts estet gallery" data-zona="laferrere">
                         <a href="/img/estetica-mente-lina.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/whqf8a" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/estetica-mente-lina-thumb.webp" width="320" height="572"
@@ -1044,7 +1067,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts pastel gallery">
+                    <div class="item gts pastel gallery" data-zona="laferrere">
                         <a href="/img/tortas-dulces-creaciones.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/slzgpp" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/tortas-dulces-creaciones-thumb.webp" width="320" height="572"
@@ -1063,7 +1086,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts estet gallery">
+                    <div class="item gts estet gallery" data-zona="laferrere">
                         <a href="/img/ng-home-studio-laferrere.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/zn8982" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/ng-home-studio-laferrere-thumb.webp" width="320" height="572"
@@ -1083,7 +1106,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts estet gallery">
+                    <div class="item gts estet gallery" data-zona="laferrere catan ciudad evita lomas del mirador casanova san justo ramos mejia">
                         <a href="/img/experiencia-bienestar.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/j07myg" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/experiencia-bienestar-thumb.webp" width="320" height="572"
@@ -1104,7 +1127,7 @@
                         </div>
                     </div>
 
-                    <div class="item salud gallery">
+                    <div class="item salud gallery" data-zona="ramos mejia">
                         <a href="/img/vincea-salud.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/t7yq3h" data-fancybox-group="light" name="Contactar">
@@ -1120,7 +1143,7 @@
                         </div>
                     </div>
 
-                    <div class="item gym gallery">
+                    <div class="item gym gallery" data-zona="laferrere">
                         <a href="/img/yoga-con-july-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/ey13if" data-fancybox-group="light" name="Contactar">
@@ -1138,7 +1161,7 @@
 
 
 
-                    <div class="item gym gallery">
+                    <div class="item gym gallery" data-zona="laferrere">
                         <a href="/img/estudio-pilates-marisa.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/1qfpro" data-fancybox-group="light" name="Contactar">
@@ -1152,7 +1175,7 @@
                         </div>
                     </div>
 
-                    <div class="item graficas gallery">
+                    <div class="item graficas gallery" data-zona="laferrere">
                         <a href="/img/banner-lona.webp" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/c2j292" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/banner-lona-thumb.webp" width="320" height="572"
@@ -1169,7 +1192,7 @@
                     </div>
 
 
-                    <div class="item comidas gallery">
+                    <div class="item comidas gallery" data-zona="laferrere">
                         <a href="/img/alina-pizza-burger-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/gr0eru" data-fancybox-group="light" name="Contactar">
@@ -1186,7 +1209,7 @@
                         </div>
                     </div>
 
-                    <div class="item comidas gallery">
+                    <div class="item comidas gallery" data-zona="rafael castillo">
                         <a href="/img/pizza-a-la-piedra-rafael-castillo.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/ha2umw" data-fancybox-group="light" name="Contactar">
@@ -1203,7 +1226,7 @@
                         </div>
                     </div>
 
-                    <div class="item barber gallery">
+                    <div class="item barber gallery" data-zona="ciudad evita">
                         <a href="/img/barberia-ciudad-evita.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/av9awe" data-fancybox-group="light" name="Contactar">
@@ -1217,7 +1240,7 @@
                             <p>Barber Shop: servicios de corte y afeitado en Ciudad Evita.</p>
                         </div>
                     </div>
-                    <div class="item gts estet gallery">
+                    <div class="item gts estet gallery" data-zona="rafael castillo">
                         <a href="/img/myrian-manos-y-pies.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/aywccx" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/myrian-manos-y-pies-thumb.webp" width="320" height="572"
@@ -1237,7 +1260,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item comidas gallery">
+                    <div class="item comidas gallery" data-zona="laferrere">
                         <a href="/img/comidas-elvira-laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/y48yqb" data-fancybox-group="light" name="Contactar">
@@ -1252,7 +1275,7 @@
                                 integral. Delivery</p>
                         </div>
                     </div>
-                    <div class="item gts trasporte gallery">
+                    <div class="item gts trasporte gallery" data-zona="laferrere">
                         <a href="/img/mini-fletes-laferrere.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/8b9pjx" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/mini-fletes-laferrere-thumb.webp" width="320" height="572"
@@ -1266,7 +1289,7 @@
                             <p>Realizamos remis, mini flete y traslado de mascotas. </p>
                         </div>
                     </div>
-                    <div class="item terrenos gallery">
+                    <div class="item terrenos gallery" data-zona="canuelas">
                         <a href="/img/venta-de-lotes-canuelas.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/nf4h6h" data-fancybox-group="light" title="Contactar"
@@ -1289,7 +1312,7 @@
 
 
 
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="laferrere">
                         <a href="/img/podologia-integral.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/njmybm" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/podologia-integral-thumb.webp" width="320" height="572"
@@ -1306,7 +1329,7 @@
 
                     </div>
 
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="laferrere">
                         <a href="/img/masokinergista.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/njmybm" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/masokinergista-thumb.webp" width="320" height="572"
@@ -1323,7 +1346,7 @@
 
                     </div>
 
-                    <div class="item gts mecanica gallery">
+                    <div class="item gts mecanica gallery" data-zona="rafael castillo">
                         <a href="/img/electricidad-del-automovil.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/d2lib7" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/electricidad-del-automovil-thumb.webp" width="320" height="572"
@@ -1339,7 +1362,7 @@
                         </div>
 
                     </div>
-                    <div class="item gts indumentaria gallery">
+                    <div class="item gts indumentaria gallery" data-zona="la tablada">
                         <a href="/img/h-p-moda-estilo.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/s2wdrb" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/h-p-moda-estilo-thumb.webp" width="320" height="572"
@@ -1355,7 +1378,7 @@
                         </div>
 
                     </div>
-                    <div class="item gts turismo gallery">
+                    <div class="item gts turismo gallery" data-zona="gonzalez catan">
                         <a href="/img/arpy-turismo.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/ti2665" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/arpy-turismo-thumb.webp" width="320" height="572"
@@ -1371,7 +1394,7 @@
                         </div>
 
                     </div>
-                    <div class="item oficios gallery">
+                    <div class="item oficios gallery" data-zona="laferrere">
                         <a href="/img/cerrajero-tecnico.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/77px3m" data-fancybox-group="light" name="Contactar">
@@ -1388,7 +1411,7 @@
                         </div>
                     </div>
 
-                    <div class="item modista gallery">
+                    <div class="item modista gallery" data-zona="villa luzuriaga">
                         <a href="/img/arreglos-confecciones.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/2wxb30" data-fancybox-group="light" name="Contactar">
@@ -1404,7 +1427,7 @@
                                 arreglos en general en Villa Luzuriaga.</p>
                         </div>
                     </div>
-                    <div class="item gts comercios gallery">
+                    <div class="item gts comercios gallery" data-zona="rafael castillo">
                         <a href="/img/kiosco-los-3-hermanos.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/4rxnlo" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/kiosco-los-3-hermanos-thumb.webp" width="320" height="572"
@@ -1419,7 +1442,7 @@
                         </div>
 
                     </div>
-                    <div class="item gts lava gallery">
+                    <div class="item gts lava gallery" data-zona="gonzalez catan">
                         <a href="/img/estetica-vehicular-myg.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/dfqeif" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/estetica-vehicular-myg-thumb.webp" width="320" height="572"
@@ -1434,7 +1457,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="laferrere">
                         <a href="/img/fenix-asesoramiento-adicciones.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/5n4tha" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/fenix-asesoramiento-adicciones-thumb.webp" width="320" height="572"
@@ -1449,7 +1472,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="laferrere">
                         <a href="/img/mecanica-dental.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/5n4tha" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/mecanica-dental-thumb.webp" width="320" height="572"
@@ -1465,7 +1488,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts oficios gallery">
+                    <div class="item gts oficios gallery" data-zona="laferrere catan casanova ramos mejia lomas del mirador ciudad evita la tablada canuelas rafael castillo la matanza">
                         <a href="/img/albanil-construccion.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/g5toz5" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/albanil-construccion-thumb.webp" width="320" height="572"
@@ -1476,14 +1499,14 @@
                                     class="link-comercio">ALBAÑILERIA - PLOMERIA - PINTURA Y MAS</a></h3>
 
                             <p>
-                                Pintura - Electricidadad -Cloacas - Plomeria - Remodelaciones
+                                Pintura - Electricidad -Cloacas - Plomeria - Remodelaciones
                                 Techos - Reparaciones- Construccion
                             </p>
 
 
                         </div>
                     </div>
-                    <div class="item gts ferreteria gallery">
+                    <div class="item gts ferreteria gallery" data-zona="laferrere">
                         <a href="/img/pinturas-laferrere.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/z1o0rc" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/pinturas-laferrere-thumb.webp" width="320" height="572"
@@ -1505,7 +1528,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts pastel gallery">
+                    <div class="item gts pastel gallery" data-zona="laferrere">
                         <a href="/img/panaderia-laferrere.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/9ozi91" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/panaderia-laferrere-thumb.webp" width="320" height="572"
@@ -1525,7 +1548,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts estet gallery">
+                    <div class="item gts estet gallery" data-zona="casanova">
                         <a href="/img/estetica-briela.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/xs14o1" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/estetica-briela-thumb.webp" width="320" height="572"
@@ -1543,7 +1566,7 @@
 
                         </div>
                     </div>
-                    <div class="item gts canina gallery">
+                    <div class="item gts canina gallery" data-zona="gonzalez catan">
                         <a href="/img/peluqueria-canina-chicho.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/xszu25" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/peluqueria-canina-chicho-thumb.webp" width="320" height="572"
@@ -1561,7 +1584,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts modista gallery">
+                    <div class="item gts modista gallery" data-zona="laferrere">
                         <a href="/img/costuras.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/k3f7wh" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/costuras-thumb.webp" width="320" height="572"
@@ -1578,7 +1601,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts eventos gallery">
+                    <div class="item gts eventos gallery" data-zona="laferrere">
                         <a href="/img/fotografo-laferrere.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/9yq79b" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/fotografo-laferrere-thumb.webp" width="320" height="572"
@@ -1596,7 +1619,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts eventos gallery">
+                    <div class="item gts eventos gallery" data-zona="gonzalez catan">
                         <a href="/img/casa-de-te.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/u9majh" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/casa-de-te-thumb.webp" width="320" height="572"
@@ -1614,7 +1637,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts salud gallery">
+                    <div class="item gts salud gallery" data-zona="gonzalez catan">
                         <a href="/img/ecografias-km32.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/v0mw97" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/ecografias-km32-thumb.webp" width="320" height="572"
@@ -1633,7 +1656,7 @@
                         </div>
                     </div>
 
-                    <div class="item gts oficios gallery">
+                    <div class="item gts oficios gallery" data-zona="laferrere catan casanova ramos mejia lomas del mirador ciudad evita la tablada canuelas">
                         <a href="/img/rodriguez-construcciones.webp" class="fancylight popup-btn popup-image"
                             data-link="https://wa.link/c6bj15" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/rodriguez-construcciones-thumb.webp" width="320" height="572"
@@ -1651,7 +1674,7 @@
                         </div>
                     </div>
 
-                    <div class="item eventos gallery">
+                    <div class="item eventos gallery" data-zona="casanova">
                         <a href="/img/DULCE-FANTASIA.webp"
                             class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/pdwisn" data-fancybox-group="light" name="Contactar">
@@ -1678,7 +1701,7 @@
 
 
 
-                    <div class="item graficas gallery">
+                    <div class="item graficas gallery" data-zona="laferrere">
                         <a href="/img/libreria-impresiones.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1691,7 +1714,7 @@
                             <p>Articulos de Libreria, mapas. Impresiones y fotocopias en Laferrere.</p>
                         </div>
                     </div>
-                    <div class="item oficios gallery">
+                    <div class="item oficios gallery" data-zona="laferrere">
                         <a href="/img/electricista-Laferrere.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1704,7 +1727,7 @@
                             <p>Instalaciones eléctricas residenciales, con garantia de trabajo en Laferrere.</p>
                         </div>
                     </div>
-                    <div class="item graficas gallery">
+                    <div class="item graficas gallery" data-zona="gonzalez catan">
                         <a href="/img/sublimaciones-fenix.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1719,7 +1742,7 @@
                         </div>
                     </div>
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/beauty-pelos.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1732,7 +1755,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item gts tecnico gallery">
+                    <div class="item gts tecnico gallery" data-zona="la tablada">
                         <a href="/img/Servicio-tecnico-AZ.webp" class="fancylight popup-btn popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/Servicio-tecnico-AZ-thumb.webp" width="320" height="572"
@@ -1745,7 +1768,7 @@
                             <p>Celulares, tablets, consolas, venta de equipos, accesorios, en La Tablada</p>
                         </div>
                     </div>
-                    <div class="item gts graficas gallery">
+                    <div class="item gts graficas gallery" data-zona="gonzalez catan">
                         <a href="/img/papeleria-creativa.webp" class="fancylight popup-btn popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/papeleria-creativa-thumb.webp" width="320" height="572"
@@ -1760,7 +1783,7 @@
                     </div>
 
 
-                    <div class="item oficios gallery">
+                    <div class="item oficios gallery" data-zona="rafael castillo">
                         <a href="/img/electricista-en-rafael-castillo.webp" class="fancylight popup-btn popup-image"
                             data-link="" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/electricista-en-rafael-castillo-thumb.webp" width="320" height="572"
@@ -1794,7 +1817,7 @@
                         </a>
                     </div> -->
 
-                    <div class="item estet gallery">
+                    <div class="item estet gallery" data-zona="laferrere">
                         <a href="/img/elena-manicura-profesional.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1812,7 +1835,7 @@
 
 
 
-                    <div class="item salud gallery">
+                    <div class="item salud gallery" data-zona="rafael castillo">
                         <a href="/img/masajista-paula.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1831,7 +1854,7 @@
 
 
 
-                    <div class="item pastel gallery">
+                    <div class="item pastel gallery" data-zona="laferrere">
                         <a href="/img/dulce-noemi.webp" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/dulce-noemi-thumb.webp" width="320" height="572"
@@ -1847,7 +1870,7 @@
                     </div>
 
 
-                    <div class="item gym gallery">
+                    <div class="item gym gallery" data-zona="laferrere">
                         <a href="/img/SO-SPINNING.webp" class="fancylight popup-btn with-caption image-link popup-image"
                             data-link="https://wa.link/mtxpmt" data-fancybox-group="light" name="Contactar">
                             <img src="/img/thumb/SO-SPINNING-thumb.webp" width="320" height="572"
@@ -1859,7 +1882,7 @@
                         </div>
                     </div>
 
-                    <div class="item modista gallery">
+                    <div class="item modista gallery" data-zona="gonzalez catan">
                         <a href="/img/el-tallercito.webp"
                             class="fancylight popup-btn with-caption image-link popup-image" data-link=""
                             data-fancybox-group="light" name="Contactar">
@@ -1880,6 +1903,11 @@
                 </div>
 
 
+
+                <p id="sin-resultados" style="display:none; text-align:center; padding:30px;">
+                    No encontramos negocios con esa búsqueda. ¿Querés publicar el tuyo?
+                    <a href="https://wa.link/t659hj" target="_blank" rel="noopener noreferrer">Escribinos</a>
+                </p>
 
                 <div class="load-more-container">
                     <button id="load-more-btn">Ver más</button>
@@ -1986,7 +2014,8 @@
     <script defer src="js/portfolio-filter.js"></script>
 
 
-    <script defer src="js/script.js"></script>
+    <script defer src="js/script.js?v=2"></script>
+    <script defer src="js/buscador.js?v=2"></script>
     <!-- Modal -->
     <div id="modalLegal" class="modal-legal-overlay">
         <div class="modal-legal-box">

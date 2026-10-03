@@ -217,7 +217,9 @@ $(function () {
     $('.popup-brand').remove();
     const link = $(item.el).attr('data-link');
     const nombre = $(item.el).attr('name') || 'WhatsApp';
-    const nombreComercio = $(item.el).closest('.item').find('.link-comercio').text().trim() || nombre;
+    /*const nombreComercio = $(item.el).closest('.item').find('.link-comercio').text().trim() || nombre;*/
+    const nombreComercio = ($(item.el).closest('.item').find('.link-comercio, h3').first().text() || '')
+    .replace(/\s+/g, ' ').trim() || nombre;
 
     const { isSlow, isMedium } = detectarConexion();
     const brandHtml = `
@@ -508,69 +510,109 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ─────────────────────────────────────
-   LOAD MORE
+   LOAD MORE + BÚSQUEDA
 ───────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
     const items = Array.from(document.querySelectorAll('.portfolio-grid .item'));
     const step = 8;
+    const button = document.getElementById('load-more-btn');
+    const sinRes = document.getElementById('sin-resultados');
 
     window.currentFilter = window.currentFilter || '*';
+    window.busqueda = { q: '', zona: '' };
     let visibleCount = 8;
 
-    function getFilteredItems(filter) {
-        if (!filter || filter === '*') return items;
-        return items.filter(item => item.matches(filter));
+    const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+    // Texto buscable de cada tarjeta (se calcula una sola vez)
+    const textos = new Map(items.map(it => [
+        it,
+        norm(it.textContent + ' ' + (it.querySelector('img')?.alt || '') + ' ' + (it.dataset.zona || ''))
+    ]));
+
+    const buscando = () => window.busqueda.q !== '' || window.busqueda.zona !== '';
+
+    function coincide(item) {
+        const t = textos.get(item);
+        const { q, zona } = window.busqueda;
+        const okTxt = !q || q.split(/\s+/).every(w => t.includes(w));
+        const okZona = !zona || (item.dataset.zona ? norm(item.dataset.zona).includes(zona) : t.includes(zona));
+        return okTxt && okZona;
     }
 
-    function applyVisibility(soloLayout = false) {
+    // modo: 'filtro' (cambio de rubro, con scroll) | 'mas' (Ver más) | 'busqueda' (sin scroll)
+    function applyVisibility(modo = 'filtro') {
         const filter = window.currentFilter || '*';
-        const filteredItems = getFilteredItems(filter);
+        const busq = buscando();
         const isTodo = filter === '*';
 
-        items.forEach(item => {
-            const inFilter = filter === '*' || item.matches(filter);
-            const idx = filteredItems.indexOf(item);
-            const inPage = isTodo ? idx < visibleCount : idx >= 0;
-            item.style.display = (inFilter && inPage) ? '' : 'none';
-        });
+        const filteredItems = items.filter(it =>
+            (isTodo || it.matches(filter)) && (!busq || coincide(it))
+        );
+
+        const visibles = new Set(
+            (busq || !isTodo) ? filteredItems : filteredItems.slice(0, visibleCount)
+        );
+
+        items.forEach(it => { it.style.display = visibles.has(it) ? '' : 'none'; });
 
         const $grid = $('.portfolio-grid');
 
         if ($grid.data('isotope')) {
-            if (soloLayout) {
-                $grid.isotope('layout');
-                window.actualizarActivos && window.actualizarActivos();
-            } else {
-                $grid.isotope({ filter: filter });
-                setTimeout(() => {
-                    window.actualizarActivos && window.actualizarActivos();
+            $grid.isotope({ filter: function () { return visibles.has(this); } });
 
-                    if (window.scrollPremium && window.tituloprin) {
-                        window.scrollPremium(window.tituloprin);
-                        window.tituloprin.classList.remove('animar-titulo');
-                        void window.tituloprin.offsetWidth;
-                        window.tituloprin.classList.add('animar-titulo');
-                    }
-                }, 300);
-            }
+            setTimeout(() => {
+                window.actualizarActivos && window.actualizarActivos();
+
+                if (modo === 'filtro' && window.scrollPremium && window.tituloprin) {
+                    window.scrollPremium(window.tituloprin);
+                    window.tituloprin.classList.remove('animar-titulo');
+                    void window.tituloprin.offsetWidth;
+                    window.tituloprin.classList.add('animar-titulo');
+                }
+            }, 300);
         } else {
             window.actualizarActivos && window.actualizarActivos();
         }
 
-        button.style.display = (isTodo && visibleCount < filteredItems.length) ? '' : 'none';
+        button.style.display = (!busq && isTodo && visibleCount < filteredItems.length) ? '' : 'none';
+        if (sinRes) sinRes.style.display = (busq && filteredItems.length === 0) ? 'block' : 'none';
     }
 
+    // Cambio de rubro: limpia la búsqueda
     window.resetLoadMore = function (newFilter) {
+        window.busqueda = { q: '', zona: '' };
+        if (window.limpiarBuscadorUI) window.limpiarBuscadorUI();
         window.currentFilter = newFilter;
         visibleCount = 8;
-        applyVisibility(false);
+        applyVisibility('filtro');
     };
 
-    const button = document.getElementById('load-more-btn');
-    applyVisibility(false);
+    // Búsqueda: la llama buscador.js
+    window.buscar = function (q, zona) {
+        window.busqueda = { q: q, zona: zona };
+        window.currentFilter = '*';
+        visibleCount = 8;
+
+        const tituloFiltro = document.getElementById('titulo-filtro');
+        document.querySelectorAll('.filter-btn').forEach(b =>
+            b.classList.toggle('active', b.dataset.filter === '*')
+        );
+        if (tituloFiltro) {
+            if (buscando()) {
+                tituloFiltro.style.display = 'none';
+            } else {
+                tituloFiltro.style.backgroundImage = "url('/img/filtros/todo.avif')";
+                tituloFiltro.style.display = 'flex';
+            }
+        }
+        applyVisibility('busqueda');
+    };
+
+    applyVisibility('filtro');
 
     button.addEventListener('click', () => {
         visibleCount += step;
-        applyVisibility(true);
+        applyVisibility('mas');
     });
 });
