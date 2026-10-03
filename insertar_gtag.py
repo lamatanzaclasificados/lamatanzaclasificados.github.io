@@ -1,128 +1,111 @@
 """
-Script para agregar el snippet de Google Analytics (gtag.js) a todos los
-archivos .html de tu sitio, sin tener que pegarlo a mano en cada uno.
+Inserta (o corrige) el snippet de Google Analytics en todos los .html del
+proyecto, con chequeo de entorno local para no contar visitas de desarrollo.
 
-CÓMO USARLO (paso a paso):
+Uso: guardalo en la raiz del proyecto y ejecuta:  python insertar_gtag.py
 
-1. Necesitás tener Python instalado. Si no lo tenés, descargalo de
-   https://www.python.org/downloads/ (al instalar, marcá la casilla
-   "Add Python to PATH").
+- Si el archivo no tiene GA: lo agrega justo despues de <head>.
+- Si tiene el snippet simple (sin chequeo de local): lo reemplaza.
+- Si ya tiene la version con chequeo: no lo toca.
+- Si tiene el ID en otro formato: lo lista para revisar a mano.
 
-2. Guardá este archivo (insertar_gtag.py) DENTRO de la carpeta raíz de tu
-   proyecto (la misma carpeta donde está tu index.html y la carpeta /comercio/).
-
-3. Abrí una terminal en esa carpeta:
-   - En Windows: click derecho dentro de la carpeta > "Abrir en Terminal"
-     (o Shift + click derecho > "Abrir ventana de PowerShell aquí")
-
-4. Ejecutá:
-       python insertar_gtag.py
-
-5. El script va a recorrer TODOS los .html de la carpeta (incluyendo
-   subcarpetas como /comercio/), y va a insertar el snippet justo después
-   de la etiqueta <head> en cada uno — salvo que ya lo tenga (no duplica).
-
-6. Al terminar te muestra un resumen: cuántos archivos modificó, cuántos
-   ya lo tenían, y si hubo algún error.
-
-7. Con git, revisá los cambios (git diff) antes de hacer commit y push,
-   así confirmás que se vea bien antes de publicar.
-
-IMPORTANTE: no borra nada, solo agrega el snippet. Aun así, si usás git,
-podés revisar los cambios y revertir fácil si algo sale mal.
+Revisa los cambios con 'git diff' antes de hacer commit.
 """
 
 import os
+import re
 
-# ID de medición de Google Analytics (el tuyo, ya cargado abajo)
 GA_ID = "G-3Y2W337NNG"
 
-# El snippet que se va a insertar en cada página
 SNIPPET = f"""<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', '{GA_ID}');
+    (function () {{
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {{ dataLayer.push(arguments); }};
+
+        var h = location.hostname;
+        var esLocal =
+            location.protocol === 'file:' ||
+            h === '' || h === 'localhost' || h === '127.0.0.1' || h === '[::1]' ||
+            /^(192\\.168\\.|10\\.|172\\.(1[6-9]|2\\d|3[01])\\.)/.test(h) ||
+            h.endsWith('.local');
+
+        if (esLocal) return;
+
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id={GA_ID}';
+        document.head.appendChild(s);
+
+        gtag('js', new Date());
+        gtag('config', '{GA_ID}');
+    }})();
 </script>
 """
 
-# Carpeta donde está este script (asumimos que es la raíz del sitio)
+# Snippet simple que insertaba la version anterior del script
+PATRON_SIMPLE = re.compile(
+    r"<!--\s*Google tag \(gtag\.js\)\s*-->\s*"
+    r"<script[^>]*googletagmanager\.com/gtag/js\?id=" + re.escape(GA_ID) + r"[^>]*></script>\s*"
+    r"<script>.*?gtag\('config',\s*'" + re.escape(GA_ID) + r"'\);?\s*</script>\s*",
+    re.DOTALL,
+)
+
+PATRON_HEAD = re.compile(r"<head[^>]*>", re.IGNORECASE)
+
 CARPETA_RAIZ = os.path.dirname(os.path.abspath(__file__))
 
 
-def procesar_archivo(ruta):
-    """
-    Lee un archivo .html, y si no tiene ya el snippet de GA, lo inserta
-    justo después de <head>. Devuelve un texto indicando qué se hizo.
-    """
+def procesar(ruta):
     with open(ruta, "r", encoding="utf-8") as f:
         contenido = f.read()
 
-    # Si ya tiene este ID de Google Analytics, no tocamos el archivo
+    if "esLocal" in contenido and GA_ID in contenido:
+        return "ok"
+
     if GA_ID in contenido:
-        return "ya tenía el snippet"
-
-    # Buscamos la etiqueta <head> (sin importar mayúsculas/minúsculas)
-    contenido_lower = contenido.lower()
-    idx = contenido_lower.find("<head>")
-
-    if idx == -1:
-        # No encontramos <head> tal cual — no modificamos este archivo
-        return "no se encontró <head>, se salteó"
-
-    # La posición justo después de "<head>" (6 caracteres)
-    posicion_insercion = idx + len("<head>")
-
-    nuevo_contenido = (
-        contenido[:posicion_insercion]
-        + "\n"
-        + SNIPPET
-        + contenido[posicion_insercion:]
-    )
+        nuevo, n = PATRON_SIMPLE.subn(lambda m: SNIPPET, contenido, count=1)
+        if n == 0:
+            return "revisar"
+        accion = "reemplazado"
+    else:
+        m = PATRON_HEAD.search(contenido)
+        if not m:
+            return "sin_head"
+        pos = m.end()
+        nuevo = contenido[:pos] + "\n" + SNIPPET + contenido[pos:]
+        accion = "agregado"
 
     with open(ruta, "w", encoding="utf-8") as f:
-        f.write(nuevo_contenido)
-
-    return "snippet agregado"
+        f.write(nuevo)
+    return accion
 
 
 def main():
-    modificados = []
-    ya_tenian = []
-    salteados = []
+    res = {"agregado": [], "reemplazado": [], "ok": [], "revisar": [], "sin_head": []}
 
-    for carpeta_actual, _, archivos in os.walk(CARPETA_RAIZ):
-        for nombre_archivo in archivos:
-            if nombre_archivo.lower().endswith(".html"):
-                ruta_completa = os.path.join(carpeta_actual, nombre_archivo)
-                resultado = procesar_archivo(ruta_completa)
-                ruta_relativa = os.path.relpath(ruta_completa, CARPETA_RAIZ)
+    for carpeta, dirs, archivos in os.walk(CARPETA_RAIZ):
+        dirs[:] = [d for d in dirs if d not in (".git", "node_modules")]
+        for nombre in archivos:
+            if nombre.lower().endswith(".html"):
+                ruta = os.path.join(carpeta, nombre)
+                res[procesar(ruta)].append(os.path.relpath(ruta, CARPETA_RAIZ))
 
-                if resultado == "snippet agregado":
-                    modificados.append(ruta_relativa)
-                elif resultado == "ya tenía el snippet":
-                    ya_tenian.append(ruta_relativa)
-                else:
-                    salteados.append(ruta_relativa)
-
+    titulos = {
+        "agregado": "Snippet agregado",
+        "reemplazado": "Snippet simple reemplazado por el que chequea local",
+        "ok": "Ya estaban correctos",
+        "revisar": "REVISAR A MANO (tienen el ID en otro formato)",
+        "sin_head": "Salteados (no se encontro <head>)",
+    }
     print("\n=== RESUMEN ===")
-    print(f"Archivos modificados: {len(modificados)}")
-    for r in modificados:
-        print(f"  + {r}")
+    for clave, titulo in titulos.items():
+        if res[clave]:
+            print(f"\n{titulo}: {len(res[clave])}")
+            for r in res[clave]:
+                print(f"  - {r}")
 
-    if ya_tenian:
-        print(f"\nArchivos que ya tenían el snippet: {len(ya_tenian)}")
-        for r in ya_tenian:
-            print(f"  = {r}")
-
-    if salteados:
-        print(f"\nArchivos salteados (no se encontró <head>): {len(salteados)}")
-        for r in salteados:
-            print(f"  ! {r}")
-
-    print("\nListo. Revisá los cambios con 'git diff' antes de hacer commit y push.")
+    print("\nListo. Revisa los cambios con 'git diff' antes de hacer commit.")
 
 
 if __name__ == "__main__":
