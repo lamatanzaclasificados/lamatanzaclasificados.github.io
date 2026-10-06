@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+
+    // ── Scroll hacia los resultados (o al cartel de "sin resultados") ──
+    function irAResultados() {
+        setTimeout(() => {
+            const sin = document.getElementById('sin-resultados');
+            const grid = document.querySelector('.portfolio-grid');
+            const destino = (sin && sin.style.display !== 'none') ? sin : grid;
+            if (!destino) return;
+
+            // Si la barra superior es fija, descontar su alto
+            const nav = document.querySelector('.navbar');
+            const pos = nav ? getComputedStyle(nav).position : '';
+            const offset = (pos === 'fixed' || pos === 'sticky') ? nav.offsetHeight : 0;
+
+            const y = destino.getBoundingClientRect().top + window.pageYOffset - offset - 12;
+            window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        }, 350);
+    }
+
+
+    /* */
     const input = document.getElementById('buscador');
     const chips = document.querySelectorAll('.zona-chip');
     if (!input) return;
@@ -16,12 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
         timer = setTimeout(lanzar, 150);
     });
 
+    input.addEventListener('keydown', (e) => {
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+        clearTimeout(timer);
+        lanzar();
+        input.blur();        // cierra el teclado en el celular
+        irAResultados();
+    });
+
     chips.forEach(chip => {
         chip.addEventListener('click', () => {
             chips.forEach(c => c.classList.remove('active'));
             chip.classList.add('active');
             zona = chip.dataset.zona;
             lanzar();
+            irAResultados();   // <-- nuevo
         });
     });
 
