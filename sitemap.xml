@@ -570,6 +570,16 @@
       <image:title>Carteles Bifaz</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/aritos-y-pelitos-laferrere.html"</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/aritos-y-pelitos-laferrere.webp</image:loc>
+      <image:title>Aritos y Pelitos Enfermera</image:title>
+    </image:image>
+  </url>
 
 
 </urlset>
