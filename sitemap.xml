@@ -541,16 +541,6 @@
   </image:image>
 </url>
   <url>
-    <loc>https://www.lamatanzaclasificados.com.ar/comercio/diseno-y-venta-de-banners-en-laferrere.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.lamatanzaclasificados.com.ar/img/digital-project.webp</image:loc>
-      <image:title>Digital Project</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/studio-make-up-laferrere-canuelas.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -578,6 +568,16 @@
     <image:image>
       <image:loc>https://www.lamatanzaclasificados.com.ar/img/aritos-y-pelitos-laferrere.webp</image:loc>
       <image:title>Aritos y Pelitos Enfermera</image:title>
+    </image:image>
+  </url>
+    <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/diseno-y-venta-de-banners-en-laferrere.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/banner-lona.webp</image:loc>
+      <image:title>Digital Project</image:title>
     </image:image>
   </url>
 
