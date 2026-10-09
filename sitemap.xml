@@ -580,6 +580,16 @@
       <image:title>Digital Project</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/reposeras-laferrere.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/reposeras-laferrere.webp</image:loc>
+      <image:title>Reposeras en Laferrere</image:title>
+    </image:image>
+  </url>
 
 
 </urlset>
