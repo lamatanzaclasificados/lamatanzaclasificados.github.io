@@ -602,5 +602,27 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/espacio-maria-spa-kids-san-justo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/espacio-maria-spa-kids-san-justo.webp</image:loc>
+      <image:title>Espacio María - Spa Kids en San Justo</image:title>
+    </image:image>
+  </url>
+
+    <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/espacio-maria-beauty-spa-san-justo.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/espacio-maria-spa-san-justo.webp</image:loc>
+      <image:title>Espacio María - Beauty Spa en San Justo</image:title>
+    </image:image>
+  </url>
+
 
 </urlset>
