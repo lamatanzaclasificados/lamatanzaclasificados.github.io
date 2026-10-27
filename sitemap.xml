@@ -613,7 +613,7 @@
     </image:image>
   </url>
 
-    <url>
+  <url>
     <loc>https://www.lamatanzaclasificados.com.ar/comercio/espacio-maria-beauty-spa-san-justo.html</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -621,6 +621,16 @@
     <image:image>
       <image:loc>https://www.lamatanzaclasificados.com.ar/img/espacio-maria-spa-san-justo.webp</image:loc>
       <image:title>Espacio María - Beauty Spa en San Justo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/transportes-los-tanos-laferrere.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/transportes-los-tanos-laferrere.webp</image:loc>
+      <image:title>Transportes Los Tanos en Laferrere</image:title>
     </image:image>
   </url>
 
