@@ -633,6 +633,16 @@
       <image:title>Transportes Los Tanos en Laferrere</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.lamatanzaclasificados.com.ar/comercio/herreria-herrero-oscar-laferrere.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.lamatanzaclasificados.com.ar/img/herreria-herrero-oscar-laferrere.webp</image:loc>
+      <image:title>Herrería Oscar en Laferrere</image:title>
+    </image:image>
+  </url>
 
 
 </urlset>
